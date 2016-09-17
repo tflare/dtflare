@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.16" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://d.tflare.comcss/styles.css">
+    <link rel="stylesheet" href="http://d.tflare.comcss/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.tflare.com/index.xml">
+    <link rel="canonical" href="http://d.tflare.com/categories/prog/" >
+
+    
+    <title>Prog - hiroyuki_tの日記</title>
+    <meta property='og:title' content="Prog - hiroyuki_tの日記">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://d.tflare.com/categories/prog/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://d.tflare.com">hiroyuki_tの日記</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+<div class="list">
+
+  <div class="row">
+    <div class="col-md-8">
+      <header class="page-title">Prog</header>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Mon, Jul 3, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/07/03/234500/">XPとアンチパターンと自動化テスト</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <div data-role="amazonjs" data-asin="4894717565" data-locale="JP" data-tmpl="" data-img-size="" class="asin_4894717565_JP_ amazonjs_item">
+    <div class="amazonjs_indicator">
+      <span class="amazonjs_indicator_img"></span><a class="amazonjs_indicator_title" href="#">XPエクストリームプログラミング懐疑編―XPはソフトウェア開発の救世主たりえるのか (The XP Series)</a><span class="amazonjs_indicator_footer"></span>
+    </div>
+  </div></p> 
+  
+  <p>
+    XPエクストリームプログラミング懐疑編―XPはソフトウェア開発の救世主たりえるのか (The XP Series)を読み返した。
+  </p>
+  
+  <p>
+    XPは自分の困ったことがあるアンチパターンにも対処してくれている気がする。
+  </p>
+  
+  <pre>
+アンチパターン　自業自得
+他の人にもわかりやすくするため、難しい技術を使わないようにする。それに伴いコード行数が増える。
+　　　　　　　　　　　↓
+難しい技術を使わなくてはどうにもならないような状況が発生する。
+　　　　　　　　　　　↓
+その部分だけ難しい技術を使って作る。
+　　　　　　　　　　　↓
+結局自分しか修正しないことに気づく。
+　　　　　　　　　　　↓
+その後の修正では難しい技術をどんどん投入する。
+　　　　　　　　　　　↓
+難しい技術を使っていれば5行ですむところを他の人にもわかりやすくした結果
+50行になってしまったため後で自分の保守が大変になる。
+　　　　　　　　　　　↓
+その当時使った言語を使うのがいやなので、修正する気にならない
+ここでいう難しい技術というのは、他のチームメンバーでは使えなさそうな技術というだけで
+実際に難しい技術かどうかは関係ありません。
+</pre>
+  
+  <p>
+    こんなことにかなり前にはまったため、今でも時々悩まされる。
+  </p>
+  
+  <p>
+    テストさえ書いておけば。
+  </p>
+  
+  <p>
+    ペアプロしておけば。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    すべてのプロジェクトにXPは有効ではないけど
+  </p>
+  
+  <p>
+    ほぼすべてのプロジェクトに自動化テストは有効に働くと思う。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    余計なプロセスを追加するより、自動化テストを入れたほうが
+  </p>
+  
+  <p>
+    品質向上に寄与すると思うよ。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Wed, Jun 28, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/06/28/221913/">JspWiki</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    JSPのみでWikiを書いた
+  </p>
+  
+  <p>
+    Wikiと言っても
+  </p>
+  
+  <p>
+    一覧表示、読み込み、書き込み、削除、検索の機能しかなく
+  </p>
+  
+  <p>
+    リンク機能なんてまったくない。
+  </p>
+  
+  <p>
+    大体300行ぐらい。
+  </p>
+  
+  <p>
+    JSPだとコンパイルを勝手にやってくれるので楽。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    とりあえずはまったこと。
+  </p>
+  
+  <p>
+    環境:Windows+Apache+Tomcat+InternetExpoler
+  </p>
+  
+  <p>
+    文字コードをEUC-JPにしていたが
+  </p>
+  
+  <p>
+    ファイル名を日本語のまま格納すると、
+  </p>
+  
+  <p>
+    書き込みはうまくいくが、
+  </p>
+  
+  <p>
+    読み込む際にInternetExpolerがうまく処理してくれず
+  </p>
+  
+  <p>
+    文字が1文字落ちてしまってうまくいかない。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    前にRubyでWikiを作ったときにも同じような事象が起きた。
+  </p>
+  
+  <p>
+    その時はエスケープしたが、
+  </p>
+  
+  <p>
+    今回はWindows+InternetExpoler限定なので
+  </p>
+  
+  <p>
+    文字コードをShift_JISにしたらうまくいくんじゃないかと思って
+  </p>
+  
+  <p>
+    やってみたらうまくいった。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    今回JSP（Java）でアプリを作ったのが
+  </p>
+  
+  <p>
+    初めてだったためデバッカーを使わずに
+  </p>
+  
+  <p>
+    変数の値を知る方法がわからず大変だった。
+  </p>
+  
+  <p>
+    Rubyだと
+  </p>
+  
+  <p>
+    raise StandardError,foo
+  </p>
+  
+  <p>
+    とするとできる。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    JSPの場合
+  </p>
+  
+  <p>
+    System.out.println(foo);
+  </p>
+  
+  <p>
+    とするとTomcatのコンソールに値が出力される
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Thu, Jun 1, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/06/01/233025/">Action Controllerのマッピング</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    mod_rewriteの代わりに使えるわけねー
+  </p>
+  
+  <p>
+    というかmod_rewriteがないと下記のようなアドレスでcgiが見つからなくてNot Foundで終わりじゃん
+  </p>
+  
+  <p>
+    <a href="http://www.hoge.net/diary/2006/06/02/" target="_blank">http://www.hoge.net/diary/2006/06/02/</a>
+  </p>
+  
+  <p>
+    なにを考えてるんだろう。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    Action Controllerのマッピングをちょっと調べてみたら
+  </p>
+  
+  <p>
+    基本的にREQUEST_URIを元にマッピングしてる
+  </p>
+  
+  <p>
+    いろいろと省略可能だったり
+  </p>
+  
+  <p>
+    オプションがいろいろついていたりしているので複雑になっている。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Mon, Mar 27, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/03/27/230536/">Haskellプログラミング入門（5）場合分け</a></h1></div>
+  </header>
+  <div class="body">Haskellのソースを読んでいても意味がわからない部分がまだ多い。 少しずつやっていこうということで、今日は場合分けを勉強した。 http://web.archive.org/web/20050216040914/www.teu.ac.jp/kougi/koshida/Prog6/text02.html 上記を参考にして2引数をとり最小の値を返す関数が以下になる。 mymin :: Int -&#62; Int -&#62; Int mymin x y | x &#60;= y = x -- まずこれを評価条件に当てはまればx | otherwise = y -- 上記以外ならy 以下のようにもかける mymin2 :: Int -&#62; Int -&#62; Int mymin2 x y = if x &#60;= y then x else y 3引数をとり最小の値を返す関数が以下になる。 mymin3 :: Int -&#62; Int -&#62; Int -&#62; Int mymin3 x y z | (x &#60;= y) &#38;&#38; (x &#60;= z)</div>
+
+  
+  <footer>
+    <a href="http://d.tflare.com/2006/03/27/230536/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Tue, Mar 21, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/03/21/203150/">Haskellプログラミング入門（4）reverse</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    Haskellプログラミング入門（3）reverseを書いて見ようの続き
+  </p>
+  
+  <p>
+    reverseは標準で意味されてるけど。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    <a href="http://www.sampou.org/haskell/report-revised-j/basic.html" target="_blank">http://www.sampou.org/haskell/report-revised-j/basic.html</a>
+  </p>
+  
+  <p>
+    上記6.1.2 文字と文字列から
+  </p>
+  
+  <blockquote>
+    <p>
+      文字列は文字のリストである。
+    </p>
+  </blockquote>
+  
+  <p>
+  </p>
+  
+  <p>
+    <a href="http://web.archive.org/web/20050216042941/www.teu.ac.jp/kougi/koshida/Prog6/text05.html" target="_blank">http://web.archive.org/web/20050216042941/www.teu.ac.jp/kougi/koshida/Prog6/text05.html</a>
+  </p>
+  
+  <p>
+    上記2.2.1　リストの構築子から
+  </p>
+  
+  <blockquote>
+    <p>
+      全てのリストは，空リスト（[]）であるか，空でないかのいずれかである．空でないリスト（例：[4,2,3]）は，x:xsの書式で表すことができる．ここで，xは先頭要素，xsは，先頭要素を除いた，リストの残りを表す．
+    </p>
+  </blockquote>
+  
+  <p>
+  </p>
+  
+  <pre>
+myr :: String -&#62; String
+myr &#91;] = &#91;]
+myr (x:xs) = myr (xs) ++ &#91;x]
+</pre>
+  
+  <p>
+    ということでこれでいいのか？
+  </p>
+  
+  <p>
+    <a href="http://web.archive.org/web/20050216042941/www.teu.ac.jp/kougi/koshida/Prog6/text05.html" target="_blank">http://web.archive.org/web/20050216042941/www.teu.ac.jp/kougi/koshida/Prog6/text05.html</a>
+  </p>
+  
+  <p>
+    上記のリストに関する基本再帰を使うから空リストが必要。
+  </p>
+  
+  <p>
+    それから再帰すると出来る。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    <a href="http://www.sampou.org/haskell/report-revised-j/standard-prelude.html#preludelist" target="_blank">http://www.sampou.org/haskell/report-revised-j/standard-prelude.html#preludelist</a>
+  </p>
+  
+  <p>
+    上記によると以下のようになっている。
+  </p>
+  
+  <p>
+    まだまだHaskellの基本的なことがわかってない。
+  </p>
+  
+  <p>
+    再帰を自分でせずに標準関数を使えばいいのか。
+  </p>
+  
+  <blockquote>
+    <p>
+      reverse :: [a] -> [a]
+    </p>
+    
+    <p>
+      reverse = foldl (flip (:)) []
+    </p>
+  </blockquote>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Wed, Mar 8, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/03/08/165213/">Haskellプログラミング入門（3）</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    Haskellで文字列のreverseってどう書けばいいんだろう。
+  </p>
+  
+  <p>
+    わからない。
+  </p>
+  
+  <p>
+    以下に関数の一覧が乗っているんだけど、どうやって書けばいいんだ。
+  </p>
+  
+  <p>
+    <a href="http://www.haskell.org/onlinelibrary/prelude-index.html" target="_blank">http://www.haskell.org/onlinelibrary/prelude-index.html</a>
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    reverseってどう書けば出来るんだっけ、ということでRubyで書いてみる。
+  </p>
+  
+  <pre>def myreverse(str)
+index = str.length - 1
+value = ""
+while index &gt;= 0
+value &lt;&lt; str[index, 1]
+index -= 1
+end
+return value
+end</pre>
+  
+  <p>
+    これでいいんだよな。
+  </p>
+  
+  <p>
+    さてこれをHaskellでどう書けばいいんだ？
+  </p>
+  
+  <p>
+    時間が来たので今日は終了。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Mon, Mar 6, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/03/06/165213/">Haskellプログラミング入門（2）</a></h1></div>
+  </header>
+  <div class="body">少しだけわかってきた。 f :: Int - Int f n = n * n 上記の場合、Int型の引数を1つとり、Int型の値を1つ返す関数。 &nbsp; k :: Int - Int - Int k m n = m * n 上記の場合、Int型の引数を2つとり、Int型の値を1つ返す関数。 &nbsp; k :: Int - Int - Int という場合-の意味は、最後のみ返し値で後は引数である。 ということなんだろう。 &nbsp; エラーメッセージ見つつ書いていたら、下記のものがかけた。 名前を入力してそれにメッセージを足して返す関数 p :: String - IO () p str = do putStr str putStrLn &#8220;さん、こんにちわ！！&#8221; &nbsp; もっと簡潔にかけないかなと思っていたら、 連結は++みたいなので下記のようにかけることが判明。 pp :: String - IO () pp str = putStrLn (str</div>
+
+  
+  <footer>
+    <a href="http://d.tflare.com/2006/03/06/165213/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, Mar 3, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/03/03/105324/">Haskellプログラミング入門</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    以下とかが参考になります。
+  </p>
+  
+  <p>
+    <a href="http://web.archive.org/web/20050216023239/www.teu.ac.jp/kougi/koshida/Prog6/text01.html" target="_blank">http://web.archive.org/web/20050216023239/www.teu.ac.jp/kougi/koshida/Prog6/text01.html</a>
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    Hugsでは対話的に入力出来るのは式のみらしい
+  </p>
+  
+  <p>
+    めんどくさい。
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    以下のHaskeller への道がかなり参考になる。
+  </p>
+  
+  <p>
+    <a href="http://www.sampou.org/cgi-bin/haskell.cgi?Programming%3aWayToHaskeller" target="_blank">http://www.sampou.org/cgi-bin/haskell.cgi?Programming%3aWayToHaskeller</a>
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    C:\Haskellに以下のバッチファイルを作ってソースもここにおく。
+  </p>
+  
+  <p>
+    &#8220;C:\Program Files\Hugs98_SOE\Hugs&#8221;
+  </p>
+  
+  <p>
+    そしてこのバッチファイルから実行すると:loadが楽になる。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Thu, Mar 2, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/03/02/233435/">Haskellプログラミングメモ</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    プログラム・プロムナード／Haskellプログラミング
+  </p>
+  
+  <p>
+    <a href="http://www.ipsj.or.jp/07editj/promenade/index.html" target="_blank">http://www.ipsj.or.jp/07editj/promenade/index.html</a>
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    連載: Haskellプログラミング」のプログラム
+  </p>
+  
+  <p>
+    <a href="http://www.sampou.org/haskell/ipsj/" target="_blank">http://www.sampou.org/haskell/ipsj/</a>
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    やさしい Haskell 入門
+  </p>
+  
+  <p>
+    <a href="http://www.sampou.org/haskell/tutorial-j/" target="_blank">http://www.sampou.org/haskell/tutorial-j/</a>
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    以下からHugsをダウンロード
+  </p>
+  
+  <p>
+    <a href="http://haskell.org/soe/Packages/hugs_SOE-Jan2005.msi" target="_blank">http://haskell.org/soe/Packages/hugs_SOE-Jan2005.msi</a>
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    以下から
+  </p>
+  
+  <p>
+    <a href="http://haskell.org/learning.html" target="_blank">http://haskell.org/learning.html</a>
+  </p>
+  
+  <p>
+    下記が見つかったので見てみる。
+  </p>
+  
+  <p>
+    <a href="ftp://ftp.geoinfo.tuwien.ac.at/navratil/HaskellTutorial.pdf" target="_blank">ftp://ftp.geoinfo.tuwien.ac.at/navratil/HaskellTutorial.pdf</a>
+  </p>
+  
+  <p>
+    putStr &#8220;Hello World&#8221;
+  </p>
+  
+  <p>
+    で&#8221;Hello World&#8221;がでる。
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    とりあえず少しずつ勉強する。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      
+<nav>
+  <ul class="pager">
+
+    
+    <li><a href="http://d.tflare.com/categories/prog/page/1">Previous</a></li>
+    
+
+    
+    <li class="disabled"><a href="#">Next</a></li>
+    
+
+  </ul>
+</nav>
+
+
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://d.tflare.com/2016/08/19/010941/" class="list-group-item">ビジネス書を読んでもデキる人にはなれない読了　この本の概要</a>
+      
+      <a href="http://d.tflare.com/2016/07/31/160751/" class="list-group-item">僕が無料の英語マンガで楽にTOEIC900点を取って、映画の英語を字幕なしでリスニングできるワケ読了</a>
+      
+      <a href="http://d.tflare.com/2016/07/30/053527/" class="list-group-item">ドラッカー名著集 4 非営利組織の経営読了</a>
+      
+      <a href="http://d.tflare.com/2016/03/31/071248/" class="list-group-item">iMac 21.5インチとMacBook Air 13インチ購入</a>
+      
+      <a href="http://d.tflare.com/2016/03/29/234956/" class="list-group-item">zenback停止し、プラグイン追加</a>
+      
+      <a href="http://d.tflare.com/2016/03/29/225335/" class="list-group-item">Vivaldiの設定を別のMacへコピーする方法</a>
+      
+      <a href="http://d.tflare.com/2014/10/13/205224/" class="list-group-item">ストレスに負けない生活―心・身体・脳のセルフケア (ちくま新書)　読了</a>
+      
+      <a href="http://d.tflare.com/2014/10/02/074817/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由（日本破綻論と国債発行）</a>
+      
+      <a href="http://d.tflare.com/2014/10/02/072949/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由</a>
+      
+      <a href="http://d.tflare.com/2014/07/23/075131/" class="list-group-item">プロセスルールの縮小の停滞とブレイクスルーへの期待</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://d.tflare.comcategories/%E6%8A%95%E8%B3%87" class="list-group-item">投資</a>
+      
+      <a href="http://d.tflare.comcategories/ubuntu" class="list-group-item">ubuntu</a>
+      
+      <a href="http://d.tflare.comcategories/opera" class="list-group-item">opera</a>
+      
+      <a href="http://d.tflare.comcategories/%E6%9C%AC" class="list-group-item">本</a>
+      
+      <a href="http://d.tflare.comcategories/comp" class="list-group-item">comp</a>
+      
+      <a href="http://d.tflare.comcategories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://d.tflare.comcategories/prog" class="list-group-item">prog</a>
+      
+      <a href="http://d.tflare.comcategories/other" class="list-group-item">other</a>
+      
+      <a href="http://d.tflare.comcategories/android" class="list-group-item">android</a>
+      
+      <a href="http://d.tflare.comcategories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>Copyright (c) 2006 - 2016, hiroyuki_tの日記</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a>, Theme <a href="https://github.com/dim0627/hugo_theme_beg" target="_blank" rel="nofollow">beg</a> designed by <a href="http://yet.unresolved.xyz" target="_blank" rel="nofollow">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

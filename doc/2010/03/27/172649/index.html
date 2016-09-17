@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.16" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://d.tflare.comcss/styles.css">
+    <link rel="stylesheet" href="http://d.tflare.comcss/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.tflare.com/index.xml">
+    <link rel="canonical" href="http://d.tflare.com/2010/03/27/172649/" >
+
+    
+    <title>ol要素の直下にli要素以外のものを入れてOperaで表示すると - hiroyuki_tの日記</title>
+    <meta property='og:title' content="ol要素の直下にli要素以外のものを入れてOperaで表示すると - hiroyuki_tの日記">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://d.tflare.com/2010/03/27/172649/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://d.tflare.com">hiroyuki_tの日記</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://d.tflare.com"/>
+        <meta itemprop="dateModified" content="2010-03-27T08:26:49&#43;00:00">
+        <meta itemprop="headline" content="ol要素の直下にli要素以外のものを入れてOperaで表示すると">
+        <meta itemprop="description" content="ol要素（順序付きリスト）の直下にli要素以外のものを入れてOperaで表示するとカウントアップしなくなる。 これを使っているサイトがたまにあるので意外と困る。 Operaは仕様どおり作っているのだが Internet ExplorerやFirefoxはカウントアップするので見過ごされているのだろう。 例 html &#60;ol&#62; &#60;div class=&#34;comment&#34;&#62; &#60;li&#62; &#60;div class=&#34;Title&#34;&#62;title&#60;/div&#62; &#60;/li&#62; &#60;/div&#62; &#60;div class=&#34;comment&#34;&#62; &#60;li&#62; &#60;div class=&#34;Title&#34;&#62;title&#60;/div&#62; &#60;/li&#62; &#60;/div&#62; &#60;/ol&#62; 表示 title &lt;div class=&quot;comment&quot;&gt; &lt;li&gt; &lt;div class=&quot;Title&quot;&gt; title &lt;/div&gt; &lt;/li&gt; &lt;/div&gt; Operaだと1. title（改行）1. titleと表示される。 Firefoxだと1. title（改行）2. titleと表示される。">
+        <meta itemprop="url" content="http://d.tflare.com/2010/03/27/172649/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://d.tflare.comimages/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://d.tflare.comimages/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="hiroyuki_tの日記">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2010-03-27T08:26:49&#43;00:00">Sat, Mar 27, 2010</time>
+          <h1 class="article-title">ol要素の直下にli要素以外のものを入れてOperaで表示すると</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <div class="section">
+  <p>
+    ol要素（順序付きリスト）の直下にli要素以外のものを入れてOperaで表示するとカウントアップしなくなる。
+  </p>
+  
+  <p>
+    これを使っているサイトがたまにあるので意外と困る。
+  </p>
+  
+  <p>
+    Operaは仕様どおり作っているのだが
+  </p>
+  
+  <p>
+    Internet ExplorerやFirefoxはカウントアップするので見過ごされているのだろう。
+  </p>
+  
+  <h4>
+    例
+  </h4>
+  
+  <h5>
+    html
+  </h5>
+  
+  <pre class="syntax-highlight">
+<span class="synIdentifier">&#60;</span><span class="synStatement">ol</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;</span><span class="synStatement">div</span><span class="synIdentifier"> </span><span class="synType">class</span><span class="synIdentifier">=</span><span class="synConstant">&#34;comment&#34;</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;</span><span class="synStatement">li</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;</span><span class="synStatement">div</span><span class="synIdentifier"> </span><span class="synType">class</span><span class="synIdentifier">=</span><span class="synConstant">&#34;Title&#34;</span><span class="synIdentifier">&#62;</span>title<span class="synIdentifier">&#60;/</span><span class="synStatement">div</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;/</span><span class="synStatement">li</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;/</span><span class="synStatement">div</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;</span><span class="synStatement">div</span><span class="synIdentifier"> </span><span class="synType">class</span><span class="synIdentifier">=</span><span class="synConstant">&#34;comment&#34;</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;</span><span class="synStatement">li</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;</span><span class="synStatement">div</span><span class="synIdentifier"> </span><span class="synType">class</span><span class="synIdentifier">=</span><span class="synConstant">&#34;Title&#34;</span><span class="synIdentifier">&#62;</span>title<span class="synIdentifier">&#60;/</span><span class="synStatement">div</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;/</span><span class="synStatement">li</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;/</span><span class="synStatement">div</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;/</span><span class="synStatement">ol</span><span class="synIdentifier">&#62;</span>
+</pre>
+  
+  <h5>
+    表示
+  </h5>
+  
+  <ol>
+    <div class="comment">
+      <li>
+        <div class="Title">
+          title
+        </div>
+      </li>
+    </div>
+    
+
+<pre><code>&lt;div class=&quot;comment&quot;&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;Title&quot;&gt;
+      title
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p></ol></p>
+
+<p><p>
+  </p></p>
+
+<p><p>
+    Operaだと1. title（改行）1. titleと表示される。
+  </p></p>
+
+<p><p>
+    Firefoxだと1. title（改行）2. titleと表示される。
+  </p>
+</div></p>
+
+        </div>
+
+
+        <aside>
+          
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fd.tflare.com%2f2010%2f03%2f27%2f172649%2f&t=ol%e8%a6%81%e7%b4%a0%e3%81%ae%e7%9b%b4%e4%b8%8b%e3%81%abli%e8%a6%81%e7%b4%a0%e4%bb%a5%e5%a4%96%e3%81%ae%e3%82%82%e3%81%ae%e3%82%92%e5%85%a5%e3%82%8c%e3%81%a6Opera%e3%81%a7%e8%a1%a8%e7%a4%ba%e3%81%99%e3%82%8b%e3%81%a8" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fd.tflare.com%2f2010%2f03%2f27%2f172649%2f&text=ol%e8%a6%81%e7%b4%a0%e3%81%ae%e7%9b%b4%e4%b8%8b%e3%81%abli%e8%a6%81%e7%b4%a0%e4%bb%a5%e5%a4%96%e3%81%ae%e3%82%82%e3%81%ae%e3%82%92%e5%85%a5%e3%82%8c%e3%81%a6Opera%e3%81%a7%e8%a1%a8%e7%a4%ba%e3%81%99%e3%82%8b%e3%81%a8&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2fd.tflare.com%2f2010%2f03%2f27%2f172649%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2fd.tflare.com%2f2010%2f03%2f27%2f172649%2f&title=ol%e8%a6%81%e7%b4%a0%e3%81%ae%e7%9b%b4%e4%b8%8b%e3%81%abli%e8%a6%81%e7%b4%a0%e4%bb%a5%e5%a4%96%e3%81%ae%e3%82%82%e3%81%ae%e3%82%92%e5%85%a5%e3%82%8c%e3%81%a6Opera%e3%81%a7%e8%a1%a8%e7%a4%ba%e3%81%99%e3%82%8b%e3%81%a8" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          <div class="section">
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  var disqus_shortname = 'http-d-tflare-com.disqus.com';
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://d.tflare.com/2016/08/19/010941/" class="list-group-item">ビジネス書を読んでもデキる人にはなれない読了　この本の概要</a>
+      
+      <a href="http://d.tflare.com/2016/07/31/160751/" class="list-group-item">僕が無料の英語マンガで楽にTOEIC900点を取って、映画の英語を字幕なしでリスニングできるワケ読了</a>
+      
+      <a href="http://d.tflare.com/2016/07/30/053527/" class="list-group-item">ドラッカー名著集 4 非営利組織の経営読了</a>
+      
+      <a href="http://d.tflare.com/2016/03/31/071248/" class="list-group-item">iMac 21.5インチとMacBook Air 13インチ購入</a>
+      
+      <a href="http://d.tflare.com/2016/03/29/234956/" class="list-group-item">zenback停止し、プラグイン追加</a>
+      
+      <a href="http://d.tflare.com/2016/03/29/225335/" class="list-group-item">Vivaldiの設定を別のMacへコピーする方法</a>
+      
+      <a href="http://d.tflare.com/2014/10/13/205224/" class="list-group-item">ストレスに負けない生活―心・身体・脳のセルフケア (ちくま新書)　読了</a>
+      
+      <a href="http://d.tflare.com/2014/10/02/074817/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由（日本破綻論と国債発行）</a>
+      
+      <a href="http://d.tflare.com/2014/10/02/072949/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由</a>
+      
+      <a href="http://d.tflare.com/2014/07/23/075131/" class="list-group-item">プロセスルールの縮小の停滞とブレイクスルーへの期待</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://d.tflare.comcategories/%E6%8A%95%E8%B3%87" class="list-group-item">投資</a>
+      
+      <a href="http://d.tflare.comcategories/ubuntu" class="list-group-item">ubuntu</a>
+      
+      <a href="http://d.tflare.comcategories/opera" class="list-group-item">opera</a>
+      
+      <a href="http://d.tflare.comcategories/%E6%9C%AC" class="list-group-item">本</a>
+      
+      <a href="http://d.tflare.comcategories/comp" class="list-group-item">comp</a>
+      
+      <a href="http://d.tflare.comcategories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://d.tflare.comcategories/prog" class="list-group-item">prog</a>
+      
+      <a href="http://d.tflare.comcategories/other" class="list-group-item">other</a>
+      
+      <a href="http://d.tflare.comcategories/android" class="list-group-item">android</a>
+      
+      <a href="http://d.tflare.comcategories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>Copyright (c) 2006 - 2016, hiroyuki_tの日記</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a>, Theme <a href="https://github.com/dim0627/hugo_theme_beg" target="_blank" rel="nofollow">beg</a> designed by <a href="http://yet.unresolved.xyz" target="_blank" rel="nofollow">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

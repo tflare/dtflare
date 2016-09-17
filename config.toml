@@ -1,0 +1,14 @@
+baseurl = "http://d.tflare.com"
+title = "hiroyuki_tの日記"
+author = "hiroyuki_t"
+
+copyright = "Copyright (c) 2006 - 2016, hiroyuki_tの日記"
+
+languageCode = "ja-jp"
+theme = "beg"
+canonifyurls = true
+publishdir = "doc"
+
+[params]
+  disqusShortname = "http-d-tflare-com.disqus.com" # optional
+  toc = true # optional, When set to TRUE this parameter, table of contents appears in all articles.

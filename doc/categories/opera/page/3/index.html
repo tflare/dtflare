@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.16" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://d.tflare.comcss/styles.css">
+    <link rel="stylesheet" href="http://d.tflare.comcss/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.tflare.com/index.xml">
+    <link rel="canonical" href="http://d.tflare.com/categories/opera/" >
+
+    
+    <title>Opera - hiroyuki_tの日記</title>
+    <meta property='og:title' content="Opera - hiroyuki_tの日記">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://d.tflare.com/categories/opera/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://d.tflare.com">hiroyuki_tの日記</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+<div class="list">
+
+  <div class="row">
+    <div class="col-md-8">
+      <header class="page-title">Opera</header>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, Jun 26, 2009</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2009/06/26/234132/">Opera10 build 4446</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    入れてみた。
+  </p>
+  
+  <p>
+    build 4446とはあまり関係ないが
+  </p>
+  
+  <p>
+    日本語入力が出来たり出来なかったりしたので
+  </p>
+  
+  <p>
+    以下を行った所安定しているように見える。
+  </p>
+  
+  <p>
+    $im-switch -s scim
+  </p>
+  
+  <p>
+    を行った後にログアウトしてログイン
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    2009-06-21の日記に記述した部分も必要と思われる。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    環境は
+  </p>
+  
+  <p>
+    Ubuntu 9.04
+  </p>
+  
+  <p>
+    scim+Anthy
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    日本語入力がうまくいかないときは以下のログが出ている。
+  </p>
+  
+  <p>
+    Failed to receive messages at scim_bridge_client_read_and_dispatch ()
+  </p>
+  
+  <p>
+    An IOException at scim_bridge_client_handle_key_event ()
+  </p>
+  
+  <p>
+    An IOException at x11FilterEvent ()
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    これを元に探した所以下のページが見つかっている。
+  </p>
+  
+  <p>
+    2009-06-21の日記は以下のページを参考にした修正となっている。
+  </p>
+  
+  <p>
+    <a href="https://bugs.launchpad.net/ubuntu/+source/scim-bridge/+bug/276159" target="_blank">https://bugs.launchpad.net/ubuntu/+source/scim-bridge/+bug/276159</a>
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Jun 20, 2009</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2009/06/21/082946/">Opera10 build 4440</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    何日か使ってみた。
+  </p>
+  
+  <p>
+    Opera 10 Beta 1やOpera 9系統より安定していると思う。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    日本語入力ができないのが難点だったが
+  </p>
+  
+  <p>
+    /etc/X11/xinit/xinput.d/scimの
+  </p>
+  
+  <p>
+    GTK_IM_MODULEとQT_IM_MODULEをximからscimに変更する事で動作するようになった。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, Jun 5, 2009</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2009/06/05/231833/">Opera 10.0 Beta 1</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    入れてみた。
+  </p>
+  
+  <p>
+    <a href="http://www.opera.com/browser/download/?ver=10.00b1" target="_blank">http://www.opera.com/browser/download/?ver=10.00b1</a>
+  </p>
+  
+  <p>
+    ブックマークがかなり前の状態になってしまった。
+  </p>
+  
+  <p>
+    他は問題なさそう。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, May 1, 2009</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2009/05/01/211222/">Operaクッキーの扱い</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    ブラウザを使っていると使用しないクッキーがたまってくる。
+  </p>
+  
+  <p>
+    昔は時々削除していたけど
+  </p>
+  
+  <p>
+    以下の設定により削除する必要がなくなった。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    Tools > Preferences > Advanced > Cookies > Delete new cookies when exiting Operaをオンにして
+  </p>
+  
+  <p>
+    クッキーが必要なサイトで右クリックからEdit Site Preferences
+  </p>
+  
+  <p>
+    Cookies > Delete new cookies when exiting Operaをオフにする。
+  </p>
+  
+  <p>
+    すると必要なサイトだけクッキーを受け入れることができる。
+  </p>
+  
+  <p>
+    そのためクッキーを削除する必要がなくなる。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sun, Jun 1, 2008</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2008/06/01/101857/">Opera snapshot</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    opera_static-9.50-1983.gcc4-qt4_i386.deb
+  </p>
+  
+  <p>
+    を入れたときはまともに動いていたのが
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    opera-static_9.50-1992.gcc4-static-qt3_i386.deb
+  </p>
+  
+  <p>
+    を入れたあとにブックマークが化けて表示されるようになった。（メニューを日本語にするとメニューも化ける）
+  </p>
+  
+  <p>
+    フォントの設定を変えても駄目
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    opera-static_9.50-1997.gcc4-static-qt3_i386.deb
+  </p>
+  
+  <p>
+    その後上記Build1997を入れても改善しない。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    opera_9.50-1997.gcc4-qt4_i386.deb
+  </p>
+  
+  <p>
+    そこでqtの問題かと思いqt4のバージョンを入れ直したら直った。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    結局opera-staticでBuild1992からqt4がなくなったので
+  </p>
+  
+  <p>
+    static-qt3バージョンを入れたのが原因だった。
+  </p>
+  
+  <p>
+    staticじゃないoperaのqt4版で上記問題が解決し
+  </p>
+  
+  <p>
+    他の問題も発生していないのでこれで作業する予定。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, Apr 25, 2008</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2008/04/25/213907/">Opera 9.50 beta 2</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    <a href="http://www.opera.com/products/desktop/next/" target="_blank">Opera 9.50 beta 2</a>がでたので入れてみたら
+  </p>
+  
+  <p>
+    マウスジェスチャーが使えなくて驚いた。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    Operaの設定を確認していたら以下の手順で使えるようになることがわかった。
+  </p>
+  
+  <p>
+    [Tools]→[Preferences]→[Advanced]→[Shortcuts]
+  </p>
+  
+  <p>
+    のEnable mouse gesturesのチェックを入れる。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, Feb 8, 2008</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2008/02/09/085639/">flashplugin Opera</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    flashplugin-nonfreeのアップデートでflashplugin 9.0.115にアップデートされたが
+  </p>
+  
+  <p>
+    Opera 9.50 Beta 2でないと対応してないようなので
+  </p>
+  
+  <p>
+    以下を参考に
+  </p>
+  
+  <p>
+    <a href="http://ubuntuforums.org/showthread.php?t=688707" target="_blank">http://ubuntuforums.org/showthread.php?t=688707</a>
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    以下からflashplugin 9.0.48をダウンロードして入れ直した。
+  </p>
+  
+  <p>
+    <a href="http://andyv133.homelinux.org/downloads/install_flash_player_9r48_linux.tar.gz" target="_blank">http://andyv133.homelinux.org/downloads/install_flash_player_9r48_linux.tar.gz</a>
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Thu, Apr 12, 2007</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2007/04/12/203653/">Opera9.2 アップデート</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    Opera9.2にアップデートしました。
+  </p>
+  
+  <p>
+    アップデートマネージャーでアップデートできるのでアップデートするのがとても楽です。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    ただ少し不安定な感じがします。
+  </p>
+  
+  <p>
+    右クリックのメニューで2度固まったような状態になりました。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, Dec 22, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/12/22/230536/">Operaを9.10にアップデート</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    Ubuntu6.10でOpera(static)を9.10にアップデート
+  </p>
+  
+  <pre>
+$sudo gedit /etc/apt/sources.list
+</pre>
+  
+  <p>
+    で開いて以下を追加
+  </p>
+  
+  <p>
+    deb <a href="http://deb.opera.com/opera" target="_blank">http://deb.opera.com/opera</a> stable non-free
+  </p>
+  
+  <p>
+    そして以下を実行すると
+  </p>
+  
+  <pre>
+$ sudo apt-get update
+</pre>
+  
+  <pre>
+W: GPG error: http://deb.opera.com stable Release: 公開鍵を利用できないため、以下の署名は検証できませんでした: NO_PUBKEY 033431536A423791
+W: これらの問題を解決するためには apt-get update を実行する必要があるかもしれません
+</pre>
+  
+  <p>
+    上記メッセージが出たため以下を実行
+  </p>
+  
+  <pre>
+$ gpg --keyserver pgp.nic.ad.jp --recv-keys 033431536A423791
+$ sudo gpg --armor --export 033431536A423791 | sudo apt-key add -
+</pre>
+  
+  <p>
+    そして以下を実行すると無事インストールできた。
+  </p>
+  
+  <pre>
+$ sudo apt-get install opera-static
+</pre>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Jun 24, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/06/24/235545/">Opera9にアップデート</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    Opera9にアップデートしてみた。
+  </p>
+  
+  <p>
+    Opera9でOpera8をそのままアップデートする形にして
+  </p>
+  
+  <p>
+    起動してみたが、メニュー、タブ等が表示されない。
+  </p>
+  
+  <p>
+    <a href="http://www.opera-wiki.com/index.php?Opera9.0#g747e1be" target="_blank">Opera9.0 &#8211; Opera-PukiWikiPlus!</a>によるとバグがあるらしい。
+  </p>
+  
+  <p>
+    しかたないからアンインストールしたらOpera8のデータまで吹っ飛んだ。
+  </p>
+  
+  <p>
+    Opera9だけアンインストールして、Opera8に戻すようにしてくれよ。
+  </p>
+  
+  <p>
+    メインブラウザのOpera8のブックマークがすべてなくなってしまった。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    Firefoxのブックマークから復旧させたが
+  </p>
+  
+  <p>
+    かなりのブックマークがなくなった。
+  </p>
+  
+  <p>
+    使ってたアンテナでアンテナの名前を覚えていないものがあってまいった。
+  </p>
+  
+  <p>
+    しかたないから使えそうなアンテナを新たに見つけた。
+  </p>
+  
+  <p>
+    かなり悲しい。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      
+<nav>
+  <ul class="pager">
+
+    
+    <li><a href="http://d.tflare.com/categories/opera/page/2">Previous</a></li>
+    
+
+    
+    <li class="disabled"><a href="#">Next</a></li>
+    
+
+  </ul>
+</nav>
+
+
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://d.tflare.com/2016/08/19/010941/" class="list-group-item">ビジネス書を読んでもデキる人にはなれない読了　この本の概要</a>
+      
+      <a href="http://d.tflare.com/2016/07/31/160751/" class="list-group-item">僕が無料の英語マンガで楽にTOEIC900点を取って、映画の英語を字幕なしでリスニングできるワケ読了</a>
+      
+      <a href="http://d.tflare.com/2016/07/30/053527/" class="list-group-item">ドラッカー名著集 4 非営利組織の経営読了</a>
+      
+      <a href="http://d.tflare.com/2016/03/31/071248/" class="list-group-item">iMac 21.5インチとMacBook Air 13インチ購入</a>
+      
+      <a href="http://d.tflare.com/2016/03/29/234956/" class="list-group-item">zenback停止し、プラグイン追加</a>
+      
+      <a href="http://d.tflare.com/2016/03/29/225335/" class="list-group-item">Vivaldiの設定を別のMacへコピーする方法</a>
+      
+      <a href="http://d.tflare.com/2014/10/13/205224/" class="list-group-item">ストレスに負けない生活―心・身体・脳のセルフケア (ちくま新書)　読了</a>
+      
+      <a href="http://d.tflare.com/2014/10/02/074817/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由（日本破綻論と国債発行）</a>
+      
+      <a href="http://d.tflare.com/2014/10/02/072949/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由</a>
+      
+      <a href="http://d.tflare.com/2014/07/23/075131/" class="list-group-item">プロセスルールの縮小の停滞とブレイクスルーへの期待</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://d.tflare.comcategories/%E6%8A%95%E8%B3%87" class="list-group-item">投資</a>
+      
+      <a href="http://d.tflare.comcategories/ubuntu" class="list-group-item">ubuntu</a>
+      
+      <a href="http://d.tflare.comcategories/opera" class="list-group-item">opera</a>
+      
+      <a href="http://d.tflare.comcategories/%E6%9C%AC" class="list-group-item">本</a>
+      
+      <a href="http://d.tflare.comcategories/comp" class="list-group-item">comp</a>
+      
+      <a href="http://d.tflare.comcategories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://d.tflare.comcategories/prog" class="list-group-item">prog</a>
+      
+      <a href="http://d.tflare.comcategories/other" class="list-group-item">other</a>
+      
+      <a href="http://d.tflare.comcategories/android" class="list-group-item">android</a>
+      
+      <a href="http://d.tflare.comcategories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>Copyright (c) 2006 - 2016, hiroyuki_tの日記</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a>, Theme <a href="https://github.com/dim0627/hugo_theme_beg" target="_blank" rel="nofollow">beg</a> designed by <a href="http://yet.unresolved.xyz" target="_blank" rel="nofollow">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

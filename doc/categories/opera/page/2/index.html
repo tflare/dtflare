@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.16" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://d.tflare.comcss/styles.css">
+    <link rel="stylesheet" href="http://d.tflare.comcss/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.tflare.com/index.xml">
+    <link rel="canonical" href="http://d.tflare.com/categories/opera/" >
+
+    
+    <title>Opera - hiroyuki_tの日記</title>
+    <meta property='og:title' content="Opera - hiroyuki_tの日記">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://d.tflare.com/categories/opera/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://d.tflare.com">hiroyuki_tの日記</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+<div class="list">
+
+  <div class="row">
+    <div class="col-md-8">
+      <header class="page-title">Opera</header>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Wed, Jun 30, 2010</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2010/06/30/222505/">Opera 10.60 RC2 Build6385</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    DSK-303234 (Linux: Improved IME support)
+  </p>
+  
+  <p>
+    iBus+Mozcで入力可能。
+  </p>
+  
+  <p>
+    検索ボックスで半角入力後、全角を入れようとしても反映されない。
+  </p>
+  
+  <p>
+    検索ボックス以外では問題ない。
+  </p>
+  
+  <p>
+    改善されているようなので今後に期待。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Thu, Jun 24, 2010</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2010/06/24/222505/">Opera10.60 Build6379</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    Opera10.60 Build6379
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    initial IME support on *nix (Linux/FreeBSD)
+  </p>
+  
+  <p>
+    ということで不安定だけどやっと日本語打てるようになった。
+  </p>
+  
+  <p>
+    今後に期待。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Mar 27, 2010</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2010/03/27/172649/">ol要素の直下にli要素以外のものを入れてOperaで表示すると</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    ol要素（順序付きリスト）の直下にli要素以外のものを入れてOperaで表示するとカウントアップしなくなる。
+  </p>
+  
+  <p>
+    これを使っているサイトがたまにあるので意外と困る。
+  </p>
+  
+  <p>
+    Operaは仕様どおり作っているのだが
+  </p>
+  
+  <p>
+    Internet ExplorerやFirefoxはカウントアップするので見過ごされているのだろう。
+  </p>
+  
+  <h4>
+    例
+  </h4>
+  
+  <h5>
+    html
+  </h5>
+  
+  <pre class="syntax-highlight">
+<span class="synIdentifier">&#60;</span><span class="synStatement">ol</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;</span><span class="synStatement">div</span><span class="synIdentifier"> </span><span class="synType">class</span><span class="synIdentifier">=</span><span class="synConstant">&#34;comment&#34;</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;</span><span class="synStatement">li</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;</span><span class="synStatement">div</span><span class="synIdentifier"> </span><span class="synType">class</span><span class="synIdentifier">=</span><span class="synConstant">&#34;Title&#34;</span><span class="synIdentifier">&#62;</span>title<span class="synIdentifier">&#60;/</span><span class="synStatement">div</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;/</span><span class="synStatement">li</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;/</span><span class="synStatement">div</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;</span><span class="synStatement">div</span><span class="synIdentifier"> </span><span class="synType">class</span><span class="synIdentifier">=</span><span class="synConstant">&#34;comment&#34;</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;</span><span class="synStatement">li</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;</span><span class="synStatement">div</span><span class="synIdentifier"> </span><span class="synType">class</span><span class="synIdentifier">=</span><span class="synConstant">&#34;Title&#34;</span><span class="synIdentifier">&#62;</span>title<span class="synIdentifier">&#60;/</span><span class="synStatement">div</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;/</span><span class="synStatement">li</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;/</span><span class="synStatement">div</span><span class="synIdentifier">&#62;</span>
+<span class="synIdentifier">&#60;/</span><span class="synStatement">ol</span><span class="synIdentifier">&#62;</span>
+</pre>
+  
+  <h5>
+    表示
+  </h5>
+  
+  <ol>
+    <div class="comment">
+      <li>
+        <div class="Title">
+          title
+        </div>
+      </li>
+    </div>
+    
+
+<pre><code>&lt;div class=&quot;comment&quot;&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;Title&quot;&gt;
+      title
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p></ol></p>
+
+<p><p>
+  </p></p>
+
+<p><p>
+    Operaだと1. title（改行）1. titleと表示される。
+  </p></p>
+
+<p><p>
+    Firefoxだと1. title（改行）2. titleと表示される。
+  </p>
+</div></p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Feb 6, 2010</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2010/02/06/091320/">Opera10.10 Web archive(single file)</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    Ubuntu 9.10でOpera10.10を自分の環境で動かすと
+  </p>
+  
+  <p>
+    言語設定によって処理が異なっている
+  </p>
+  
+  <p>
+    [ファイル]→[保存]→[Webアーカイブ(単一ファイル)](/usr/share/opera/locale/ja/ja.lng)を選ぶと拡張子がmhtにならない。
+  </p>
+  
+  <p>
+    [File]→[Save As]→[Web archive(single file)](/usr/share/opera/locale/en/en.lng)だと拡張子がmhtになる。
+  </p>
+  
+  <p>
+    処理も異なる模様
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    追記
+  </p>
+  
+  <p>
+    日本語での問題点についてもう少し試して見たところ
+  </p>
+  
+  <p>
+    拡張子がmhtにならないではなく
+  </p>
+  
+  <p>
+    拡張子が変わらないというのが正しい。
+  </p>
+  
+  <p>
+    htmlにしてもtxtにしても拡張子が変わらない。
+  </p>
+  
+  <p>
+    デフォルトのままとなる。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, Jan 8, 2010</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2010/01/08/094406/">Opera10.50 iBus</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    Opera10.50でiBusでも日本語入力できない。
+  </p>
+  
+  <p>
+    他でも出来ないようなので
+  </p>
+  
+  <p>
+    alphaかbetaバージョンに期待しましょう。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Jan 2, 2010</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2010/01/02/114542/">Opera10.50ベンチーマーク</a></h1></div>
+  </header>
+  <div class="body">Opera10.10とOpera10.50とFirefox3.5.6でベンチーマークをとってみた 総合 Opera10.10 Opera10.50 Firefox3.5.6 V8 Benchmark 165 3258 366 Peacekeeper 1361 3694 1842 Opera10.50Firefox3.5.6Opera10.10 Opera10.50はpre-alpha、Firefox3.5.6は正式版なので参考にしかならない。 Opera10.10からOpera10.50で大幅に早くになっていることが分かる。 V8 Benchmark Opera10.10 Opera10.50 Firefox3.5.6 Richards 122 3129 1549 DeltaBlue 151 2472 97.2 Crypto 105 2998 713 RayTrace 258 4538 214 EarleyBoyer 426 4331 313 RegExp 63.1 1614 229 Splay 249 5292 532 http://code.google.com/apis/v8/run.html Opera10.10とOpera10.50で全体的に20倍近い差がある Opera10.10はFirefox3.5.6と比較するとRichardsとRegExpが遅い Peacekeeper Opera10.10 Opera10.50 Firefox 3.5.6 Rendering 2070 3241 2103 Social networking 2131 3251 1941 Complex graphics 2730</div>
+
+  
+  <footer>
+    <a href="http://d.tflare.com/2010/01/02/114542/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Thu, Oct 29, 2009</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2009/10/29/231724/">Opera10.10 Build4685</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    Opera10.10 Build4685を入れた
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    以下の関連かJavaScriptが重いサイトで落ちなくなってる。
+  </p>
+  
+  <p>
+    ちょっと気になっていたのでうれしい。
+  </p>
+  
+  <p>
+    Fixed Bug CORE-21663 (Crash on some JavaScript heavy sites (such as Facebook))
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sun, Oct 11, 2009</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2009/10/11/142543/">Opera10.10 Build4665</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    Opera10.10 Build4665を入れた
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    Weekly Buildを毎週入れているけど
+  </p>
+  
+  <p>
+    いつの間にかCrash Logの解析ツールが加わってる。
+  </p>
+  
+  <p>
+    クラッシュ後にoperaが起動されると、情報が表示される機能
+  </p>
+  
+  <p>
+    なにも情報がないと以下のメッセージが表示される。
+  </p>
+  
+  <p>
+    「There is no detailed information available for this crash.」
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Wed, Sep 2, 2009</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2009/09/02/232652/">Opera10</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    Opera10入れた。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    アップデート・マネージャーで以下のエラーとなったので対応した。
+  </p>
+  
+  <pre>
+公開鍵を利用できないため、以下の署名は検証できませんでした: NO_PUBKEY F9A2F76A9D1A0061
+W: A error occurred during the signature verification. The repository is not updated and the previous index files will be used.GPG error: <a href="http://deb.opera.com" target="_blank">http://deb.opera.com</a> stable Release: 公開鍵を利用できないため、以下の署名は検証できませんでした: NO_PUBKEY F9A2F76A9D1A0061
+W: <a href="http://deb.opera.com/opera/dists/stable/Release" target="_blank">http://deb.opera.com/opera/dists/stable/Release</a> の取得に失敗しました
+W: いくつかのインデックスファイルのダウンロードに失敗しました。これらは無視されるか、古いものが代わりに使われます。
+</pre>
+  
+  <p>
+    以下を見るとキーが変わったようだ。
+  </p>
+  
+  <p>
+    <a href="http://deb.opera.com/" target="_blank">http://deb.opera.com/</a>
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    一度sudoでコマンドを実行した後に
+  </p>
+  
+  <p>
+    以下のコマンドを実行して、今までのキーを削除して完了
+  </p>
+  
+  <p>
+    wget -O &#8211; http://deb.opera.com/archive.key | sudo apt-key add &#8211;
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Wed, Jul 22, 2009</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2009/07/22/212547/">Opera10 build 4502</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    Opera10 build 4502を入れた
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    build 4478で1度
+  </p>
+  
+  <p>
+    build 4493で2度
+  </p>
+  
+  <p>
+    クラッシュレポートを送ったのだけど
+  </p>
+  
+  <p>
+    この状況はどこかで分からないのだろうか？
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    再現が難しいものがほとんどなので
+  </p>
+  
+  <p>
+    修正したかどうか分かるとうれしい。
+  </p>
+  
+  <p>
+    大量にクラッシュレポートが来ていると思うので
+  </p>
+  
+  <p>
+    公開するのは大変なんだろうけど。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    Opera10が自分の環境では全然クラッシュしなかったので、
+  </p>
+  
+  <p>
+    やっとクラッシュレポートを送れたので少しうれしい。
+  </p>
+  
+  <p>
+    これで安定性がさらに向上すれば良いのだが。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      
+<nav>
+  <ul class="pager">
+
+    
+    <li><a href="http://d.tflare.com/categories/opera/page/1">Previous</a></li>
+    
+
+    
+    <li><a href="http://d.tflare.com/categories/opera/page/3">Next</a></li>
+    
+
+  </ul>
+</nav>
+
+
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://d.tflare.com/2016/08/19/010941/" class="list-group-item">ビジネス書を読んでもデキる人にはなれない読了　この本の概要</a>
+      
+      <a href="http://d.tflare.com/2016/07/31/160751/" class="list-group-item">僕が無料の英語マンガで楽にTOEIC900点を取って、映画の英語を字幕なしでリスニングできるワケ読了</a>
+      
+      <a href="http://d.tflare.com/2016/07/30/053527/" class="list-group-item">ドラッカー名著集 4 非営利組織の経営読了</a>
+      
+      <a href="http://d.tflare.com/2016/03/31/071248/" class="list-group-item">iMac 21.5インチとMacBook Air 13インチ購入</a>
+      
+      <a href="http://d.tflare.com/2016/03/29/234956/" class="list-group-item">zenback停止し、プラグイン追加</a>
+      
+      <a href="http://d.tflare.com/2016/03/29/225335/" class="list-group-item">Vivaldiの設定を別のMacへコピーする方法</a>
+      
+      <a href="http://d.tflare.com/2014/10/13/205224/" class="list-group-item">ストレスに負けない生活―心・身体・脳のセルフケア (ちくま新書)　読了</a>
+      
+      <a href="http://d.tflare.com/2014/10/02/074817/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由（日本破綻論と国債発行）</a>
+      
+      <a href="http://d.tflare.com/2014/10/02/072949/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由</a>
+      
+      <a href="http://d.tflare.com/2014/07/23/075131/" class="list-group-item">プロセスルールの縮小の停滞とブレイクスルーへの期待</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://d.tflare.comcategories/%E6%8A%95%E8%B3%87" class="list-group-item">投資</a>
+      
+      <a href="http://d.tflare.comcategories/ubuntu" class="list-group-item">ubuntu</a>
+      
+      <a href="http://d.tflare.comcategories/opera" class="list-group-item">opera</a>
+      
+      <a href="http://d.tflare.comcategories/%E6%9C%AC" class="list-group-item">本</a>
+      
+      <a href="http://d.tflare.comcategories/comp" class="list-group-item">comp</a>
+      
+      <a href="http://d.tflare.comcategories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://d.tflare.comcategories/prog" class="list-group-item">prog</a>
+      
+      <a href="http://d.tflare.comcategories/other" class="list-group-item">other</a>
+      
+      <a href="http://d.tflare.comcategories/android" class="list-group-item">android</a>
+      
+      <a href="http://d.tflare.comcategories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>Copyright (c) 2006 - 2016, hiroyuki_tの日記</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a>, Theme <a href="https://github.com/dim0627/hugo_theme_beg" target="_blank" rel="nofollow">beg</a> designed by <a href="http://yet.unresolved.xyz" target="_blank" rel="nofollow">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

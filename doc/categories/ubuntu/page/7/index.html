@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.16" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://d.tflare.comcss/styles.css">
+    <link rel="stylesheet" href="http://d.tflare.comcss/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.tflare.com/index.xml">
+    <link rel="canonical" href="http://d.tflare.com/categories/ubuntu/" >
+
+    
+    <title>Ubuntu - hiroyuki_tの日記</title>
+    <meta property='og:title' content="Ubuntu - hiroyuki_tの日記">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://d.tflare.com/categories/ubuntu/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://d.tflare.com">hiroyuki_tの日記</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+<div class="list">
+
+  <div class="row">
+    <div class="col-md-8">
+      <header class="page-title">Ubuntu</header>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Feb 10, 2007</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2007/02/10/210703/">zsh</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    chsh
+  </p>
+  
+  <p>
+    でログインシェルを/bin/zshに変更。
+  </p>
+  
+  <p>
+    いまさらながらとっても便利
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    .zshrcを以下に設定
+  </p>
+  
+  <p>
+    設定内容は以下を参照するとわかりやすい。
+  </p>
+  
+  <p>
+    <a href="http://www.ayu.ics.keio.ac.jp/~mukai/translate/zshoptions.html" target="_blank">http://www.ayu.ics.keio.ac.jp/~mukai/translate/zshoptions.html</a>
+  </p>
+  
+  <pre class="syntax-highlight">
+<span class="synComment"># compinitの初期化</span>
+<span class="synStatement">autoload</span> -U compinit
+compinit
+<span class="synComment"># 補完候補カーソル選択</span>
+zstyle <span class="synConstant">':completion:*:default'</span> menu select<span class="synStatement">=</span><span class="synConstant">1</span>
+<span class="synComment">## ヒストリ関連</span>
+<span class="synComment"># 履歴ファイル</span>
+<span class="synSpecial">HISTFILE</span><span class="synStatement">=</span><span class="synConstant">&#34;</span><span class="synSpecial">$HOME</span><span class="synConstant">/.zsh_history&#34;</span>
+<span class="synSpecial">HISTSIZE</span><span class="synStatement">=</span><span class="synConstant">100000</span>
+<span class="synSpecial">SAVEHIST</span><span class="synStatement">=</span><span class="synConstant">100000</span>
+<span class="synComment"># 時刻を記録</span>
+<span class="synStatement">setopt</span> extended_history
+<span class="synComment"># 履歴をインクリメンタルに追加</span>
+<span class="synStatement">setopt</span> inc_append_history
+<span class="synComment"># 履歴の共有</span>
+<span class="synStatement">setopt</span> share_history
+<span class="synComment"># 直前と同じコマンドラインはヒストリに追加しない</span>
+<span class="synStatement">setopt</span> hist_ignore_dups
+<span class="synComment">##　プロンプト関連</span>
+<span class="synStatement">setopt</span> prompt_subst
+<span class="synStatement">local</span> BLUE<span class="synStatement">=</span>$<span class="synConstant">'%{\e[34m%}'</span>
+<span class="synStatement">local</span> DEFAULT<span class="synStatement">=</span>$<span class="synConstant">'%{\e[m%}'</span>
+<span class="synSpecial">PROMPT</span><span class="synStatement">=</span><span class="synSpecial">$BLUE</span><span class="synConstant">'${USER}@${HOST}%(!.#.$)'</span><span class="synSpecial">$DEFAULT</span>
+<span class="synSpecial">RPROMPT</span><span class="synStatement">=</span><span class="synConstant">'[%~]'</span>
+</pre>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Mon, Jan 22, 2007</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2007/01/22/210436/">開発環境</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    そろそろ開発環境を整えなければと思い
+  </p>
+  
+  <p>
+    SubversionのGUIクライアントであるeSvnをインストールした。
+  </p>
+  
+  <p>
+    Windows上のSubversionのレポジトリをUbuntuに持ってきたいのだが
+  </p>
+  
+  <p>
+    svnadmin dumpとsvnadmin loadでどうにかなるのだろうか？
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, Dec 22, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/12/22/230536/">Operaを9.10にアップデート</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    Ubuntu6.10でOpera(static)を9.10にアップデート
+  </p>
+  
+  <pre>
+$sudo gedit /etc/apt/sources.list
+</pre>
+  
+  <p>
+    で開いて以下を追加
+  </p>
+  
+  <p>
+    deb <a href="http://deb.opera.com/opera" target="_blank">http://deb.opera.com/opera</a> stable non-free
+  </p>
+  
+  <p>
+    そして以下を実行すると
+  </p>
+  
+  <pre>
+$ sudo apt-get update
+</pre>
+  
+  <pre>
+W: GPG error: http://deb.opera.com stable Release: 公開鍵を利用できないため、以下の署名は検証できませんでした: NO_PUBKEY 033431536A423791
+W: これらの問題を解決するためには apt-get update を実行する必要があるかもしれません
+</pre>
+  
+  <p>
+    上記メッセージが出たため以下を実行
+  </p>
+  
+  <pre>
+$ gpg --keyserver pgp.nic.ad.jp --recv-keys 033431536A423791
+$ sudo gpg --armor --export 033431536A423791 | sudo apt-key add -
+</pre>
+  
+  <p>
+    そして以下を実行すると無事インストールできた。
+  </p>
+  
+  <pre>
+$ sudo apt-get install opera-static
+</pre>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Dec 16, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/12/16/205048/">Ubuntu6.10でデスクトップにホームアイコンを表示させる方法</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    コマンドラインからgconf-editorを立ち上げる。
+  </p>
+  
+  <p>
+    そうすると設定エディタが立ち上がるので
+  </p>
+  
+  <p>
+    設定エディタをapps→nautilus→desktopと選択し
+  </p>
+  
+  <p>
+    home_icon_visibleをオンにするとデスクトップにホームアイコンが表示される。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Tue, Nov 21, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/11/21/204218/">Ubuntu6.10でOperaが入力を受け付けないが解消</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    Operaをダウンロードするときに
+  </p>
+  
+  <p>
+    お使いのディストリビューションとベンダーを選択してくださいで
+  </p>
+  
+  <p>
+    UbuntuではなくStatic DEBを選択すると
+  </p>
+  
+  <p>
+    Ctrl+Fで検索ウィンドウを立ち上げると入力を受け付けなくなる事象が発生しないことがわかった。
+  </p>
+  
+  <p>
+    当分これで様子を見てみようと思う。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, Nov 10, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/11/11/000000/">Ubuntu6.10でOperaが入力を受け付けない。</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    Ctrl+Fで検索ウィンドウを立ち上げると入力を受け付けなくなることがわかった。
+  </p>
+  
+  <p>
+    この状態になってもマウスを使用すると貼り付けは可能。
+  </p>
+  
+  <p>
+    症状からして下記と同件かと思う。
+  </p>
+  
+  <p>
+    <a href="http://my.opera.com/japanese/forums/topic.dml?id=148194" target="_blank">Ubuntu, Linux Opera, SCIM</a>
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, Nov 10, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/11/11/000000/">Ubuntu6.10で起動したときにNum Lockを自動でONにする。</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    以下を参考にして設定するとNum Lockを自動でONにできた。
+  </p>
+  
+  <p>
+    <a href="http://ubuntuguide.org/wiki/Ubuntu_dapper_Ja#How_to_turn_on_Num_Lock_on_GNOME_startup" target="_blank">How_to_turn_on_Num_Lock_on_GNOME_startup</a>
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sun, Nov 5, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/11/05/094008/">Ubuntu 6.10 ウエブブラウザと音声</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    Opera9.02をメインにしているけど
+  </p>
+  
+  <p>
+    文字入力ができなくなることがあり不安定
+  </p>
+  
+  <p>
+    そのためFirefox2.0も利用している。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    Firefox2.0は文字入力は安定しているけど
+  </p>
+  
+  <p>
+    その変わり落ちることがあるのでメインにはできない。
+  </p>
+  
+  <p>
+    Operaの方がなれているということの方が大きいが
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    あとは右上のスピーカーアイコンから音量設定を開くと
+  </p>
+  
+  <p>
+    Sis SI7012のスピーカがミュートになっているのに気づいたので
+  </p>
+  
+  <p>
+    ミュートを外してMP3プレイヤでSis SI7012を設定したところ
+  </p>
+  
+  <p>
+    無事音声が出るようになった。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    以下の設定も参考になる。
+  </p>
+  
+  <p>
+    <a href="http://park15.wakwak.com/~unixlife/linux/ubuntu.html" target="_blank">Ubuntu 6.06 の設定や追加アプリなど</a>
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, Nov 3, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/11/03/231430/">Ubuntu 6.10インストール</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    問題なくインストール完了
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    回線がBフレッツのため以下で設定を行う。
+  </p>
+  
+  <p>
+    sudo pppoeconf
+  </p>
+  
+  <p>
+    無事接続できた。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    <a href="http://d.hatena.ne.jp/bend_tail/20060805/1154770129" target="_blank">http://d.hatena.ne.jp/bend_tail/20060805/1154770129</a>
+  </p>
+  
+  <p>
+    上記を参考にして設定すると
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    上り回線速度 38.34Mbps (4.793MByte/sec)
+  </p>
+  
+  <p>
+    下り回線速度 24.27Mbps (3.034MByte/sec)
+  </p>
+  
+  <p>
+    から
+  </p>
+  
+  <p>
+    上り回線速度 50.35Mbps (6.294MByte/sec)
+  </p>
+  
+  <p>
+    下り回線速度 21.20Mbps (2.650MByte/sec)
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    に改善した。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    Operaで日本語入力できないと思っていたら
+  </p>
+  
+  <p>
+    /usr/binのoperaの
+  </p>
+  
+  <p>
+    #!/bin/shの下に
+  </p>
+  
+  <p>
+    export QT_IM_MODULE=xim
+  </p>
+  
+  <p>
+    を書き込むと入力できるようになった。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    Operaのデフォルトフォントに違和感を覚えたので
+  </p>
+  
+  <p>
+    [Tools]→[preferences]→[web pages]から
+  </p>
+  
+  <p>
+    フォントをIPAGothicに変更
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      
+<nav>
+  <ul class="pager">
+
+    
+    <li><a href="http://d.tflare.com/categories/ubuntu/page/6">Previous</a></li>
+    
+
+    
+    <li class="disabled"><a href="#">Next</a></li>
+    
+
+  </ul>
+</nav>
+
+
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://d.tflare.com/2016/08/19/010941/" class="list-group-item">ビジネス書を読んでもデキる人にはなれない読了　この本の概要</a>
+      
+      <a href="http://d.tflare.com/2016/07/31/160751/" class="list-group-item">僕が無料の英語マンガで楽にTOEIC900点を取って、映画の英語を字幕なしでリスニングできるワケ読了</a>
+      
+      <a href="http://d.tflare.com/2016/07/30/053527/" class="list-group-item">ドラッカー名著集 4 非営利組織の経営読了</a>
+      
+      <a href="http://d.tflare.com/2016/03/31/071248/" class="list-group-item">iMac 21.5インチとMacBook Air 13インチ購入</a>
+      
+      <a href="http://d.tflare.com/2016/03/29/234956/" class="list-group-item">zenback停止し、プラグイン追加</a>
+      
+      <a href="http://d.tflare.com/2016/03/29/225335/" class="list-group-item">Vivaldiの設定を別のMacへコピーする方法</a>
+      
+      <a href="http://d.tflare.com/2014/10/13/205224/" class="list-group-item">ストレスに負けない生活―心・身体・脳のセルフケア (ちくま新書)　読了</a>
+      
+      <a href="http://d.tflare.com/2014/10/02/074817/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由（日本破綻論と国債発行）</a>
+      
+      <a href="http://d.tflare.com/2014/10/02/072949/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由</a>
+      
+      <a href="http://d.tflare.com/2014/07/23/075131/" class="list-group-item">プロセスルールの縮小の停滞とブレイクスルーへの期待</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://d.tflare.comcategories/%E6%8A%95%E8%B3%87" class="list-group-item">投資</a>
+      
+      <a href="http://d.tflare.comcategories/ubuntu" class="list-group-item">ubuntu</a>
+      
+      <a href="http://d.tflare.comcategories/opera" class="list-group-item">opera</a>
+      
+      <a href="http://d.tflare.comcategories/%E6%9C%AC" class="list-group-item">本</a>
+      
+      <a href="http://d.tflare.comcategories/comp" class="list-group-item">comp</a>
+      
+      <a href="http://d.tflare.comcategories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://d.tflare.comcategories/prog" class="list-group-item">prog</a>
+      
+      <a href="http://d.tflare.comcategories/other" class="list-group-item">other</a>
+      
+      <a href="http://d.tflare.comcategories/android" class="list-group-item">android</a>
+      
+      <a href="http://d.tflare.comcategories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>Copyright (c) 2006 - 2016, hiroyuki_tの日記</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a>, Theme <a href="https://github.com/dim0627/hugo_theme_beg" target="_blank" rel="nofollow">beg</a> designed by <a href="http://yet.unresolved.xyz" target="_blank" rel="nofollow">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

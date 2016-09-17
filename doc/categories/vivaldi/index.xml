@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vivaldi on hiroyuki_tの日記</title>
+    <link>http://d.tflare.com/categories/vivaldi/</link>
+    <description>Recent content in Vivaldi on hiroyuki_tの日記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Copyright (c) 2006 - 2016, hiroyuki_tの日記</copyright>
+    <lastBuildDate>Tue, 29 Mar 2016 13:53:35 +0000</lastBuildDate>
+    <atom:link href="http://d.tflare.com/categories/vivaldi/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Vivaldiの設定を別のMacへコピーする方法</title>
+      <link>http://d.tflare.com/2016/03/29/225335/</link>
+      <pubDate>Tue, 29 Mar 2016 13:53:35 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2016/03/29/225335/</guid>
+      <description>&lt;p&gt;Vivaldiの設定を別のMacへコピーする方法&lt;/p&gt;
+
+&lt;p&gt;（bata3同士での動作を確認しています。&lt;/p&gt;
+
+&lt;p&gt;　確認していませんが、bataからスナップショットへの設定の移行もできると思われます。）&lt;/p&gt;
+
+&lt;p&gt;手順1&lt;/p&gt;
+
+&lt;p&gt;/Users/[ユーザ名]/Library/Application Support/Vivaldi/Default&lt;/p&gt;
+
+&lt;p&gt;に設定ファイルが存在するので、フォルダごと、コピーする。&lt;/p&gt;
+
+&lt;p&gt;[ユーザ名]は自分のユーザ名&lt;/p&gt;
+
+&lt;p&gt;手順2&lt;/p&gt;
+
+&lt;p&gt;手順1のデータをコピー先に移送する。&lt;/p&gt;
+
+&lt;p&gt;（この際、Vivaldiが終了していることを確認する。）&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

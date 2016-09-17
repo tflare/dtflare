@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Opera on hiroyuki_tの日記</title>
+    <link>http://d.tflare.com/categories/opera/</link>
+    <description>Recent content in Opera on hiroyuki_tの日記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Copyright (c) 2006 - 2016, hiroyuki_tの日記</copyright>
+    <lastBuildDate>Sat, 25 Dec 2010 02:39:00 +0000</lastBuildDate>
+    <atom:link href="http://d.tflare.com/categories/opera/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Opera 11 検索ボックスへの日本語入力で落ちなくする方法</title>
+      <link>http://d.tflare.com/2010/12/25/113900/</link>
+      <pubDate>Sat, 25 Dec 2010 02:39:00 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2010/12/25/113900/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    Ubuntu10.10でOpera 11を-noargbを付けて起動すると
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    検索ボックスで日本語を変換しても落ちなくなった。
+  &lt;/p&gt;
+  
+  &lt;blockquote&gt;
+    &lt;p&gt;
+      Operaのアドレスバーや検索フィールドに日本語を入力してOperaがクラッシュするようであれば、起動時に「-noargb」のオプションを指定するようにすればいい。
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      高速ブラウザOpera 11をLinux/BSDでさらに高速化する方法
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;a href=&#34;http://journal.mycom.co.jp/articles/2010/12/24/speed-up-opera-on-linux-freebsd/index.html&#34; target=&#34;_blank&#34;&gt;http://journal.mycom.co.jp/articles/2010/12/24/speed-up-opera-on-linux-freebsd/index.html&lt;/a&gt;
+    &lt;/p&gt;
+  &lt;/blockquote&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    noargbに関する説明
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Opera 11.00 リリース
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;a href=&#34;http://my.opera.com/chooseopera-Japan/blog/2010/12/17/opera-11-00&#34; target=&#34;_blank&#34;&gt;http://my.opera.com/chooseopera-Japan/blog/2010/12/17/opera-11-00&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    What is compositing? How does Opera use it? How do you switch it off?
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;a href=&#34;http://my.opera.com/ruario/blog/2010/12/17/switching-off-compositing&#34; target=&#34;_blank&#34;&gt;http://my.opera.com/ruario/blog/2010/12/17/switching-off-compositing&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Opera 11 Build1111</title>
+      <link>http://d.tflare.com/2010/11/23/090142/</link>
+      <pubDate>Tue, 23 Nov 2010 00:01:42 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2010/11/23/090142/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    Visual mouse gesturesを
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    opera:config#Show Gesture UIをオフにして無効化した。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    最初は良いかと思ったけど、使っていると邪魔
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Opera 11 Build1104</title>
+      <link>http://d.tflare.com/2010/11/21/110756/</link>
+      <pubDate>Sun, 21 Nov 2010 02:07:56 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2010/11/21/110756/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    Ubuntu10.04上で
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    検索ボックスで日本語入力するだけでSIGSEGV発生。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    同じ情報が見当たらないのでバグレポートをしておいた。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    アドレスバーからなら問題ないようなので
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    それで回避してみる。
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Opera 11 Build1094</title>
+      <link>http://d.tflare.com/2010/11/19/185647/</link>
+      <pubDate>Fri, 19 Nov 2010 09:56:47 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2010/11/19/185647/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    アドレスフィールドの修正は現在の状態がわかるという意味でおもしろい機能
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    パラメータを見せないようにするのは個人的にはあまりいらない機能
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    無効化できるからいいけど
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Ubuntu10.04上で
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    検索ボックスで日本語入力するだけでSIGSEGV発生。
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Opera 11 Build1085</title>
+      <link>http://d.tflare.com/2010/11/16/110636/</link>
+      <pubDate>Tue, 16 Nov 2010 02:06:36 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2010/11/16/110636/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    Ubuntu10.04上で
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Build1055,1060同様、検索ボックスで日本語入力するだけで落ちる。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    今修正しているみたいなので、それまで待ち。
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Opera 11 Build1060</title>
+      <link>http://d.tflare.com/2010/11/11/233311/</link>
+      <pubDate>Thu, 11 Nov 2010 14:33:11 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2010/11/11/233311/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    Build1055同様、検索ボックスで日本語入力するだけで落ちる。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    検索ボックス使えないと厳しいのでBuild1045に戻しました。
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Opera 11 Build1055</title>
+      <link>http://d.tflare.com/2010/11/07/085705/</link>
+      <pubDate>Sat, 06 Nov 2010 23:57:05 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2010/11/07/085705/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    IME関連の修正が入ったみたいだけど
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    検索ボックスで日本語入力するだけでSIGSEGVで落ちるようになってる。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    検索ボックス使えないと厳しいのでBuild1045に戻しました。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    検索ボックスで半角入力後、全角を入れようとしても反映されないのは
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Build1045でBug Reportしておいたけど
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Opera 10.70 Build9067</title>
+      <link>http://d.tflare.com/2010/10/11/211023/</link>
+      <pubDate>Mon, 11 Oct 2010 12:10:23 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2010/10/11/211023/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    Web Socketsサポートが来た。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    HTML5関連の機能でよいところはどんどん取り込んでほしい。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    ブラウザがサポートしてくれないと、使えない。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    特にHTML5は仕様確定に複数の実装を必要とするので。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    HTML5については以下を参照。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;a href=&#34;http://yoppa.org/taumedia10/1695.html&#34; target=&#34;_blank&#34;&gt;HTML5+CSS3 入門&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;a href=&#34;http://www.slideshare.net/myakura/html5-web-platform&#34; target=&#34;_blank&#34;&gt;HTML5 &amp; The Web Platform&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;a href=&#34;http://docs.google.com/present/view?id=dddvzhrc_3frv8djhr&#34; target=&#34;_blank&#34;&gt;WebSocketでリアルタイムWebアプリ&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    しかしOpera 10.70の日本語入力はいつ修正されるのでしょうか？
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Operaの検索ボックスで日本語入力できない→Firefoxで日本語入力→Operaの検索ボックスで日本語入力できるようになる→またOperaの検索ボックスで日本語入力できない
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    のループです。
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Opera設定まとめ</title>
+      <link>http://d.tflare.com/2010/07/21/230504/</link>
+      <pubDate>Wed, 21 Jul 2010 14:05:04 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2010/07/21/230504/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    現在のOpera設定のまとめ
+  &lt;/p&gt;
+  
+  &lt;h4&gt;
+    Tools→Preference→Advanced(ツール→設定→詳細設定)
+  &lt;/h4&gt;
+  
+  &lt;h5&gt;
+    Content(コンテンツ)
+  &lt;/h5&gt;
+  
+  &lt;p&gt;
+    JavaScript Options（JavaScriptオプション）
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    User JavaScript Folder(ユーザ JavaScript フォルダ)設定
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Style Option（スタイルプション）
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    10.70だとフォントの設定がうまくいかないところがあるのでここで設定
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;h5&gt;
+    History(履歴)
+  &lt;/h5&gt;
+  
+  &lt;p&gt;
+    Check if cached page is updated on the server(ページの更新をサーバーに確認するタイミング)
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Check documents(ドキュメント) Every 24 hours(24時間に1度)に変更
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Check images(画像) Every Week(1週間に1度)に変更
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    表示高速化、画像は変わる可能性は少ないので1週間に1度とする。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;h5&gt;
+    Cookies
+  &lt;/h5&gt;
+  
+  &lt;p&gt;
+    Cookie Delete new cookies when exciteing opera(Operaの終了時にCookieを削除する) オンに変更
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    クッキーは後で削除するのが大変なので
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    必要なものだけサイトごとの設定で、このチェックをオフとする。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    これによりクッキーの削除が不要となる。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;h4&gt;
+    opera:config
+  &lt;/h4&gt;
+  
+  &lt;p&gt;
+    opera:config#UserPrefs|TrustServerTypes オンに変更
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    これがないと左クリックしたときにダウンロードされず
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    内容が表示されてしまう場合がある。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    オフだとサーバの設定を使用するようだが、
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    サーバの設定がきちんと行われていないところがそれなりにあるので
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    オンとする。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;h4&gt;
+    AutoPagerize
+  &lt;/h4&gt;
+  
+  &lt;p&gt;
+    AutoPagerizeを導入
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;a href=&#34;http://d.hatena.ne.jp/os0x/20071202/oautopagerize&#34; target=&#34;_blank&#34;&gt;http://d.hatena.ne.jp/os0x/20071202/oautopagerize&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    次へ等をクリックしなくても、次のページが表示される。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    ものすごく便利
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Ubuntu起動時に以下を実行（システム→設定→自動起動するアプリから追加）
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    sh &amp;#8216;/home/taki/AutoAutoPagerize.sh&amp;#8217;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    起動時に実行することで、定期的に最新化を行う。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    /home/taki/AutoAutoPagerize.shの中身
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    wget &lt;a href=&#34;http://ss-o.net/userjs/0AutoPagerize.SITEINFO.js&#34; target=&#34;_blank&#34;&gt;http://ss-o.net/userjs/0AutoPagerize.SITEINFO.js&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    mv 0AutoPagerize.SITEINFO.js /home/taki/user_javascript/
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Opera 10.70 Build6395</title>
+      <link>http://d.tflare.com/2010/07/09/093524/</link>
+      <pubDate>Fri, 09 Jul 2010 00:35:24 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2010/07/09/093524/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    導入
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    いまだ日本語入力できなくなる場合がある。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    .operaフォルダの内容を以下だけ残して、あと全て削除。その後導入
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    bookmarks.adr
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    bookmarks.ini
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    override.ini
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    override_downloaded.ini
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    search.ini
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    wand.dat
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    覚えていない設定があるのでこの機会にやりなおし
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Opera 10.60 RC2 Build6385</title>
+      <link>http://d.tflare.com/2010/06/30/222505/</link>
+      <pubDate>Wed, 30 Jun 2010 13:25:05 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2010/06/30/222505/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    DSK-303234 (Linux: Improved IME support)
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    iBus+Mozcで入力可能。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    検索ボックスで半角入力後、全角を入れようとしても反映されない。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    検索ボックス以外では問題ない。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    改善されているようなので今後に期待。
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Opera10.60 Build6379</title>
+      <link>http://d.tflare.com/2010/06/24/222505/</link>
+      <pubDate>Thu, 24 Jun 2010 13:25:05 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2010/06/24/222505/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    Opera10.60 Build6379
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    initial IME support on *nix (Linux/FreeBSD)
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    ということで不安定だけどやっと日本語打てるようになった。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    今後に期待。
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ol要素の直下にli要素以外のものを入れてOperaで表示すると</title>
+      <link>http://d.tflare.com/2010/03/27/172649/</link>
+      <pubDate>Sat, 27 Mar 2010 08:26:49 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2010/03/27/172649/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    ol要素（順序付きリスト）の直下にli要素以外のものを入れてOperaで表示するとカウントアップしなくなる。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    これを使っているサイトがたまにあるので意外と困る。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Operaは仕様どおり作っているのだが
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Internet ExplorerやFirefoxはカウントアップするので見過ごされているのだろう。
+  &lt;/p&gt;
+  
+  &lt;h4&gt;
+    例
+  &lt;/h4&gt;
+  
+  &lt;h5&gt;
+    html
+  &lt;/h5&gt;
+  
+  &lt;pre class=&#34;syntax-highlight&#34;&gt;
+&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#60;&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;ol&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#62;&lt;/span&gt;
+&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#60;&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt; &lt;/span&gt;&lt;span class=&#34;synType&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;synConstant&#34;&gt;&amp;#34;comment&amp;#34;&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#62;&lt;/span&gt;
+&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#60;&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#62;&lt;/span&gt;
+&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#60;&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt; &lt;/span&gt;&lt;span class=&#34;synType&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;synConstant&#34;&gt;&amp;#34;Title&amp;#34;&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#62;&lt;/span&gt;title&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#60;/&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#62;&lt;/span&gt;
+&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#60;/&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#62;&lt;/span&gt;
+&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#60;/&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#62;&lt;/span&gt;
+&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#60;&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt; &lt;/span&gt;&lt;span class=&#34;synType&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;synConstant&#34;&gt;&amp;#34;comment&amp;#34;&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#62;&lt;/span&gt;
+&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#60;&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#62;&lt;/span&gt;
+&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#60;&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt; &lt;/span&gt;&lt;span class=&#34;synType&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;synConstant&#34;&gt;&amp;#34;Title&amp;#34;&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#62;&lt;/span&gt;title&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#60;/&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#62;&lt;/span&gt;
+&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#60;/&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#62;&lt;/span&gt;
+&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#60;/&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#62;&lt;/span&gt;
+&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#60;/&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;ol&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;&amp;#62;&lt;/span&gt;
+&lt;/pre&gt;
+  
+  &lt;h5&gt;
+    表示
+  &lt;/h5&gt;
+  
+  &lt;ol&gt;
+    &lt;div class=&#34;comment&#34;&gt;
+      &lt;li&gt;
+        &lt;div class=&#34;Title&#34;&gt;
+          title
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/div&gt;
+    
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;comment&amp;quot;&amp;gt;
+  &amp;lt;li&amp;gt;
+    &amp;lt;div class=&amp;quot;Title&amp;quot;&amp;gt;
+      title
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/li&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/ol&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    Operaだと1. title（改行）1. titleと表示される。
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    Firefoxだと1. title（改行）2. titleと表示される。
+  &lt;/p&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Opera10.10 Web archive(single file)</title>
+      <link>http://d.tflare.com/2010/02/06/091320/</link>
+      <pubDate>Sat, 06 Feb 2010 00:13:20 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2010/02/06/091320/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    Ubuntu 9.10でOpera10.10を自分の環境で動かすと
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    言語設定によって処理が異なっている
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    [ファイル]→[保存]→[Webアーカイブ(単一ファイル)](/usr/share/opera/locale/ja/ja.lng)を選ぶと拡張子がmhtにならない。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    [File]→[Save As]→[Web archive(single file)](/usr/share/opera/locale/en/en.lng)だと拡張子がmhtになる。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    処理も異なる模様
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    追記
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    日本語での問題点についてもう少し試して見たところ
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    拡張子がmhtにならないではなく
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    拡張子が変わらないというのが正しい。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    htmlにしてもtxtにしても拡張子が変わらない。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    デフォルトのままとなる。
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Opera10.50 iBus</title>
+      <link>http://d.tflare.com/2010/01/08/094406/</link>
+      <pubDate>Fri, 08 Jan 2010 00:44:06 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2010/01/08/094406/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    Opera10.50でiBusでも日本語入力できない。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    他でも出来ないようなので
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    alphaかbetaバージョンに期待しましょう。
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

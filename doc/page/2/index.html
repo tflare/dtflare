@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.16" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://d.tflare.comcss/styles.css">
+    <link rel="stylesheet" href="http://d.tflare.comcss/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.tflare.com/index.xml">
+    <link rel="canonical" href="http://d.tflare.com/" >
+
+    
+    <title>hiroyuki_tの日記</title>
+    <meta property='og:title' content="hiroyuki_tの日記">
+    <meta property="og:type" content="website">
+    
+
+    <meta property="og:url" content="http://d.tflare.com/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://d.tflare.com">hiroyuki_tの日記</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+<div class="index">
+
+  <div class="row">
+    <div class="col-md-8">
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Jan 26, 2013</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2013/01/26/151708/">MhtViewerのintent-filterの現状</a></h1></div>
+  </header>
+  <div class="body"><p>AndroidにMhtViewerをインストールするとファイルマネージャでHTMLファイルを選択した際に</p>
+
+<p>MhtViewerが選択肢に現れる事がある。</p>
+
+<p>これについて現在わかっている情報をまとめる。</p>
+
+<p>MhtViewerのintent-filterは以下としている。</p>
+
+<p>`AndroidにMhtViewerをインストールするとファイルマネージャでHTMLファイルを選択した際に</p>
+
+<p>MhtViewerが選択肢に現れる事がある。</p>
+
+<p>これについて現在わかっている情報をまとめる。</p>
+
+<p>MhtViewerのintent-filterは以下としている。</p>
+
+<p>`</p>
+
+<p>まずandroid:pathPatternのみの設定で良いのではないかと思うかもしれないが</p>
+
+<p>android:pathPatternでは反応しないファイルマネージャがあるためandroid:mimeTypeも設定している。</p>
+
+<p>android:mimeType=&#8221;message/rfc822&#8243;だけではなく、android:mimeType=&#8221;text/html&#8221;も対象にしている。</p>
+
+<p>これはファイルマネージャによっては、MHTML形式のファイルをmimeType=&#8221;text/html&#8221;と誤判定する場合があるためである。</p>
+
+<p>上記のため、現状では上記設定としている。</p>
+
+<p>ファイルマネージャがファイルの判定を拡張子で行い、mimeType=”message/rfc822と判定してくれれば問題はない。</p>
+
+<p>しかしファイルマネージャがファイルの中身でファイルを判定する場合、MHTML形式はHTMLファイルとの区別が難しいファイルもあるため誤判定によりandroid:mimeType=&#8221;text/html&#8221;と解釈されるケースがそれなりに存在する。</p>
+
+<p>それを救うために上記intent-filterの設定にしている。</p>
+
+<p>とりあえず、上記設定としているが、もっと良い方はないのだろうか。</p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, Jan 4, 2013</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2013/01/04/125653/">Androidで外部ストレージのパスを取得する方法</a></h1></div>
+  </header>
+  <div class="body">Androidで外部ストレージのパスを取得する方法 現在Androidで外部ストレージのパスを取得するAPIが存在しない。 Androidでストレージのパスを取得するEnvironment.getExternalStorageDirectory()は、 内部ストレージが存在する場合、名前に反して内部ストレージのパスを返す。（これは、既存プログラムの互換性を考えた時に、必要な考慮と思われる。） そのため、以下を参考にして/system/etc/vold/fstabを使用する方法で取得することにした。 （参考http://inujirushi123.blog.fc2.com/blog-entry-93.html） Xperia VLの/system/etc/vold.fstabを確認したところ 内部ストレージがfuse_mountで定義されていたため、追加している。 static private List getStoragePaths() { List mountList = new ArrayList(); Scanner scanner = null; try { scanner = new Scanner(new FileInputStream(new File( "/system/etc/vold.fstab"))); while (scanner.hasNextLine()) { String line = scanner.nextLine(); if (line.startsWith("dev_mount") || line.startsWith("fuse_mount")) { String path = line.split(" ")[2].replaceAll(":.*$", ""); if (!mountList.contains(path)){ File dir = new File(path + "/"); if (dir.canRead()){ mountList.add(path); } } } } } catch (Exception e)</div>
+
+  
+  <footer>
+    <a href="http://d.tflare.com/2013/01/04/125653/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Mon, Jun 25, 2012</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2012/06/26/062955/">WordPress3.4 テーマとプラグイン</a></h1></div>
+  </header>
+  <div class="body"><p>WordPress3.4にアップデートしました。</p>
+
+<p>使用しているテーマとプラグインが以前から少し変更されているので以下に記載します。</p>
+
+<p><strong>テーマ</strong></p>
+
+<ul>
+<li>Suffusion</li>
+</ul>
+
+<p><strong>プラグイン</strong></p>
+
+<ul>
+<li>Akismet　スパムチェック</li>
+<li>EZ zenback　zenback用プラグイン　関連記事表示に使用</li>
+<li>Google XML Sitemaps   サイトマップ作成</li>
+<li>Quick Cache   キャッシュプラグイン　ページにもよるが2倍は早くなる。</li>
+<li>Simple Yearly Archive　アーカイブページ作成</li>
+<li>TinyMCE Advanced 　ヴィジュアル・テキストエディターの強化　テーブルを表現するのに使用</li>
+<li>WP Multibyte Patch　マルチバイト文字の取り扱い（日本語版に標準添付されている）</li>
+<li>WP SlimStat　アクセス解析</li>
+<li>WP-DBManager   データベースバックアップ</li>
+</ul>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sun, Jun 10, 2012</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2012/06/10/100900/">Galleria QF655 Ubuntu Linux 12.04 初期設定 その2</a></h1></div>
+  </header>
+  <div class="body">Galleria QF655 Ubuntu Linux 12.04 初期設定 その2 設定 アドレスバーの表示 gsettings set org.gnome.nautilus.preferences always-use-location-entry true グローバルメニューの無効化 sudo apt-get autoremove appmenu-gtk appmenu-gtk3 appmenu-qt 隠しファイルの表示 フォルダーを開き、メニューから [編集]→[設定] 隠しファイルと バックアップ・ファイルを表示する &nbsp; &nbsp; 開発用ソフトウエア git sudo apt-get install git-core RabbitVCS バージョン管理GUIツール gitで使用 sudo add-apt-repository ppa:rabbitvcs/ppa sudo apt-get install rabbitvcs-nautilus3 SSH すべて以前の設定を持ってくる。 bitbucket用の設定も持ってくる。 Java7 sudo add-apt-repository ppa:webupd8team/java sudo apt-get update apt-get install oracle-java7-installer Eclipse sudo apt-get install eclipse 起動しようとすると以下のエラーになるので no swt-gtk-3740 in java.library.path no swt-gtk in</div>
+
+  
+  <footer>
+    <a href="http://d.tflare.com/2012/06/10/100900/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sun, Jun 10, 2012</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2012/06/10/093524/">Galleria QF655 Ubuntu Linux 12.04 初期設定 その1</a></h1></div>
+  </header>
+  <div class="body">Prime Note Galleria QF655購入 スペック CPU Core i7-3610QM MEMORY 8GB(M471B5273DH0-CK0 Samsung 4GB PC3-12800✕2) SSD 128G(Intel SSD 330) GPU NVIDIA GeForce GT 650M 2GB 光学ドライブ DVDスーパーマルチドライブ OS Windows7 Home Premium 64bit HDDから SSDに変更している。 &nbsp; &nbsp; パーテーション切り分け / 12G ext4 Ubuntu Linux 12.04 /home 39G ext4 Ubuntu Linux 12.04 67G ntfs Windows7 Ubuntu Linuxで使用するのがメインの用途となるが、 Windowsはゲーム （Skyrim等）で容量を取ることを想定し、多めに設定 データ移行等が行いやすいように、/homeは別パーテーションとする。 swapはメモリーが8GBあるので、設定しない。 &nbsp; &nbsp; ソフトウエア設定 ２００６年から設定を引き継いでおり、新しく設定し直したかったので、homeをコピーするのではなく、 必要なもののみ設定しなおしする方針とした。 Opera 本家からインストール flashもインストール 以下のファイルを以前のPCから移行 bookmarks.adr, operaprefs.ini, override.ini, search.ini, wand.dat</div>
+
+  
+  <footer>
+    <a href="http://d.tflare.com/2012/06/10/093524/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sun, Jun 3, 2012</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2012/06/03/190324/">MhtViewer 1.0.4リリース</a></h1></div>
+  </header>
+  <div class="body"><p><a href="http://tflare.com/android/mhtviewer.html " target="_blank">MhtViewer</a> 1.0.4</p>
+
+<p>以下の修正を行いました。</p>
+
+<ul>
+<li>ディレクトリ選択画面でファイル名を表示するようにし、ファイル名を選択した場合、mhtの表示ができるように修正</li>
+<li>拡張子mhtmlに対応</li>
+<li>内部処理の細かい改善</li>
+</ul>
+
+<p><a href="http://d.tflare.com/wp-content/uploads/2012/06/device-2012-06-03-190100.png"><img src="http://d.tflare.com/wp-content/uploads/2012/06/device-2012-06-03-190100-180x300.png" alt="new directory list" title="new directory list" width="180" height="300" class="alignnone size-medium wp-image-407" srcset="http://d.tflare.com/wp-content/uploads/2012/06/device-2012-06-03-190100-180x300.png 180w, http://d.tflare.com/wp-content/uploads/2012/06/device-2012-06-03-190100.png 480w" sizes="(max-width: 180px) 100vw, 180px" /></a></p>
+
+<p>MhtViewerはMHTML形式によって作成された、Webページのアーカイブファイルのビューアです。(Android2.2以上必須)</p>
+
+<p>長文のmhtファイルを読むために作成されました。</p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, May 25, 2012</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2012/05/26/083148/">MhtViewer 0.9.27リリース</a></h1></div>
+  </header>
+  <div class="body"><p><a href="http://tflare.com/android/mhtviewer.html " target="_blank">MhtViewer</a> 0.9.27</p>
+
+<p>以下の事象に対応しました。</p>
+
+<ul>
+<li>htmlのcharsetと異なるcharsetがhtmlより前に指定されていると、文字化けが発生する</li>
+<li>最後のファイルの扱いが不完全になる（画像等が表示されない等）</li>
+</ul>
+
+<p>MhtViewerはMHTML形式によって作成された、Webページのアーカイブファイルのビューアです。(Android2.2以上必須)</p>
+
+<p>長文のmhtファイルを読むために作成されました。</p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sun, May 6, 2012</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2012/05/06/120212/">au HOME SPOT CUBE設定</a></h1></div>
+  </header>
+  <div class="body"><p><strong>初期ID／パスワード</strong></p>
+
+<p>無線でつながっている端末から以下にアクセスする。</p>
+
+<p><a href="http://192.168.0.254/">http://192.168.0.254/</a> or <a href="http://192.168.1.254/">http://192.168.1.254/</a></p>
+
+<p>ID「au」パスワード「1234」</p>
+
+<p>&nbsp;</p>
+
+<p>**<strong>Wi-Fi</strong>設定→Wi-Fi基本設定**</p>
+
+<p>無線周波数出力を35%に修正</p>
+
+<p>限られた範囲でしか使わないのであれば、出力を弱めたほうが良い。</p>
+
+<p>範囲内であれば、Wi-Fiのリストに出てくることになるので、他の人の迷惑になるし、</p>
+
+<p>範囲を絞ることでその範囲しか使えないことになり、不正に使われる可能性も減ると考える。</p>
+
+<p>&nbsp;</p>
+
+<p>**<strong>Wi-Fi</strong>設定→SSID2の設定**</p>
+
+<p>無効にする。</p>
+
+<p>DS等でWEPを利用する場合に使う。</p>
+
+<p>WEPは解析ソフトが出まわっており、即解析されてしまう。</p>
+
+<p>これにより、有効にしておくと他の人に不正に利用させる可能性が非常に高くなるので、使用しない場合は無効にしたほうが良い。</p>
+
+<p>&nbsp;</p>
+
+<p>****<strong>Wi-Fi</strong>設定→<strong>MACアドレスフィルタリング </strong></p>
+
+<p>有効にする。</p>
+
+<p>指定した端末以外の接続を拒否する機能</p>
+
+<p>これを有効にしても、MACアドレスを偽装されてしまう（簡単に偽装はできる）と意味がなくなるが、</p>
+
+<p>お手軽に侵入できるか試そうとしているひとへの対策にはなると思われる。</p>
+
+<p>&nbsp;</p>
+
+<p><strong>フレッツ光、Bフレッツ</strong></p>
+
+<p>フレッツ光、Bフレッツの人は以下も参照してください。</p>
+
+<p><a href="http://d.tflare.com/2012/04/10/055014/" title="フレッツ光/Bフレッツ(VH-100E&amp;lt;S&amp;gt;)とau HOME SPOT CUBEをつなぐ方法">フレッツ光/Bフレッツ(VH-100E&lt;S&gt;)とau HOME SPOT CUBEをつなぐ方法 </a></p>
+
+<p><p style="text-align: right;"></p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Thu, May 3, 2012</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2012/05/03/173735/">WordPress設定</a></h1></div>
+  </header>
+  <div class="body"><p><strong>テーマ</strong></p>
+
+<ul>
+<li>iFeature</li>
+</ul>
+
+<p>html5対応、スマートフォン対応がなされており、シンプルなデザインのものという観点で決めた。</p>
+
+<p><strong>プラグイン</strong></p>
+
+<ul>
+<li>Akismet　スパムチェック</li>
+<li>Broken Link Checker　リンクチェック</li>
+<li>Google XML Sitemaps   サイトマップ作成</li>
+<li>Simple Yearly Archive　アーカイブページ作成</li>
+<li>SyntaxHighlighter Evolved　ソースコードのハイライトに使用</li>
+<li>Quick Cache   キャッシュプラグイン　ページにもよるが2倍は早くなる。</li>
+<li>WP Multibyte Patch　マルチバイト文字の取り扱い（日本語版に標準添付されている）</li>
+<li>WP SlimStat　アクセス解析</li>
+<li>WP-DBManager   データベースバックアップ</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>Chrome Developer Toolsで測定すると、</p>
+
+<p>Grid Archivesだとアーカイブ以外のページでも300ミリ秒程度遅くなるので、Simple Yearly Archiveに置き換え</p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Wed, May 2, 2012</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2012/05/02/200857/">WordPress使用開始</a></h1></div>
+  </header>
+  <div class="body"><p>WordPressの使用を開始した。</p>
+
+<p>過去のデータははてなからMovable Type and TypePad Importerを使用してインポートした。</p>
+
+<p>一部手作業が発生したが問題なく終わった。</p>
+
+<p>まずテーマを探したが、スマートフォン対応されているもの（viewport等の設定等があり、対応していそうなもの）がなかなか無く、標準のTwenty Elevenを使うことにした。</p>
+
+<p>ヘッダーのサイズが気になったので、</p>
+
+<p>Twenty Eleven Theme Extensionsでヘッダーの画像のサイズを変更した。</p>
+
+<p>またプラグインはWP SlimStatを入れた。</p>
+
+<p><strong>移行時に使用した設定の個人的なメモ</strong></p>
+
+<p><day date=&#8221;([0-9]{4}\-[0-9]{2}\-[0-9]{2})&#8221; title=&#8221;(.+?)&#8221;(.|\n)+?</body></p>
+
+<p><day date=&#8221;\1&#8243; title=&#8221;\2&#8243;><body><a href=&#8221;http://d.tflare.com/\1&#8243;>\2</a></body></p>
+
+<p><a href="http://d.tflare.com/([0-9]{4})-([0-9]{2})-([0-9]{2}">http://d.tflare.com/([0-9]{4})-([0-9]{2})-([0-9]{2}</a>)</p>
+
+<p><a href="http://d.tflare.com/1/2/3">http://d.tflare.com/1/2/3</a></p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      
+<nav>
+  <ul class="pager">
+
+    
+    <li><a href="http://d.tflare.com/page/1">Previous</a></li>
+    
+
+    
+    <li><a href="http://d.tflare.com/page/3">Next</a></li>
+    
+
+  </ul>
+</nav>
+
+
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://d.tflare.com/2016/08/19/010941/" class="list-group-item">ビジネス書を読んでもデキる人にはなれない読了　この本の概要</a>
+      
+      <a href="http://d.tflare.com/2016/07/31/160751/" class="list-group-item">僕が無料の英語マンガで楽にTOEIC900点を取って、映画の英語を字幕なしでリスニングできるワケ読了</a>
+      
+      <a href="http://d.tflare.com/2016/07/30/053527/" class="list-group-item">ドラッカー名著集 4 非営利組織の経営読了</a>
+      
+      <a href="http://d.tflare.com/2016/03/31/071248/" class="list-group-item">iMac 21.5インチとMacBook Air 13インチ購入</a>
+      
+      <a href="http://d.tflare.com/2016/03/29/234956/" class="list-group-item">zenback停止し、プラグイン追加</a>
+      
+      <a href="http://d.tflare.com/2016/03/29/225335/" class="list-group-item">Vivaldiの設定を別のMacへコピーする方法</a>
+      
+      <a href="http://d.tflare.com/2014/10/13/205224/" class="list-group-item">ストレスに負けない生活―心・身体・脳のセルフケア (ちくま新書)　読了</a>
+      
+      <a href="http://d.tflare.com/2014/10/02/074817/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由（日本破綻論と国債発行）</a>
+      
+      <a href="http://d.tflare.com/2014/10/02/072949/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由</a>
+      
+      <a href="http://d.tflare.com/2014/07/23/075131/" class="list-group-item">プロセスルールの縮小の停滞とブレイクスルーへの期待</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://d.tflare.comcategories/%E6%8A%95%E8%B3%87" class="list-group-item">投資</a>
+      
+      <a href="http://d.tflare.comcategories/ubuntu" class="list-group-item">ubuntu</a>
+      
+      <a href="http://d.tflare.comcategories/opera" class="list-group-item">opera</a>
+      
+      <a href="http://d.tflare.comcategories/%E6%9C%AC" class="list-group-item">本</a>
+      
+      <a href="http://d.tflare.comcategories/comp" class="list-group-item">comp</a>
+      
+      <a href="http://d.tflare.comcategories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://d.tflare.comcategories/prog" class="list-group-item">prog</a>
+      
+      <a href="http://d.tflare.comcategories/other" class="list-group-item">other</a>
+      
+      <a href="http://d.tflare.comcategories/android" class="list-group-item">android</a>
+      
+      <a href="http://d.tflare.comcategories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>Copyright (c) 2006 - 2016, hiroyuki_tの日記</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a>, Theme <a href="https://github.com/dim0627/hugo_theme_beg" target="_blank" rel="nofollow">beg</a> designed by <a href="http://yet.unresolved.xyz" target="_blank" rel="nofollow">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

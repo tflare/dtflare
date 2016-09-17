@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.16" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://d.tflare.comcss/styles.css">
+    <link rel="stylesheet" href="http://d.tflare.comcss/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.tflare.com/index.xml">
+    <link rel="canonical" href="http://d.tflare.com/" >
+
+    
+    <title>hiroyuki_tの日記</title>
+    <meta property='og:title' content="hiroyuki_tの日記">
+    <meta property="og:type" content="website">
+    
+
+    <meta property="og:url" content="http://d.tflare.com/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://d.tflare.com">hiroyuki_tの日記</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+<div class="index">
+
+  <div class="row">
+    <div class="col-md-8">
+      
+      <article class="li">
+  <header>
+    <div class="date">Sun, Sep 17, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/09/17/113905/">画面のハードコピーを取るサンプルプログラム Alfeira v0.04</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    ラジオボタンのクリックのサンプルプログラムの追加
+  </p>
+  
+  <pre>
+ラジオボタンのクリック
+Private Sub RadioClick(radio_name, idx)
+objIE.document.getElementsByName(radio_name)(idx).Click
+End Sub
+</pre>
+  
+  <p>
+    <a href="http://tflare.com/taki/comp/archive/Alfeira_v0.04.zip" target="_blank">Alfeira_v0.04</a>
+  </p>
+  
+  <p>
+    <a href="http://tflare.com/taki/comp/Alfeira.html" target="_blank">Alfeira最新版</a>
+  </p>
+  
+  <p>
+    修正BSDライセンスで配布します。
+  </p>
+  
+  <p>
+    利用、改造、再配布については修正BSDライセンスの規定に従ってください
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sun, Sep 17, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/09/17/110259/">画面のハードコピーを取るサンプルプログラム Alfeira v0.03</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    VBAでIEを操作して、画面のハードコピーを取るサンプルプログラムを更新しました。
+  </p>
+  
+  <p>
+    下記のハイパーリンク、画像のクリックのサンプルプログラムの追加、他細かい修正
+  </p>
+  
+  <pre>
+ハイパーリンクのクリック
+Private Sub HeperLinkClick(link_text)
+For n = 0 To objIE.document.links.Length - 1
+If objIE.document.links(n).innerText = link_text Then
+objIE.document.links(n).Click
+Exit For
+End If
+Next n
+End Sub
+画像のクリック
+Private Sub ImageClick(image_alt)
+For n = 0 To objIE.document.images.Length - 1
+If objIE.document.images(n).alt = image_alt Then
+objIE.document.images(n).Click
+Exit For
+End If
+Next n
+End Sub
+</pre>
+  
+  <p>
+  </p>
+  
+  <p>
+    <a href="http://tflare.com/taki/comp/archive/Alfeira_v0.03.zip" target="_blank">Alfeira_v0.03</a>
+  </p>
+  
+  <p>
+    <a href="http://tflare.com/taki/comp/Alfeira.html" target="_blank">Alfeira最新版</a>
+  </p>
+  
+  <p>
+    修正BSDライセンスで配布します。
+  </p>
+  
+  <p>
+    利用、改造、再配布については修正BSDライセンスの規定に従ってください
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Sep 16, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/09/16/222046/">画面のハードコピーを取るサンプルプログラム</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    VBAでIEを操作して、画面のハードコピーを取るサンプルプログラムを作成しました。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    <a href="http://tflare.com/taki/comp/archive/Alfeira_v0.02.zip" target="_blank">Alfeira_v0.02</a>
+  </p>
+  
+  <p>
+    <a href="http://tflare.com/taki/comp/Alfeira.html" target="_blank">Alfeira最新版</a>
+  </p>
+  
+  <p>
+    修正BSDライセンスで配布します。
+  </p>
+  
+  <p>
+    利用、改造、再配布については修正BSDライセンスの規定に従ってください。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Mon, Sep 11, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/09/11/221149/">ユダヤ人大富豪の教え</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <div data-role="amazonjs" data-asin="4479300082" data-locale="JP" data-tmpl="" data-img-size="" class="asin_4479300082_JP_ amazonjs_item">
+    <div class="amazonjs_indicator">
+      <span class="amazonjs_indicator_img"></span><a class="amazonjs_indicator_title" href="#">ユダヤ人大富豪の教え 幸せな金持ちになる17の秘訣 (だいわ文庫)</a><span class="amazonjs_indicator_footer"></span>
+    </div>
+  </div></p> 
+  
+  <p>
+    ユダヤ人大富豪の教え 幸せな金持ちになる17の秘訣 (だいわ文庫)読了
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    いろいろと参考になることが書かれている。
+  </p>
+  
+  <ul>
+    <li>
+      しなくてはならないことを減らして楽しもう
+    </li>
+    <li>
+      日常的に話す言葉が自分の未来を作る。
+    </li>
+    <li>
+      決断をしないことが一番悪い
+    </li>
+  </ul>
+  
+  <p>
+  </p>
+  
+  <p>
+    何かを見ていいなと思っても、
+  </p>
+  
+  <p>
+    実行に移さなければ何にもならない。
+  </p>
+  
+  <p>
+    重要なのは行動力だ。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    下記はどの世界でも参考になると思う。
+  </p>
+  
+  <p>
+    ある程度の能力があれば、それに付随して能力の利子がついてきてくれる。
+  </p>
+  
+  <p>
+    だから一気に上がれば、それ以降は能力の利子だけで何とかなるのだろう。
+  </p>
+  
+  <p>
+    だけどその一気に上がるのが結構つらい。
+  </p>
+  
+  <p>
+    だからみんなだらだらしてるんだけど、
+  </p>
+  
+  <p>
+    それでは能力の利子は貯まらないよ。
+  </p>
+  
+  <blockquote>
+    <p>
+      一度、トップに一気に上がれば、あとは、それほどしんどくないんだ。
+    </p>
+    
+    <p>
+      要は、爆発的な瞬発力だ
+    </p>
+    
+    <p>
+    </p>
+    
+    <p>
+      ユダヤ人大富豪の教え 幸せな金持ちになる17の秘訣 (だいわ文庫) p123
+    </p>
+  </blockquote>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sun, Sep 3, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/09/03/231028/">Google誕生</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <div data-role="amazonjs" data-asin="4872576446" data-locale="JP" data-tmpl="" data-img-size="" class="asin_4872576446_JP_ amazonjs_item">
+    <div class="amazonjs_indicator">
+      <span class="amazonjs_indicator_img"></span><a class="amazonjs_indicator_title" href="#">Google誕生 —ガレージで生まれたサーチ・モンスター</a><span class="amazonjs_indicator_footer"></span>
+    </div>
+  </div></p> 
+  
+  <p>
+    Google誕生 ?ガレージで生まれたサーチ・モンスター読了
+  </p>
+  
+  <p>
+    Googleの歴史について書かれた本
+  </p>
+  
+  <p>
+    Googleができる前から2005年ぐらいまでを書いている。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    Googleの歴史等を書いてある本をはじめてみたので面白かった。
+  </p>
+  
+  <p>
+    Googleについて書いてある本がたくさん出てくるけど、
+  </p>
+  
+  <p>
+    そういった本より格段に面白いと思う。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    下記のことが書いてあるのが興味深い
+  </p>
+  
+  <ul>
+    <li>
+      図書館デジタルプロジェクトに力を入れている
+    </li>
+    <li>
+      Googleのクリック詐欺に対するだめさ（最近改善されたようだけど　<a href="http://japan.cnet.com/news/media/story/0,2000056023,20181527,00.htm" target="_blank">参考</a>）
+    </li>
+    <li>
+      遺伝子関連
+    </li>
+  </ul>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Sep 2, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/09/03/000000/">自分がGoogleを使う理由</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    欲しい情報が手に入るからGoogleを使っている。
+  </p>
+  
+  <p>
+    用途によって異なるだろうけど、自分にはあっているだろうと思っている。
+  </p>
+  
+  <p>
+    他の検索エンジンがGoogleよりもよければそっちを使おうと思っている。
+  </p>
+  
+  <p>
+    そこで、Yahoo!の検索エンジンでどういう結果が出るのかちょっと調べてみた。
+  </p>
+  
+  <p>
+    GoogleとYahoo!で同じ言葉を検索してみる。
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    google 広告で検索してみたら以下の結果となった。
+  </p>
+  
+  <p>
+    Googleは記事が出てくるのに対して、Yahoo!では公式ページが出てくる。
+  </p>
+  
+  <p>
+    <a href="http://www.google.com/search?rls=ja&q=google+%E5%BA%83%E5%91%8A" target="_blank">Google</a> <a href="http://search.yahoo.co.jp/search?p=google%A1%A1%B9%AD%B9%F0&fr=top_v2&tid=top_v2&search.x=1&x=0&y=0" target="_blank">Yahoo!</a>
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    yahoo 広告で検索してみたら以下の結果となった。
+  </p>
+  
+  <p>
+    Googleは公式が出てから記事が出てくるのに対して、Yahoo!では公式ページで検索結果が占拠されている。
+  </p>
+  
+  <p>
+    <a href="http://www.google.com/search?rls=ja&q=yahoo+%E5%BA%83%E5%91%8A&btnG=Search" target="_blank">Google</a> <a href="http://search.yahoo.co.jp/search?p=yahoo+%E5%BA%83%E5%91%8A" target="_blank">Yahoo!</a>
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    個人的な使い方としてGoogleのほうが使いやすいと思う。
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    Googleについてはいろいろ言われているけど、
+  </p>
+  
+  <p>
+    Googleの検索エンジンが使いやすいと思う人が多ければ発展するし、
+  </p>
+  
+  <p>
+    他の検索エンジンの方が使いやすいという人が増えれば、
+  </p>
+  
+  <p>
+    Googleは衰退する。
+  </p>
+  
+  <p>
+    いくら低コストのコンピュータ構築能力を保持していても
+  </p>
+  
+  <p>
+    Googleよりも良い（と思う人がたくさんいる）検索エンジンが現れたら、衰退するしかないと思う。
+  </p>
+  
+  <p>
+    低コストのコンピュータ構築能力はすごいし、いろいろな分野で使えるのはわかるけど。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Aug 26, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/08/26/113436/">Web用テストツールmemo</a></h1></div>
+  </header>
+  <div class="body">Selenium http://www.openqa.org/selenium/ Selenium 0.7利用手順書（前編） http://codezine.jp/a/article.aspx?aid=436 Selenium使うんならSeleniumIDEは必須だよね。 SeleniumIDEはFirefoxにしか対応していないから InternetExploreじゃないと動作しないシステムの場合困るんだよね。 社内用のシステムでありがちなんだけど Sahi &#8211; Web Automation and Test Tool http://sahi.sourceforge.net/ WebUnit ブラウザを使用せずにテストするツールRuby用 http://www.xpenguin.biz/download/webunit/index-ja.html Apache JMeter 負荷テスト用だけど機能テストでも一応使える http://jakarta.apache.org/jmeter/ JMeter(高機能/フリーなテストツール) http://www.stackasterisk.jp/tech/engineer/jmeter01_01.jsp Jameleon http://jameleon.sourceforge.net/ オープンソースの自動化テストツール「Jameleon」の概要 http://www.itmedia.co.jp/enterprise/articles/0601/12/news001.html WWW-Mechanize http://search.cpan.org/dist/WWW-Mechanize/ Perlモジュール/WWW::Mechanize &#8211; Walrus, Digit. http://digit.que.ne.jp/work/index.cgi?Perl%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%2FWWW%3A%3AMechanize Canoo WebTest 2.0 http://webtest.canoo.com/webtest/manual/WebTestHome.html Webアプリを自動的にテスト、Canoo WebTest 2.0 登場 http://journal.mycom.co.jp/news/2006/03/17/341.html IEの遠隔操作用ライブラリmechanize.js http://la.ma.la/blog/diary_200607121903.htm IEナビトレ http://www.vector.co.jp/soft/win95/net/se299115.html 送信するPOSTデータやCookieを保存したり、動的に編集できるツール FairyTrace http://www.vector.co.jp/soft/win95/util/se219079.html windows用（シェアウエア） マウスの操作等を記録する。 少し使ってたことがあるんだけど 画面が少しずれたりしただけで、使えなくなったりする。 （座標を記録しているのだから当たり前だけど） 当時の用途としてマウスの座標を記録したりするタイプだと ちょっと厳しいと思い。使うのをやめた。 WinRunner http://www.mercury.com/jp/products/quality-center/functional-testing/winrunner/ QuickTest ProfessionalとWinRunnerの機能的な違い http://www.ashisuto.co.jp/prod/qtp/sum/info/index.html WinRunnerかQuickTest Professionalか忘れたけど、 テスト結果を見るためにもライセンスが必要だったような気がする。 それなのにQuickTest Professionalのライセンスは以下のとおりの値段。</div>
+
+  
+  <footer>
+    <a href="http://d.tflare.com/2006/08/26/113436/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Aug 26, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/08/26/092051/">エモーショナル・デザイン</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <div data-role="amazonjs" data-asin="4788509210" data-locale="JP" data-tmpl="" data-img-size="" class="asin_4788509210_JP_ amazonjs_item">
+    <div class="amazonjs_indicator">
+      <span class="amazonjs_indicator_img"></span><a class="amazonjs_indicator_title" href="#">エモーショナル・デザイン―微笑を誘うモノたちのために</a><span class="amazonjs_indicator_footer"></span>
+    </div>
+  </div></p> 
+  
+  <p>
+    エモーショナル・デザイン―微笑を誘うモノたちのために読了
+  </p>
+  
+  <p>
+    使いづらくても、触っているだけでうれしくなったり
+  </p>
+  
+  <p>
+    見ているだけでうれしくなったりするモノはあるよね。
+  </p>
+  
+  <p>
+    そういったことは重要だよね。
+  </p>
+  
+  <p>
+    ということを書いている。
+  </p>
+  
+  <p>
+    他にロボットの未来の話も
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Thu, Aug 24, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/08/25/000000/">第6回オープンソーステクノロジー勉強会内容</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    第6回オープンソーステクノロジー勉強会にいってきました。
+  </p>
+  
+  <p>
+    内容と自分の作っているテストツールについて
+  </p>
+  
+  <p>
+    Seleniumには以下の物があるよ。
+  </p>
+  
+  <p>
+    Selenium Core
+  </p>
+  
+  <p>
+    Selenium IDE
+  </p>
+  
+  <p>
+    Selenium Remote Control
+  </p>
+  
+  <p>
+    Selenium Coreではテストを書くのがめんどくさいからSelenium IDEがあり、
+  </p>
+  
+  <p>
+    Selenium Coreでは定時にテストを実行することが出来ないのでSelenium Remote Controlがある。
+  </p>
+  
+  <p>
+    後、テストの実行結果の一覧化をしているのを見て、
+  </p>
+  
+  <p>
+    テストを定時に行うのであれば、実行結果の一覧を用意すると便利だと思った。
+  </p>
+  
+  <p>
+    Selenium IDEは拡張機能を使えばAJAXにも対応できる。
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    面白かった。
+  </p>
+  
+  <p>
+    やる気が出てきた。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Thu, Aug 24, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/08/25/000000/">自分の作っているテストツールについて</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    自動テストには環境整備が重要
+  </p>
+  
+  <p>
+    自動テストする際にテーブルを全部削除するとか
+  </p>
+  
+  <p>
+    Railsのフィクスチャを使うとかいう話が出てるけど
+  </p>
+  
+  <p>
+    そういうことがやりたくても、自分が今いる環境ではそういうことが出来ない。
+  </p>
+  
+  <p>
+    仕方ないので初回用と2回目以降用のテストケースを作って切り替えるということをしている。
+  </p>
+  
+  <p>
+    やろうとすれば、すべて初回扱いにも出来るのだけど、
+  </p>
+  
+  <p>
+    ・テスト用とはいえ、データを作りすぎるとまずい（簡単に削除できないので）
+  </p>
+  
+  <p>
+    ・テストの実行時間の問題
+  </p>
+  
+  <p>
+    があるかと思い初回用と2回目以降用のテストケースを用意している。
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    テストを作成するのにはSeleniumを使っているのではなく
+  </p>
+  
+  <p>
+    ExcelのVBAで作っている。
+  </p>
+  
+  <p>
+    なぜかというと今常駐している会社では、フリーソフトが使えないから、
+  </p>
+  
+  <p>
+    そこら辺にあるものを使うしかなくExcelのVBAで作っている。
+  </p>
+  
+  <p>
+    ExcelのVBAで命令セットを作って、
+  </p>
+  
+  <p>
+    Excelのシートからその命令を呼び出すという風にしている。
+  </p>
+  
+  <p>
+    たとえばMenuClick命令というのがあってこれを呼び出すと、メニューを押すことが出来る。
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    ExcelのVBAで作っているためWindowsのAPIを簡単に呼び出すことが可能。
+  </p>
+  
+  <p>
+    画面のハードコピーを撮ってと言われても、簡単に画面のハードコピーを撮ることが出来る。
+  </p>
+  
+  <p>
+    自分的には自動テストには画面のハードコピーは重要だと思わないけど好きな人はいるので仕方ない。
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    auto_screen_modeというのもあって
+  </p>
+  
+  <p>
+    auto_screen_modeをonにしてMenuClick命令等で画面を遷移させると、
+  </p>
+  
+  <p>
+    勝手に開いている画面をすべて画面に撮って、Excelのシートに貼り付けたり出来る。
+  </p>
+  
+  <p>
+    （一画面に収まらないときは自動でスクロールして画面を取ってくれる。）
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    まあそれなりに命令セットがあって使えるんだけど、
+  </p>
+  
+  <p>
+    テストを書くのがめんどくさいという問題点がある。
+  </p>
+  
+  <p>
+    それを改善すべく、スクリプト生成ソフトを作ろうと考えてはいるのだが。
+  </p>
+  
+  <p>
+    スクリプト生成ソフトを作るのにrubyが使いたいのだけど、rubyは入れられないので困っていたりする。
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    まあ現状でも使えるので少しずつ回帰テスト用のツールとして使っていこうと思っている。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      
+<nav>
+  <ul class="pager">
+
+    
+    <li><a href="http://d.tflare.com/page/20">Previous</a></li>
+    
+
+    
+    <li><a href="http://d.tflare.com/page/22">Next</a></li>
+    
+
+  </ul>
+</nav>
+
+
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://d.tflare.com/2016/08/19/010941/" class="list-group-item">ビジネス書を読んでもデキる人にはなれない読了　この本の概要</a>
+      
+      <a href="http://d.tflare.com/2016/07/31/160751/" class="list-group-item">僕が無料の英語マンガで楽にTOEIC900点を取って、映画の英語を字幕なしでリスニングできるワケ読了</a>
+      
+      <a href="http://d.tflare.com/2016/07/30/053527/" class="list-group-item">ドラッカー名著集 4 非営利組織の経営読了</a>
+      
+      <a href="http://d.tflare.com/2016/03/31/071248/" class="list-group-item">iMac 21.5インチとMacBook Air 13インチ購入</a>
+      
+      <a href="http://d.tflare.com/2016/03/29/234956/" class="list-group-item">zenback停止し、プラグイン追加</a>
+      
+      <a href="http://d.tflare.com/2016/03/29/225335/" class="list-group-item">Vivaldiの設定を別のMacへコピーする方法</a>
+      
+      <a href="http://d.tflare.com/2014/10/13/205224/" class="list-group-item">ストレスに負けない生活―心・身体・脳のセルフケア (ちくま新書)　読了</a>
+      
+      <a href="http://d.tflare.com/2014/10/02/074817/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由（日本破綻論と国債発行）</a>
+      
+      <a href="http://d.tflare.com/2014/10/02/072949/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由</a>
+      
+      <a href="http://d.tflare.com/2014/07/23/075131/" class="list-group-item">プロセスルールの縮小の停滞とブレイクスルーへの期待</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://d.tflare.comcategories/%E6%8A%95%E8%B3%87" class="list-group-item">投資</a>
+      
+      <a href="http://d.tflare.comcategories/ubuntu" class="list-group-item">ubuntu</a>
+      
+      <a href="http://d.tflare.comcategories/opera" class="list-group-item">opera</a>
+      
+      <a href="http://d.tflare.comcategories/%E6%9C%AC" class="list-group-item">本</a>
+      
+      <a href="http://d.tflare.comcategories/comp" class="list-group-item">comp</a>
+      
+      <a href="http://d.tflare.comcategories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://d.tflare.comcategories/prog" class="list-group-item">prog</a>
+      
+      <a href="http://d.tflare.comcategories/other" class="list-group-item">other</a>
+      
+      <a href="http://d.tflare.comcategories/android" class="list-group-item">android</a>
+      
+      <a href="http://d.tflare.comcategories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>Copyright (c) 2006 - 2016, hiroyuki_tの日記</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a>, Theme <a href="https://github.com/dim0627/hugo_theme_beg" target="_blank" rel="nofollow">beg</a> designed by <a href="http://yet.unresolved.xyz" target="_blank" rel="nofollow">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

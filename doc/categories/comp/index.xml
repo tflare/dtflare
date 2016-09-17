@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Comp on hiroyuki_tの日記</title>
+    <link>http://d.tflare.com/categories/comp/</link>
+    <description>Recent content in Comp on hiroyuki_tの日記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Copyright (c) 2006 - 2016, hiroyuki_tの日記</copyright>
+    <lastBuildDate>Wed, 30 Mar 2016 22:12:48 +0000</lastBuildDate>
+    <atom:link href="http://d.tflare.com/categories/comp/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>iMac 21.5インチとMacBook Air 13インチ購入</title>
+      <link>http://d.tflare.com/2016/03/31/071248/</link>
+      <pubDate>Wed, 30 Mar 2016 22:12:48 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2016/03/31/071248/</guid>
+      <description>&lt;p&gt;iMac 21.5インチとMacBook Air 13インチ購入&lt;/p&gt;
+
+&lt;p&gt;15インチのノートを単独で使用していたが&lt;/p&gt;
+
+&lt;p&gt;家での使用率が多いため、据え置きと移動用に分けた。&lt;/p&gt;
+
+&lt;p&gt;また、Macを使用してみたかったのと使いたいソフトがMacにしかないといったことがあったため導入&lt;/p&gt;
+
+&lt;p&gt;iMac 21.5インチ LATE 2015&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2.8GHz QC i5, TB up to 3.3GHz&lt;/li&gt;
+&lt;li&gt;Intel Iris Pro Graphics 6200&lt;/li&gt;
+&lt;li&gt;8GB 1867MHz LPDDR3 onboard&lt;/li&gt;
+&lt;li&gt;256GB Flash Storage&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;MacBook Air 13インチ EARLY 2015&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1.6GHz Intel Dual-Core Core i5&lt;/li&gt;
+&lt;li&gt;Intel HD Graphics 6000&lt;/li&gt;
+&lt;li&gt;8GB 1600MHz LPDDR3 SDRAM&lt;/li&gt;
+&lt;li&gt;256GB PCIe-based Flash Storage&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>プロセスルールの縮小の停滞とブレイクスルーへの期待</title>
+      <link>http://d.tflare.com/2014/07/23/075131/</link>
+      <pubDate>Tue, 22 Jul 2014 22:51:31 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2014/07/23/075131/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://ascii.jp/elem/000/000/165/165196/&#34;&gt;http://ascii.jp/elem/000/000/165/165196/&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;プロセスルールが縮小されるにしたがって、（中略）トランジスターの動作速度も向上していく。半導体の進化は、プロセスルールの縮小によって支えられてきたと言っていい。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;このプロセスルールの縮小が停滞しはじめてる。&lt;/p&gt;
+
+&lt;p&gt;プロセスルールの縮小製造の最先端をいくIntelは、14nmプロセスで遅延が発生している。（現行は22nmプロセス）&lt;/p&gt;
+
+&lt;p&gt;比較的新しいプロセスを使用するGPUでも28nmを2年以上使用している。&lt;/p&gt;
+
+&lt;p&gt;（例えば、28nmを始めて使用したGeForce GTX 680は2012年3月23日に発売されている。）&lt;/p&gt;
+
+&lt;p&gt;GeForceが20nmプロセスで製造されるのは2015年になると言われている。&lt;/p&gt;
+
+&lt;p&gt;個人的に使用するPCのCPUやGPUは、必要な性能を満たしているためそれほど問題はないと考えている。&lt;/p&gt;
+
+&lt;p&gt;しかし、スマートフォンを始めとするモバイル関連で使用するCPUやGPUには進歩がほしいと考えている。&lt;/p&gt;
+
+&lt;p&gt;プロセスルールの縮小は難しい段階に入っており、ブレイクスルーが求められており&lt;/p&gt;
+
+&lt;p&gt;日々研究が進んでいる。&lt;/p&gt;
+
+&lt;p&gt;ブレイクスルーがなり、その技術がスマートフォンに使われる日を期待したい。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Galleria QF655 Ubuntu Linux 12.04 初期設定 その2</title>
+      <link>http://d.tflare.com/2012/06/10/100900/</link>
+      <pubDate>Sun, 10 Jun 2012 01:09:00 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2012/06/10/100900/</guid>
+      <description>
+
+&lt;p&gt;Galleria QF655 Ubuntu Linux 12.04 初期設定 その2&lt;/p&gt;
+
+&lt;h2 id=&#34;設定&#34;&gt;設定&lt;/h2&gt;
+
+&lt;h3 id=&#34;アドレスバーの表示&#34;&gt;アドレスバーの表示&lt;/h3&gt;
+
+&lt;p&gt;gsettings set org.gnome.nautilus.preferences always-use-location-entry true&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://d.tflare.com/wp-content/uploads/2012/06/Screenshot_from_2012-06-10-120518.png&#34;&gt;&lt;img src=&#34;http://d.tflare.com/wp-content/uploads/2012/06/Screenshot_from_2012-06-10-120518-300x30.png&#34; alt=&#34;&#34; title=&#34;Screenshot_from_2012-06-10 12:05:18&#34; width=&#34;300&#34; height=&#34;30&#34; class=&#34;alignnone size-medium wp-image-448&#34; srcset=&#34;http://d.tflare.com/wp-content/uploads/2012/06/Screenshot_from_2012-06-10-120518-300x30.png 300w, http://d.tflare.com/wp-content/uploads/2012/06/Screenshot_from_2012-06-10-120518-768x77.png 768w, http://d.tflare.com/wp-content/uploads/2012/06/Screenshot_from_2012-06-10-120518.png 800w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;グローバルメニューの無効化&#34;&gt;グローバルメニューの無効化&lt;/h3&gt;
+
+&lt;p&gt;sudo apt-get autoremove appmenu-gtk appmenu-gtk3 appmenu-qt&lt;/p&gt;
+
+&lt;h3 id=&#34;隠しファイルの表示&#34;&gt;隠しファイルの表示&lt;/h3&gt;
+
+&lt;p&gt;フォルダーを開き、メニューから&lt;/p&gt;
+
+&lt;p&gt;[編集]→[設定]&lt;/p&gt;
+
+&lt;p&gt;隠しファイルと バックアップ・ファイルを表示する&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 id=&#34;開発用ソフトウエア&#34;&gt;開発用ソフトウエア&lt;/h2&gt;
+
+&lt;h3 id=&#34;git&#34;&gt;git&lt;/h3&gt;
+
+&lt;p&gt;sudo apt-get install git-core&lt;/p&gt;
+
+&lt;h3 id=&#34;rabbitvcs&#34;&gt;RabbitVCS&lt;/h3&gt;
+
+&lt;p&gt;バージョン管理GUIツール&lt;/p&gt;
+
+&lt;p&gt;gitで使用&lt;/p&gt;
+
+&lt;p&gt;sudo add-apt-repository ppa:rabbitvcs/ppa&lt;/p&gt;
+
+&lt;p&gt;sudo apt-get install rabbitvcs-nautilus3&lt;/p&gt;
+
+&lt;h3 id=&#34;ssh&#34;&gt;SSH&lt;/h3&gt;
+
+&lt;p&gt;すべて以前の設定を持ってくる。&lt;/p&gt;
+
+&lt;p&gt;bitbucket用の設定も持ってくる。&lt;/p&gt;
+
+&lt;h3 id=&#34;java7&#34;&gt;Java7&lt;/h3&gt;
+
+&lt;p&gt;sudo add-apt-repository ppa:webupd8team/java&lt;/p&gt;
+
+&lt;p&gt;sudo apt-get update&lt;/p&gt;
+
+&lt;p&gt;apt-get install oracle-java7-installer&lt;/p&gt;
+
+&lt;h3 id=&#34;eclipse&#34;&gt;Eclipse&lt;/h3&gt;
+
+&lt;p&gt;sudo apt-get install eclipse&lt;/p&gt;
+
+&lt;p&gt;起動しようとすると以下のエラーになるので&lt;/p&gt;
+
+&lt;p&gt;no swt-gtk-3740 in java.library.path&lt;/p&gt;
+
+&lt;p&gt;no swt-gtk in java.library.path&lt;/p&gt;
+
+&lt;p&gt;32bit版であれば以下を実行することで解消される。&lt;/p&gt;
+
+&lt;p&gt;sudo cp /usr/lib/jni/libswt-*3740.so ~/.swt/lib/linux/x86/&lt;/p&gt;
+
+&lt;p&gt;64bit版はリンク参照&lt;/p&gt;
+
+&lt;p&gt;参考:&lt;a href=&#34;http://askubuntu.com/questions/125150/unsatisfied-link-error-and-missing-so-files-when-starting-eclipse&#34;&gt;http://askubuntu.com/questions/125150/unsatisfied-link-error-and-missing-so-files-when-starting-eclipse &lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;android&#34;&gt;Android&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://techbooster.jpn.org/andriod/environment/492/&#34;&gt;Ubuntu 10.04にAndroid SDKをインストールする&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;を参照&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Galleria QF655 Ubuntu Linux 12.04 初期設定 その1</title>
+      <link>http://d.tflare.com/2012/06/10/093524/</link>
+      <pubDate>Sun, 10 Jun 2012 00:35:24 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2012/06/10/093524/</guid>
+      <description>
+
+&lt;p&gt;Prime Note Galleria QF655購入&lt;/p&gt;
+
+&lt;h2 id=&#34;スペック&#34;&gt;スペック&lt;/h2&gt;
+
+&lt;table border=&#34;0&#34;&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+      CPU
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      Core i7-3610QM
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt;
+      MEMORY
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      8GB(M471B5273DH0-CK0 Samsung 4GB PC3-12800✕2)
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt;
+      SSD
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      128G(Intel SSD 330)
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt;
+      GPU
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      NVIDIA GeForce GT 650M 2GB
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt;
+      光学ドライブ
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      DVDスーパーマルチドライブ
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt;
+      OS
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      Windows7 Home Premium 64bit
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;HDDから SSDに変更している。&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 id=&#34;パーテーション切り分け&#34;&gt;パーテーション切り分け&lt;/h2&gt;
+
+&lt;table border=&#34;0&#34;&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+      /
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      12G
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      ext4
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      Ubuntu Linux 12.04
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt;
+      /home
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      39G
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      ext4
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      Ubuntu Linux 12.04
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt;
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      67G
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      ntfs
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      Windows7
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Ubuntu Linuxで使用するのがメインの用途となるが、&lt;/p&gt;
+
+&lt;p&gt;Windowsはゲーム （Skyrim等）で容量を取ることを想定し、多めに設定&lt;/p&gt;
+
+&lt;p&gt;データ移行等が行いやすいように、/homeは別パーテーションとする。&lt;/p&gt;
+
+&lt;p&gt;swapはメモリーが8GBあるので、設定しない。&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 id=&#34;ソフトウエア設定&#34;&gt;ソフトウエア設定&lt;/h2&gt;
+
+&lt;p&gt;２００６年から設定を引き継いでおり、新しく設定し直したかったので、homeをコピーするのではなく、&lt;/p&gt;
+
+&lt;p&gt;必要なもののみ設定しなおしする方針とした。&lt;/p&gt;
+
+&lt;h3 id=&#34;opera&#34;&gt;Opera&lt;/h3&gt;
+
+&lt;p&gt;本家からインストール&lt;/p&gt;
+
+&lt;p&gt;flashもインストール&lt;/p&gt;
+
+&lt;p&gt;以下のファイルを以前のPCから移行&lt;/p&gt;
+
+&lt;p&gt;bookmarks.adr, operaprefs.ini, override.ini, search.ini, wand.dat&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://ja.opera-wiki.com/urlfilter.ini%E8%A3%9C%E5%AE%8C%E8%A8%88%E7%94%BB&#34;&gt;urlfilter&lt;/a&gt;の設定&lt;/p&gt;
+
+&lt;p&gt;上記のGeneralのみurlfilter.iniという名前で $HOME/.operaに保存&lt;/p&gt;
+
+&lt;h3 id=&#34;zsh&#34;&gt;zsh&lt;/h3&gt;
+
+&lt;p&gt;補完が便利なシェル&lt;/p&gt;
+
+&lt;p&gt;apt-get install zsh&lt;/p&gt;
+
+&lt;p&gt;$ chsh&lt;/p&gt;
+
+&lt;p&gt;新しいシェル [/bin/bash]: /bin/zsh&lt;/p&gt;
+
+&lt;p&gt;補完が便利なので、ないと辛い&lt;/p&gt;
+
+&lt;p&gt;この&lt;a href=&#34;http://d.tflare.com/2007/02/10/210703/&#34;&gt;リンク&lt;/a&gt;の.zshrcや.zsh_historyを過去のデータから移行&lt;/p&gt;
+
+&lt;h3 id=&#34;mozc&#34;&gt;mozc&lt;/h3&gt;
+
+&lt;p&gt;Google日本語入力のオープンソース版&lt;/p&gt;
+
+&lt;p&gt;sudo apt-get install ibus-mozc mozc-server mozc-utils-gui&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://d.tflare.com/wp-content/uploads/2012/06/Screenshot_from_2012-06-10-085510.png&#34;&gt;&lt;img class=&#34;alignnone size-full wp-image-425&#34; title=&#34;Screenshot_from_2012-06-10 08:55:10&#34; src=&#34;http://d.tflare.com/wp-content/uploads/2012/06/Screenshot_from_2012-06-10-085510.png&#34; alt=&#34;&#34; width=&#34;200&#34; height=&#34;30&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;画面右上のキーボード→[再起動]&lt;/p&gt;
+
+&lt;p&gt;画面右上のキーボード→[設定] →[インプットメソッドタブ]mozcを設定&lt;/p&gt;
+
+&lt;p&gt;/usr/lib/mozc/mozc_tool &amp;#8211;mode=config_dialogでATOKキーバインドに変更&lt;/p&gt;
+
+&lt;h3 id=&#34;他のソフト&#34;&gt;他のソフト&lt;/h3&gt;
+
+&lt;p&gt;FTPソフト&lt;/p&gt;
+
+&lt;p&gt;sudo apt-get install filezilla&lt;/p&gt;
+
+&lt;p&gt;グラフィック編集・加工ソフト&lt;/p&gt;
+
+&lt;p&gt;sudo apt-get install gimp&lt;/p&gt;
+
+&lt;p&gt;ブラウザ&lt;/p&gt;
+
+&lt;p&gt;sudo apt-get install chromium-browser&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>au HOME SPOT CUBE設定</title>
+      <link>http://d.tflare.com/2012/05/06/120212/</link>
+      <pubDate>Sun, 06 May 2012 03:02:12 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2012/05/06/120212/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;初期ID／パスワード&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;無線でつながっている端末から以下にアクセスする。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://192.168.0.254/&#34;&gt;http://192.168.0.254/&lt;/a&gt; or &lt;a href=&#34;http://192.168.1.254/&#34;&gt;http://192.168.1.254/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ID「au」パスワード「1234」&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;**&lt;strong&gt;Wi-Fi&lt;/strong&gt;設定→Wi-Fi基本設定**&lt;/p&gt;
+
+&lt;p&gt;無線周波数出力を35%に修正&lt;/p&gt;
+
+&lt;p&gt;限られた範囲でしか使わないのであれば、出力を弱めたほうが良い。&lt;/p&gt;
+
+&lt;p&gt;範囲内であれば、Wi-Fiのリストに出てくることになるので、他の人の迷惑になるし、&lt;/p&gt;
+
+&lt;p&gt;範囲を絞ることでその範囲しか使えないことになり、不正に使われる可能性も減ると考える。&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;**&lt;strong&gt;Wi-Fi&lt;/strong&gt;設定→SSID2の設定**&lt;/p&gt;
+
+&lt;p&gt;無効にする。&lt;/p&gt;
+
+&lt;p&gt;DS等でWEPを利用する場合に使う。&lt;/p&gt;
+
+&lt;p&gt;WEPは解析ソフトが出まわっており、即解析されてしまう。&lt;/p&gt;
+
+&lt;p&gt;これにより、有効にしておくと他の人に不正に利用させる可能性が非常に高くなるので、使用しない場合は無効にしたほうが良い。&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;****&lt;strong&gt;Wi-Fi&lt;/strong&gt;設定→&lt;strong&gt;MACアドレスフィルタリング &lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;有効にする。&lt;/p&gt;
+
+&lt;p&gt;指定した端末以外の接続を拒否する機能&lt;/p&gt;
+
+&lt;p&gt;これを有効にしても、MACアドレスを偽装されてしまう（簡単に偽装はできる）と意味がなくなるが、&lt;/p&gt;
+
+&lt;p&gt;お手軽に侵入できるか試そうとしているひとへの対策にはなると思われる。&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;フレッツ光、Bフレッツ&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;フレッツ光、Bフレッツの人は以下も参照してください。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://d.tflare.com/2012/04/10/055014/&#34; title=&#34;フレッツ光/Bフレッツ(VH-100E&amp;amp;lt;S&amp;amp;gt;)とau HOME SPOT CUBEをつなぐ方法&#34;&gt;フレッツ光/Bフレッツ(VH-100E&amp;lt;S&amp;gt;)とau HOME SPOT CUBEをつなぐ方法 &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p style=&#34;text-align: right;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>フレッツ光/Bフレッツ(VH-100E&lt;S&gt;)とau HOME SPOT CUBEをつなぐ方法</title>
+      <link>http://d.tflare.com/2012/04/10/055014/</link>
+      <pubDate>Mon, 09 Apr 2012 20:50:14 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2012/04/10/055014/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    &lt;a href=&#34;http://www.cs-au.com/3m%E9%96%A2%E9%80%A3/wi-fi-home/home-spot-cube/&#34; target=&#34;_blank&#34;&gt;http://www.cs-au.com/3m%E9%96%A2%E9%80%A3/wi-fi-home/home-spot-cube/&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    のケース２
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    無線でつながっている端末からHOME SPOT CUBEの設定画面にアクセス
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    PPPoEでの設定が必要
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    PPPoE設定の際のユーザ名についてはniftyの場合、@nifty.comを忘れないように注意。
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PC-PK103</title>
+      <link>http://d.tflare.com/2012/04/09/072817/</link>
+      <pubDate>Sun, 08 Apr 2012 22:28:17 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2012/04/09/072817/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    VL-M3とUS-100のセット
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    アウトレットの品を4800円で買った。
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>3つの3.0インタフェース</title>
+      <link>http://d.tflare.com/2010/06/26/070241/</link>
+      <pubDate>Fri, 25 Jun 2010 22:02:41 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2010/06/26/070241/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    PCの拡張性に大幅な影響を与えるのが
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    USB,Serial ATA,PCI-Expressの3つである。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    この3つにはアップデートが迫っている。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    USB,Serial ATAについては拡張ボードの導入で
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    対処可能な部分があるが、マザーボードが新しいバージョンを考慮した設計になっていないと
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    能力が十分に生かせないという問題がある。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    そのため出来れば新しいバージョンを考慮した設計がなされているものを導入したい。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    PCI-Express 3.0については
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    一般ユーザにとって主な用途となるビデオカード(GPU)が
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    PCI Express 2.0で十分と思われることもあり、あまり気にしなくても良いと考える。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    そのためUSB 3.0、Serial ATA 3.0について考慮した設計がなされ、
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    チップセット内蔵された時が買い時と考える。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    つまりIntelなら2012年、AMDなら2011年と考える。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;h4&gt;
+    USB 3.0
+  &lt;/h4&gt;
+  
+  &lt;p&gt;
+    チップセット内蔵でマザーボードに搭載されるのが
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Intel 2012年から（予想）
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    AMD 2011年から（予想）
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;h4&gt;
+    Serial ATA 3.0
+  &lt;/h4&gt;
+  
+  &lt;p&gt;
+    チップセット内蔵でマザーボードに搭載されるのが
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Intel 2011年から（予想）
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    AMD 2010年から
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;h4&gt;
+    PCI-Express 3.0
+  &lt;/h4&gt;
+  
+  &lt;p&gt;
+    2011年に仕様決定と思われるのでその後
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>製造プロセス GPU</title>
+      <link>http://d.tflare.com/2010/06/25/204521/</link>
+      <pubDate>Fri, 25 Jun 2010 11:45:21 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2010/06/25/204521/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    2010年 40nm
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    2011年 28nm
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    GPUの製造プロセスは上記になると思われる。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    現在　RADEONとGeForceはTSMCで製造している。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    そのTSMCが32nmプロセスをキャンセルした
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    そのため32nmプロセスありきで計画していたと思われるGeForceは厳しい戦いを強いられている。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    RADEONとGeForceが28nmの製品を出すのは
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    2012年と思われる。（&lt;a href=&#34;http://www.4gamer.net/games/110/G011065/20100526093/&#34; target=&#34;_blank&#34;&gt;参考&lt;/a&gt;）
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    （28nmのRADEONはGlobalFoundriesで作られると思われる。）
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    よってGPU製品を買うのであれば2012年が買い時と考える。
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>製造プロセス CPU</title>
+      <link>http://d.tflare.com/2010/06/25/204520/</link>
+      <pubDate>Fri, 25 Jun 2010 11:45:20 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2010/06/25/204520/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;h4&gt;
+    Intel
+  &lt;/h4&gt;
+  
+  &lt;p&gt;
+    2010年 32nm
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    2011年 32nm SandyBridge
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    2012年 22nm IvyBridge
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;h4&gt;
+    AMD
+  &lt;/h4&gt;
+  
+  &lt;p&gt;
+    2010年 45nm
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    2011年 32nm Llano
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    2011年 32nm Bulldozer
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    CPUの製造プロセスは上記になると思われる。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    製造プロセスが変わることによって
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    同時に新技術が導入されることが多く、
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    これにより、コスト低減、熱低減、ワットパフォーマンス改善等
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    について期待できる。&lt;a href=&#34;http://pc.watch.impress.co.jp/docs/column/kaigai/20100215_348705.html&#34; target=&#34;_blank&#34;&gt;参考&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    これにより製造プロセスが変わる時が
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    お得なPCの更新時期と言えると考える。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Intelなら2012年、AMDなら2011年
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Seagate HDD</title>
+      <link>http://d.tflare.com/2009/01/25/202639/</link>
+      <pubDate>Sun, 25 Jan 2009 11:26:39 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2009/01/25/202639/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    Seagate HDDの新情報が来てる
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;a href=&#34;http://seagate.custkb.com/seagate/crm/selfservice/search.jsp?DocId=207931&#34; target=&#34;_blank&#34;&gt;http://seagate.custkb.com/seagate/crm/selfservice/search.jsp?DocId=207931&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    前のチェッカーはaffected だったけど今回は not affected
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;a href=&#34;https://apps1.seagate.com/rms_af_srl_chk/&#34; target=&#34;_blank&#34;&gt;https://apps1.seagate.com/rms_af_srl_chk/&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    ファームウエアCC2Fなので、バージョンアップできるファームも&lt;a href=&#34;http://seagate.custkb.com/seagate/crm/selfservice/search.jsp?DocId=207957&#34; target=&#34;_blank&#34;&gt;ない&lt;/a&gt;。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    ファームウエアCC2Fであれば、ロックはしないようなので、バックアップを取り使用を続けることにします。
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PC買い替え</title>
+      <link>http://d.tflare.com/2009/01/18/195904/</link>
+      <pubDate>Sun, 18 Jan 2009 10:59:04 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2009/01/18/195904/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    2008年12月にPCを買い換えた。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    2009年1月まで保たせたかったけど無理だった。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    メモとしてスペックを書いておく
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    CPU:Core2Duo E8400(3GHZ)
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Memory:1GB×2(DDR2-800 PC2-6400)
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    VGA:GeForce 9600GT(G9600GT-512-3-256-ZL)
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    HDD:ST3320613AS(320GB 7200rpm S-ATA2)
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    MotherBoard:P43T-A2(P43/ICH10)
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Case:SCBC01-WH
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    BTOでの購入
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    急ぎで買ったのだけど、
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    ECS以外のマザーボードにしておけば良かったかなと思う。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    またHDDのFirmwareのバージョンアップが必要な模様
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;a href=&#34;http://seagate.custkb.com/seagate/crm/selfservice/search.jsp?DocId=207931&#34; target=&#34;_blank&#34;&gt;http://seagate.custkb.com/seagate/crm/selfservice/search.jsp?DocId=207931&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    以下でSerialNoを入れると確認できる。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;a href=&#34;http://support.seagate.com/sncheck.html&#34; target=&#34;_blank&#34;&gt;http://support.seagate.com/sncheck.html&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MY JOB WENT TO CHINA</title>
+      <link>http://d.tflare.com/2007/09/04/214316/</link>
+      <pubDate>Tue, 04 Sep 2007 12:43:16 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2007/09/04/214316/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    現在の中国の給与は日本の10分の1なので、
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    オフショアの体制が整ったら、どんどんオフショアされちゃう。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    体制が整ったら、日本の開発者が増えることはない。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    こういった状況がソフトウエア産業の中で特別な技術を必要としない
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    ところでどんどん増えていくんだろう。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    ソフトウエア産業の中で特別な技術を必要としないところでは
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    技術があるひとは少なく、人が作ったマニュアルに沿って作業をしているだけであったりするので
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    簡単に淘汰されそう。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    というわけで仕事がどんどん少なくなっていく未来において
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    どのようなことをするかということがますます重要になってくるだろう。
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>簡易スパム対策</title>
+      <link>http://d.tflare.com/2007/02/04/225716/</link>
+      <pubDate>Sun, 04 Feb 2007 13:57:16 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2007/02/04/225716/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    自分が使っている簡易スパム対策
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    1.知合いやメーリングリスト等の定期的にメールが来るものをメーラの機能で振り分けしておく。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    2.spamフォルダを作成する
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    3.振り分けの設定でToが自分のメールアドレスと一致しない場合にspamフォルダに移動するようにする。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    　その際優先度を1で設定したルールよりも低くする。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    これだけで8割程度のspamをspamフォルダに自動的に移動できる。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    あとは1で振り分けられなかった個人的に来たメールをspamフォルダから移動しspamは削除すればOK
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>パーテーションの切り直し</title>
+      <link>http://d.tflare.com/2006/11/20/000000/</link>
+      <pubDate>Sun, 19 Nov 2006 15:00:00 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2006/11/20/000000/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    マシンが故障したのでPCを購入した。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    使っていたPCは3年使っていたので、よい感じのスパンだと思う。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    次は2009年の11月に購入することにしよう。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &amp;nbsp;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    マシンを購入してWindowsXPをインストールして、Ubuntu6.10をインストールした。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Ubuntu6.10をインストールした時にパーテーションの切り分けをミスった。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    新しいパーテションはどれぐらいにしますか？
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    と聞かれたからそれがUbuntu用のパーテーションの大きさかと思ったら
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    それがWindows用のパーテーションの大きさだった。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    （前にインストールしたときはカスタムでインストールしたので大丈夫だった。）
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &amp;nbsp;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    そこでパーテーションの切り直しができるツールを探していたら
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    KNOPPIX上でQTPartedを用いてできるという情報を得たので
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    knoppix_v5.0.1CD_20060601-20060614+IPAFont_AC20060623.iso
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    を試してみたらKNOPPIXがシリアルATAを認識しなくて
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    パーテーションの切り直しができなかった。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &amp;nbsp;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    そこでシリアルATAに対応していそうなディストリビューションを探したところ&lt;a href=&#34;http://kanotix.com/&#34; target=&#34;_blank&#34;&gt;Kanotix&lt;/a&gt;が見つかり、
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    KANOTIX 2006-01-RC4を使用したところシリアルATAを認識してくれた。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    後はKANOTIX上でGpartedを使用したところ無事パーテーションの切り直しができた。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    その後WindowsXPもUbuntu6.10も無事起動が確認できた。
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.16" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://d.tflare.comcss/styles.css">
+    <link rel="stylesheet" href="http://d.tflare.comcss/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.tflare.com/index.xml">
+    <link rel="canonical" href="http://d.tflare.com/categories/comp/" >
+
+    
+    <title>Comp - hiroyuki_tの日記</title>
+    <meta property='og:title' content="Comp - hiroyuki_tの日記">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://d.tflare.com/categories/comp/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://d.tflare.com">hiroyuki_tの日記</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+<div class="list">
+
+  <div class="row">
+    <div class="col-md-8">
+      <header class="page-title">Comp</header>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sun, Sep 17, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/09/17/113905/">画面のハードコピーを取るサンプルプログラム Alfeira v0.04</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    ラジオボタンのクリックのサンプルプログラムの追加
+  </p>
+  
+  <pre>
+ラジオボタンのクリック
+Private Sub RadioClick(radio_name, idx)
+objIE.document.getElementsByName(radio_name)(idx).Click
+End Sub
+</pre>
+  
+  <p>
+    <a href="http://tflare.com/taki/comp/archive/Alfeira_v0.04.zip" target="_blank">Alfeira_v0.04</a>
+  </p>
+  
+  <p>
+    <a href="http://tflare.com/taki/comp/Alfeira.html" target="_blank">Alfeira最新版</a>
+  </p>
+  
+  <p>
+    修正BSDライセンスで配布します。
+  </p>
+  
+  <p>
+    利用、改造、再配布については修正BSDライセンスの規定に従ってください
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sun, Sep 17, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/09/17/110259/">画面のハードコピーを取るサンプルプログラム Alfeira v0.03</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    VBAでIEを操作して、画面のハードコピーを取るサンプルプログラムを更新しました。
+  </p>
+  
+  <p>
+    下記のハイパーリンク、画像のクリックのサンプルプログラムの追加、他細かい修正
+  </p>
+  
+  <pre>
+ハイパーリンクのクリック
+Private Sub HeperLinkClick(link_text)
+For n = 0 To objIE.document.links.Length - 1
+If objIE.document.links(n).innerText = link_text Then
+objIE.document.links(n).Click
+Exit For
+End If
+Next n
+End Sub
+画像のクリック
+Private Sub ImageClick(image_alt)
+For n = 0 To objIE.document.images.Length - 1
+If objIE.document.images(n).alt = image_alt Then
+objIE.document.images(n).Click
+Exit For
+End If
+Next n
+End Sub
+</pre>
+  
+  <p>
+  </p>
+  
+  <p>
+    <a href="http://tflare.com/taki/comp/archive/Alfeira_v0.03.zip" target="_blank">Alfeira_v0.03</a>
+  </p>
+  
+  <p>
+    <a href="http://tflare.com/taki/comp/Alfeira.html" target="_blank">Alfeira最新版</a>
+  </p>
+  
+  <p>
+    修正BSDライセンスで配布します。
+  </p>
+  
+  <p>
+    利用、改造、再配布については修正BSDライセンスの規定に従ってください
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Sep 16, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/09/16/222046/">画面のハードコピーを取るサンプルプログラム</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    VBAでIEを操作して、画面のハードコピーを取るサンプルプログラムを作成しました。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    <a href="http://tflare.com/taki/comp/archive/Alfeira_v0.02.zip" target="_blank">Alfeira_v0.02</a>
+  </p>
+  
+  <p>
+    <a href="http://tflare.com/taki/comp/Alfeira.html" target="_blank">Alfeira最新版</a>
+  </p>
+  
+  <p>
+    修正BSDライセンスで配布します。
+  </p>
+  
+  <p>
+    利用、改造、再配布については修正BSDライセンスの規定に従ってください。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Jun 24, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/06/25/010437/">Selenium使いたい</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    自分のFirefoxにはエクステンションに<a href="http://optimoz.mozdev.org/gestures/index.html" target="_blank">Mouse Gestures</a>と<a href="http://www.openqa.org/selenium-ide/" target="_blank">Selenium IDE</a>が入ってる。
+  </p>
+  
+  <p>
+    Mouse GesturesがあるとOperaでよく使う
+  </p>
+  
+  <p>
+    右クリックしてから左クリックで戻る
+  </p>
+  
+  <p>
+    左クリックしてから右クリックで進む
+  </p>
+  
+  <p>
+    ができるので便利。
+  </p>
+  
+  <p>
+    Selenium IDEはブラウザ操作をすることでテストコードを生成できるツール。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    参考:<a href="http://wiki.openqa.org/display/SEL/Selenium+0.7+Reference+%28Japanese%29" target="_blank">Selenium 0.7 Reference (Japanese)</a>
+  </p>
+  
+  <p>
+    これはSelenium IDEではなく、Seleniumのリファレンス。
+  </p>
+  
+  <p>
+    <a href="http://cl.pocari.org/2006-02-15-3.html" target="_blank">Web アプリケーションテストツール Selenium のテスト記述から開放してくれる Firefox 拡張 Selenium IDE</a>
+  </p>
+  
+  <p>
+    <a href="http://d.hatena.ne.jp/selenium_blog/searchdiary?word=%2a%5bSelenium%5d" target="_blank">Selenium Blog</a>
+  </p>
+  
+  <p>
+    上記Selenium Blogによると画面のキャプチャもとれる。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    仕事でSelenium使いたいんだけど使えないんだよね。
+  </p>
+  
+  <p>
+    仕事場ではソフトを入れられないし、フリーソフト禁止令なんてのが出てるし。
+  </p>
+  
+  <p>
+    そのため仕方なく、VBAでテスト用の言語を作成してそれでIEを操作して何とかしのいでいる。
+  </p>
+  
+  <p>
+    メニュークリックとかassertとかテスト用に使いやすい命令が備えられていて
+  </p>
+  
+  <p>
+    画面のキャプチャ、キャプチャした結果の保存等もテスト用の言語で出来るようになっている。
+  </p>
+  
+  <p>
+    こういうのでテストデータ作成用のスクリプトを書いておくと、
+  </p>
+  
+  <p>
+    負荷テスト用のデータ作成に役に立ったりもする。
+  </p>
+  
+  <p>
+    でもSelenium IDEみたいなテストコードを生成できるツールがないから不便なんだよね。
+  </p>
+  
+  <p>
+    Selenium使いたい。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Jun 24, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/06/25/000000/">Firefox</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    ブックマークのバックアップのためOpera9からブックマークをインポートしようとしたら
+  </p>
+  
+  <p>
+    Opera9の選択肢が出てきてすんなりいく。
+  </p>
+  
+  <p>
+    すばらしい。
+  </p>
+  
+  <p>
+    Operaだとインポートがめんどくさい。
+  </p>
+  
+  <p>
+    Operaだとその代わりどこにあるデータでもインポートできるけどそんなことはめったにしないし
+  </p>
+  
+  <p>
+    Firefoxはよくできてるな。
+  </p>
+  
+  <p>
+    インポートの選択でPreferences,Cookies,Browsing History,Bookmarkの選択があってびっくりする。
+  </p>
+  
+  <p>
+    クッキーまでインポートできるのか。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Tue, Apr 4, 2006</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2006/04/04/212612/">Adobe Readerの隠し機能</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    Adobe LiveCycle Reader Extensions
+  </p>
+  
+  <p>
+    <a href="http://www.adobe.co.jp/products/server/readerextensions/overview.html" target="_blank">http://www.adobe.co.jp/products/server/readerextensions/overview.html</a>
+  </p>
+  
+  <blockquote>
+    <p>
+      Reader Extensionsでは、Adobe PDFドキュメントに特別な利用権限を設定できます。 この利用権限によって無償のAdobe Readerが持つ「隠し機能」が起動する。
+    </p>
+  </blockquote>
+  
+  <p>
+    Adobe Readerに隠し機能なんて含まれていたのか。
+  </p>
+  
+  <p>
+    知らなかった。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    J2EEを拡張するAdobe LiveCycleの全容
+  </p>
+  
+  <p>
+    <a href="http://www.atmarkit.co.jp/fwcr/rensai/pdf02/pdf02_2.html" target="_blank">http://www.atmarkit.co.jp/fwcr/rensai/pdf02/pdf02_2.html</a>
+  </p>
+  
+  <p>
+    上記によるとフォーム記入内容の保存、コメント付与、ファイル添付等が出来るらしい。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      
+<nav>
+  <ul class="pager">
+
+    
+    <li><a href="http://d.tflare.com/categories/comp/page/2">Previous</a></li>
+    
+
+    
+    <li class="disabled"><a href="#">Next</a></li>
+    
+
+  </ul>
+</nav>
+
+
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://d.tflare.com/2016/08/19/010941/" class="list-group-item">ビジネス書を読んでもデキる人にはなれない読了　この本の概要</a>
+      
+      <a href="http://d.tflare.com/2016/07/31/160751/" class="list-group-item">僕が無料の英語マンガで楽にTOEIC900点を取って、映画の英語を字幕なしでリスニングできるワケ読了</a>
+      
+      <a href="http://d.tflare.com/2016/07/30/053527/" class="list-group-item">ドラッカー名著集 4 非営利組織の経営読了</a>
+      
+      <a href="http://d.tflare.com/2016/03/31/071248/" class="list-group-item">iMac 21.5インチとMacBook Air 13インチ購入</a>
+      
+      <a href="http://d.tflare.com/2016/03/29/234956/" class="list-group-item">zenback停止し、プラグイン追加</a>
+      
+      <a href="http://d.tflare.com/2016/03/29/225335/" class="list-group-item">Vivaldiの設定を別のMacへコピーする方法</a>
+      
+      <a href="http://d.tflare.com/2014/10/13/205224/" class="list-group-item">ストレスに負けない生活―心・身体・脳のセルフケア (ちくま新書)　読了</a>
+      
+      <a href="http://d.tflare.com/2014/10/02/074817/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由（日本破綻論と国債発行）</a>
+      
+      <a href="http://d.tflare.com/2014/10/02/072949/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由</a>
+      
+      <a href="http://d.tflare.com/2014/07/23/075131/" class="list-group-item">プロセスルールの縮小の停滞とブレイクスルーへの期待</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://d.tflare.comcategories/%E6%8A%95%E8%B3%87" class="list-group-item">投資</a>
+      
+      <a href="http://d.tflare.comcategories/ubuntu" class="list-group-item">ubuntu</a>
+      
+      <a href="http://d.tflare.comcategories/opera" class="list-group-item">opera</a>
+      
+      <a href="http://d.tflare.comcategories/%E6%9C%AC" class="list-group-item">本</a>
+      
+      <a href="http://d.tflare.comcategories/comp" class="list-group-item">comp</a>
+      
+      <a href="http://d.tflare.comcategories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://d.tflare.comcategories/prog" class="list-group-item">prog</a>
+      
+      <a href="http://d.tflare.comcategories/other" class="list-group-item">other</a>
+      
+      <a href="http://d.tflare.comcategories/android" class="list-group-item">android</a>
+      
+      <a href="http://d.tflare.comcategories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>Copyright (c) 2006 - 2016, hiroyuki_tの日記</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a>, Theme <a href="https://github.com/dim0627/hugo_theme_beg" target="_blank" rel="nofollow">beg</a> designed by <a href="http://yet.unresolved.xyz" target="_blank" rel="nofollow">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

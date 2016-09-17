@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac on hiroyuki_tの日記</title>
+    <link>http://d.tflare.com/categories/mac/</link>
+    <description>Recent content in Mac on hiroyuki_tの日記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Copyright (c) 2006 - 2016, hiroyuki_tの日記</copyright>
+    <lastBuildDate>Wed, 30 Mar 2016 22:12:48 +0000</lastBuildDate>
+    <atom:link href="http://d.tflare.com/categories/mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>iMac 21.5インチとMacBook Air 13インチ購入</title>
+      <link>http://d.tflare.com/2016/03/31/071248/</link>
+      <pubDate>Wed, 30 Mar 2016 22:12:48 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2016/03/31/071248/</guid>
+      <description>&lt;p&gt;iMac 21.5インチとMacBook Air 13インチ購入&lt;/p&gt;
+
+&lt;p&gt;15インチのノートを単独で使用していたが&lt;/p&gt;
+
+&lt;p&gt;家での使用率が多いため、据え置きと移動用に分けた。&lt;/p&gt;
+
+&lt;p&gt;また、Macを使用してみたかったのと使いたいソフトがMacにしかないといったことがあったため導入&lt;/p&gt;
+
+&lt;p&gt;iMac 21.5インチ LATE 2015&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2.8GHz QC i5, TB up to 3.3GHz&lt;/li&gt;
+&lt;li&gt;Intel Iris Pro Graphics 6200&lt;/li&gt;
+&lt;li&gt;8GB 1867MHz LPDDR3 onboard&lt;/li&gt;
+&lt;li&gt;256GB Flash Storage&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;MacBook Air 13インチ EARLY 2015&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1.6GHz Intel Dual-Core Core i5&lt;/li&gt;
+&lt;li&gt;Intel HD Graphics 6000&lt;/li&gt;
+&lt;li&gt;8GB 1600MHz LPDDR3 SDRAM&lt;/li&gt;
+&lt;li&gt;256GB PCIe-based Flash Storage&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Vivaldiの設定を別のMacへコピーする方法</title>
+      <link>http://d.tflare.com/2016/03/29/225335/</link>
+      <pubDate>Tue, 29 Mar 2016 13:53:35 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2016/03/29/225335/</guid>
+      <description>&lt;p&gt;Vivaldiの設定を別のMacへコピーする方法&lt;/p&gt;
+
+&lt;p&gt;（bata3同士での動作を確認しています。&lt;/p&gt;
+
+&lt;p&gt;　確認していませんが、bataからスナップショットへの設定の移行もできると思われます。）&lt;/p&gt;
+
+&lt;p&gt;手順1&lt;/p&gt;
+
+&lt;p&gt;/Users/[ユーザ名]/Library/Application Support/Vivaldi/Default&lt;/p&gt;
+
+&lt;p&gt;に設定ファイルが存在するので、フォルダごと、コピーする。&lt;/p&gt;
+
+&lt;p&gt;[ユーザ名]は自分のユーザ名&lt;/p&gt;
+
+&lt;p&gt;手順2&lt;/p&gt;
+
+&lt;p&gt;手順1のデータをコピー先に移送する。&lt;/p&gt;
+
+&lt;p&gt;（この際、Vivaldiが終了していることを確認する。）&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

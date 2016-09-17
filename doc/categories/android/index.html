@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.16" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://d.tflare.comcss/styles.css">
+    <link rel="stylesheet" href="http://d.tflare.comcss/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.tflare.com/index.xml">
+    <link rel="canonical" href="http://d.tflare.com/categories/android/" >
+
+    
+    <title>Android - hiroyuki_tの日記</title>
+    <meta property='og:title' content="Android - hiroyuki_tの日記">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://d.tflare.com/categories/android/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://d.tflare.com">hiroyuki_tの日記</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+<div class="list">
+
+  <div class="row">
+    <div class="col-md-8">
+      <header class="page-title">Android</header>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Jan 26, 2013</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2013/01/26/151708/">MhtViewerのintent-filterの現状</a></h1></div>
+  </header>
+  <div class="body"><p>AndroidにMhtViewerをインストールするとファイルマネージャでHTMLファイルを選択した際に</p>
+
+<p>MhtViewerが選択肢に現れる事がある。</p>
+
+<p>これについて現在わかっている情報をまとめる。</p>
+
+<p>MhtViewerのintent-filterは以下としている。</p>
+
+<p>`AndroidにMhtViewerをインストールするとファイルマネージャでHTMLファイルを選択した際に</p>
+
+<p>MhtViewerが選択肢に現れる事がある。</p>
+
+<p>これについて現在わかっている情報をまとめる。</p>
+
+<p>MhtViewerのintent-filterは以下としている。</p>
+
+<p>`</p>
+
+<p>まずandroid:pathPatternのみの設定で良いのではないかと思うかもしれないが</p>
+
+<p>android:pathPatternでは反応しないファイルマネージャがあるためandroid:mimeTypeも設定している。</p>
+
+<p>android:mimeType=&#8221;message/rfc822&#8243;だけではなく、android:mimeType=&#8221;text/html&#8221;も対象にしている。</p>
+
+<p>これはファイルマネージャによっては、MHTML形式のファイルをmimeType=&#8221;text/html&#8221;と誤判定する場合があるためである。</p>
+
+<p>上記のため、現状では上記設定としている。</p>
+
+<p>ファイルマネージャがファイルの判定を拡張子で行い、mimeType=”message/rfc822と判定してくれれば問題はない。</p>
+
+<p>しかしファイルマネージャがファイルの中身でファイルを判定する場合、MHTML形式はHTMLファイルとの区別が難しいファイルもあるため誤判定によりandroid:mimeType=&#8221;text/html&#8221;と解釈されるケースがそれなりに存在する。</p>
+
+<p>それを救うために上記intent-filterの設定にしている。</p>
+
+<p>とりあえず、上記設定としているが、もっと良い方はないのだろうか。</p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, Jan 4, 2013</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2013/01/04/125653/">Androidで外部ストレージのパスを取得する方法</a></h1></div>
+  </header>
+  <div class="body">Androidで外部ストレージのパスを取得する方法 現在Androidで外部ストレージのパスを取得するAPIが存在しない。 Androidでストレージのパスを取得するEnvironment.getExternalStorageDirectory()は、 内部ストレージが存在する場合、名前に反して内部ストレージのパスを返す。（これは、既存プログラムの互換性を考えた時に、必要な考慮と思われる。） そのため、以下を参考にして/system/etc/vold/fstabを使用する方法で取得することにした。 （参考http://inujirushi123.blog.fc2.com/blog-entry-93.html） Xperia VLの/system/etc/vold.fstabを確認したところ 内部ストレージがfuse_mountで定義されていたため、追加している。 static private List getStoragePaths() { List mountList = new ArrayList(); Scanner scanner = null; try { scanner = new Scanner(new FileInputStream(new File( "/system/etc/vold.fstab"))); while (scanner.hasNextLine()) { String line = scanner.nextLine(); if (line.startsWith("dev_mount") || line.startsWith("fuse_mount")) { String path = line.split(" ")[2].replaceAll(":.*$", ""); if (!mountList.contains(path)){ File dir = new File(path + "/"); if (dir.canRead()){ mountList.add(path); } } } } } catch (Exception e)</div>
+
+  
+  <footer>
+    <a href="http://d.tflare.com/2013/01/04/125653/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sun, Jun 3, 2012</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2012/06/03/190324/">MhtViewer 1.0.4リリース</a></h1></div>
+  </header>
+  <div class="body"><p><a href="http://tflare.com/android/mhtviewer.html " target="_blank">MhtViewer</a> 1.0.4</p>
+
+<p>以下の修正を行いました。</p>
+
+<ul>
+<li>ディレクトリ選択画面でファイル名を表示するようにし、ファイル名を選択した場合、mhtの表示ができるように修正</li>
+<li>拡張子mhtmlに対応</li>
+<li>内部処理の細かい改善</li>
+</ul>
+
+<p><a href="http://d.tflare.com/wp-content/uploads/2012/06/device-2012-06-03-190100.png"><img src="http://d.tflare.com/wp-content/uploads/2012/06/device-2012-06-03-190100-180x300.png" alt="new directory list" title="new directory list" width="180" height="300" class="alignnone size-medium wp-image-407" srcset="http://d.tflare.com/wp-content/uploads/2012/06/device-2012-06-03-190100-180x300.png 180w, http://d.tflare.com/wp-content/uploads/2012/06/device-2012-06-03-190100.png 480w" sizes="(max-width: 180px) 100vw, 180px" /></a></p>
+
+<p>MhtViewerはMHTML形式によって作成された、Webページのアーカイブファイルのビューアです。(Android2.2以上必須)</p>
+
+<p>長文のmhtファイルを読むために作成されました。</p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, May 25, 2012</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2012/05/26/083148/">MhtViewer 0.9.27リリース</a></h1></div>
+  </header>
+  <div class="body"><p><a href="http://tflare.com/android/mhtviewer.html " target="_blank">MhtViewer</a> 0.9.27</p>
+
+<p>以下の事象に対応しました。</p>
+
+<ul>
+<li>htmlのcharsetと異なるcharsetがhtmlより前に指定されていると、文字化けが発生する</li>
+<li>最後のファイルの扱いが不完全になる（画像等が表示されない等）</li>
+</ul>
+
+<p>MhtViewerはMHTML形式によって作成された、Webページのアーカイブファイルのビューアです。(Android2.2以上必須)</p>
+
+<p>長文のmhtファイルを読むために作成されました。</p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Tue, Apr 3, 2012</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2012/04/04/074501/">MhtViewer 0.9.15リリース</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    <a href="http://market.android.com/search?q=pname:com.tflare.mhtviewer" target="_blank">MhtViewer</a> 0.9.15
+  </p>
+  
+  <p>
+    初めて公開した0.7.1と比べて、大きく改善されています。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    MhtViewerはMHTML形式によって作成された、Webページのアーカイブファイルのビューアです。
+  </p>
+  
+  <p>
+    長文のmhtファイルを読むために作成されました。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Mar 17, 2012</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2012/03/17/192601/">Android ソフトウエア10選</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    使用頻度が高いソフトウエア10選
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    <a href="https://play.google.com/store/apps/details?id=com.estrongs.android.pop" target="_blank">ES File Explorer</a>
+  </p>
+  
+  <p>
+    使いやすいファイルマネージャ
+  </p>
+  
+  <p>
+    見た目も良い
+  </p>
+  
+  <p>
+    <a href="https://play.google.com/store/apps/details?id=com.adobe.reader" target="_blank">Adobe Reader</a>
+  </p>
+  
+  <p>
+    PDFビューア
+  </p>
+  
+  <p>
+    スクロールがしやすいが、しおり機能が使えないのが残念
+  </p>
+  
+  <p>
+    <a href="https://play.google.com/store/apps/details?id=udk.android.reader" target="_blank">ezPDF Reader</a>
+  </p>
+  
+  <p>
+    PDFビューア
+  </p>
+  
+  <p>
+    しおり機能が使えるので、必要な場合はこちらを使う
+  </p>
+  
+  <p>
+    <a href="https://play.google.com/store/apps/details?id=com.alensw.PicFolder" target="_blank">QuickPic</a>
+  </p>
+  
+  <p>
+    写真ビューア
+  </p>
+  
+  <p>
+    <a href="https://play.google.com/store/apps/details?id=com.rookiestudio.perfectviewer" target="_blank">Perfect Viewer</a>
+  </p>
+  
+  <p>
+    操作しやすい画像ビューア
+  </p>
+  
+  <p>
+    <a href="https://play.google.com/store/apps/details?id=jp.co.johospace.jorte" target="_blank">Jorte Calendar</a>
+  </p>
+  
+  <p>
+    システム手帳
+  </p>
+  
+  <p>
+    <a href="https://play.google.com/store/apps/details?id=jp.co.jorudan.nrkj" target="_blank">乗換案内</a>
+  </p>
+  
+  <p>
+    交通機関の乗り換え案内
+  </p>
+  
+  <p>
+    <a href="https://play.google.com/store/apps/details?id=com.levelup.beautifulwidgets" target="_blank">Beautiful Widgets</a>
+  </p>
+  
+  <p>
+    時計＋天気予報ウィジェット
+  </p>
+  
+  <p>
+    <a href="https://play.google.com/store/apps/details?id=com.cb.volumePlus" target="_blank">Volume Control +</a>
+  </p>
+  
+  <p>
+    音量調節
+  </p>
+  
+  <p>
+    <a href="https://play.google.com/store/apps/details?id=com.tflare.mhtviewer" target="_blank">MhtViewer</a>
+  </p>
+  
+  <p>
+    mhtビューア
+  </p>
+  
+  <p>
+    自作
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Wed, Feb 22, 2012</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2012/02/23/072626/">Android 2.2以降でテーマを即時に反映させる方法2</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    <a href="http://d.tflare.com/2012/02/12/android-2-2%e4%bb%a5%e9%99%8d%e3%81%a7%e3%83%86%e3%83%bc%e3%83%9e%e3%82%92%e5%8d%b3%e6%99%82%e3%81%ab%e5%8f%8d%e6%98%a0%e3%81%95%e3%81%9b%e3%82%8b%e6%96%b9%e6%b3%95/" target="_blank">Android 2.2以降でテーマを即時に反映させる方法</a>よりも
+  </p>
+  
+  <p>
+    こちらの方が速度的に優位性がある。
+  </p>
+  
+  <pre class="syntax-highlight">
+<span class="synType">static</span> <span class="synType">void</span> displayRefresh(Activity activity){
+activity.finish();
+ComponentName comp = <span class="synStatement">new</span> ComponentName(activity.getPackageName(),
+activity.getClass().getName());
+activity.startActivity(<span class="synStatement">new</span> Intent().setComponent(comp));
+}
+</pre>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sun, Feb 12, 2012</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2012/02/12/163947/">Android 2.2以降でテーマを即時に反映させる方法</a></h1></div>
+  </header>
+  <div class="body">Android 3.0以上であれば、recreate()を使えばよさそうだが、 そうでない場合でも、画面の向きを変更すればテーマを即時に反映させられるようだ。 自分のアクティビティのonCreateで setThemeでテーマを変更できるようにしておき、 メニュでテーマを選択し、reflectTheme()を呼び出し、 これで実現できるようだ。 public void onCreate(Bundle savedInstanceState) { SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this); int themeSetting = sp.getInt(&#34;themeSetting&#34;, MENU_THEME_BLACK); if (themeSetting == MENU_THEME_WALLPAPER){ setTheme(android.R.style.Theme_Wallpaper); } ... public boolean onOptionsItemSelected(MenuItem item) { SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this); switch (item.getItemId()) { case MENU_THEME_WALLPAPER: sp.edit().putInt(&#34;themeSetting&#34;, MENU_THEME_WALLPAPER).commit(); reflectTheme(); return true; } } private void reflectTheme(){ Configuration config = getResources().getConfiguration(); int screenOrientation; if(config.orientation == Configuration.ORIENTATION_LANDSCAPE) { screenOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT; setRequestedOrientation(screenOrientation); screenOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE; setRequestedOrientation(screenOrientation);</div>
+
+  
+  <footer>
+    <a href="http://d.tflare.com/2012/02/12/163947/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Tue, Nov 22, 2011</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2011/11/23/085600/">androidで使用できるmhtファイルビューアを開発した。</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    mhtファイルはOpera Miniでも見れるが、
+  </p>
+  
+  <p>
+    Opera Miniで4MB程度のmhtファイルを見ようとしても、異常終了して見れなかったのが開発契機
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    <a href="http://market.android.com/search?q=pname:com.tflare.mhtviewer" target="_blank">MhtViewer</a>はMHTML形式によって作成された、Webページのアーカイブファイルのビューアです。
+  </p>
+  
+  <p>
+    長文のmhtファイルを読むために作成されました。
+  </p>
+  
+  <ul>
+    <li>
+      SDカードからMhtファイルを読み込み、表示するため、SDカードがないと動作しない。
+    </li>
+    <li>
+      長文を読むためのサポート機能として、しおり機能がある。
+    </li>
+  </ul>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Oct 22, 2011</div>
+    <div class="title"><h1><a href="http://d.tflare.com/2011/10/22/173515/">AVDからEmulatorが起動しない(Ubuntu11.04)</a></h1></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    Ubuntu11.04にてAVD(Android Virtual Device Manager)からEmulatorを起動しようとしても起動しない
+  </p>
+  
+  <p>
+    コマンドラインから実行するとSegmentation faultしており、
+  </p>
+  
+  <p>
+    gdbを使うとvfprintfで落ちていることがわかった。
+  </p>
+  
+  <p>
+    これをもとに検索すると以下が引っかかった。
+  </p>
+  
+  <p>
+  </p>
+  
+  <p>
+    以下を見るとキャプチャーカードが問題の一つとしてあるようだ。(他にWebカメラでの事象もあり)
+  </p>
+  
+  <p>
+    Emulator segfault on startup
+  </p>
+  
+  <p>
+    <a href="http://code.google.com/p/android/issues/detail?id=20952#c9" target="_blank">http://code.google.com/p/android/issues/detail?id=20952#c9</a>
+  </p>
+  
+  <blockquote>
+    <p>
+      the emulator was trying to access a video device (/dev/video0 &#8211; a tv tuner card). At the same point as the OP (emulator: Adding boot property: &#8216;qemu.sf.fake_camera&#8217; = &#8216;back&#8217;).
+    </p>
+  </blockquote>
+  
+  <p>
+  </p>
+  
+  <p>
+    Webカメラであればカメラの設定を変えることで対処できそうだが、
+  </p>
+  
+  <p>
+    こちらで問題になっているのはキャプチャーカード(GV-MVP/RX)と思われる。
+  </p>
+  
+  <p>
+    そのため以下で解決した。
+  </p>
+  
+  <p>
+    Emulator segfault on startup
+  </p>
+  
+  <p>
+    <a href="http://code.google.com/p/android/issues/detail?id=20952#c19" target="_blank">http://code.google.com/p/android/issues/detail?id=20952#c19</a>
+  </p>
+  
+  <blockquote>
+    <p>
+      rename /dev/video0 to /dev/_video0
+    </p>
+  </blockquote>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      
+<nav>
+  <ul class="pager">
+
+    
+    <li class="disabled"><a href="#">Previous</a></li>
+    
+
+    
+    <li><a href="http://d.tflare.com/categories/android/page/2">Next</a></li>
+    
+
+  </ul>
+</nav>
+
+
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://d.tflare.com/2016/08/19/010941/" class="list-group-item">ビジネス書を読んでもデキる人にはなれない読了　この本の概要</a>
+      
+      <a href="http://d.tflare.com/2016/07/31/160751/" class="list-group-item">僕が無料の英語マンガで楽にTOEIC900点を取って、映画の英語を字幕なしでリスニングできるワケ読了</a>
+      
+      <a href="http://d.tflare.com/2016/07/30/053527/" class="list-group-item">ドラッカー名著集 4 非営利組織の経営読了</a>
+      
+      <a href="http://d.tflare.com/2016/03/31/071248/" class="list-group-item">iMac 21.5インチとMacBook Air 13インチ購入</a>
+      
+      <a href="http://d.tflare.com/2016/03/29/234956/" class="list-group-item">zenback停止し、プラグイン追加</a>
+      
+      <a href="http://d.tflare.com/2016/03/29/225335/" class="list-group-item">Vivaldiの設定を別のMacへコピーする方法</a>
+      
+      <a href="http://d.tflare.com/2014/10/13/205224/" class="list-group-item">ストレスに負けない生活―心・身体・脳のセルフケア (ちくま新書)　読了</a>
+      
+      <a href="http://d.tflare.com/2014/10/02/074817/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由（日本破綻論と国債発行）</a>
+      
+      <a href="http://d.tflare.com/2014/10/02/072949/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由</a>
+      
+      <a href="http://d.tflare.com/2014/07/23/075131/" class="list-group-item">プロセスルールの縮小の停滞とブレイクスルーへの期待</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://d.tflare.comcategories/%E6%8A%95%E8%B3%87" class="list-group-item">投資</a>
+      
+      <a href="http://d.tflare.comcategories/ubuntu" class="list-group-item">ubuntu</a>
+      
+      <a href="http://d.tflare.comcategories/opera" class="list-group-item">opera</a>
+      
+      <a href="http://d.tflare.comcategories/%E6%9C%AC" class="list-group-item">本</a>
+      
+      <a href="http://d.tflare.comcategories/comp" class="list-group-item">comp</a>
+      
+      <a href="http://d.tflare.comcategories/%E6%9C%AA%E5%88%86%E9%A1%9E" class="list-group-item">未分類</a>
+      
+      <a href="http://d.tflare.comcategories/prog" class="list-group-item">prog</a>
+      
+      <a href="http://d.tflare.comcategories/other" class="list-group-item">other</a>
+      
+      <a href="http://d.tflare.comcategories/android" class="list-group-item">android</a>
+      
+      <a href="http://d.tflare.comcategories/ruby" class="list-group-item">ruby</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>Copyright (c) 2006 - 2016, hiroyuki_tの日記</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a>, Theme <a href="https://github.com/dim0627/hugo_theme_beg" target="_blank" rel="nofollow">beg</a> designed by <a href="http://yet.unresolved.xyz" target="_blank" rel="nofollow">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

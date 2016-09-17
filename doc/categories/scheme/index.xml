@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scheme on hiroyuki_tの日記</title>
+    <link>http://d.tflare.com/categories/scheme/</link>
+    <description>Recent content in Scheme on hiroyuki_tの日記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Copyright (c) 2006 - 2016, hiroyuki_tの日記</copyright>
+    <lastBuildDate>Sun, 11 Mar 2007 10:06:55 +0000</lastBuildDate>
+    <atom:link href="http://d.tflare.com/categories/scheme/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>scheme勉強</title>
+      <link>http://d.tflare.com/2007/03/11/190655/</link>
+      <pubDate>Sun, 11 Mar 2007 10:06:55 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2007/03/11/190655/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    R5RS
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;a href=&#34;http://www.unixuser.org/~euske/doc/r5rs-ja/index.html&#34; target=&#34;_blank&#34;&gt;http://www.unixuser.org/~euske/doc/r5rs-ja/index.html&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    独修scheme三週間
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;a href=&#34;http://www.sampou.org/scheme/t-y-scheme/t-y-scheme.html&#34; target=&#34;_blank&#34;&gt;http://www.sampou.org/scheme/t-y-scheme/t-y-scheme.html&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Gauche ユーザリファレンス
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;a href=&#34;http://www.shiro.dreamhost.com/scheme/gauche/man/gauche-refj.html&#34; target=&#34;_blank&#34;&gt;http://www.shiro.dreamhost.com/scheme/gauche/man/gauche-refj.html&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Gauche:CGI:MiniWiKi
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;a href=&#34;http://practical-scheme.net/wiliki/wiliki.cgi?Gauche%3ACGI%3AMiniWiKi&amp;#038;l=en&#34; target=&#34;_blank&#34;&gt;http://practical-scheme.net/wiliki/wiliki.cgi?Gauche%3ACGI%3AMiniWiKi&amp;l=en&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Gaucheプログラミング &gt; 第3部: 実用
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;a href=&#34;http://karetta.jp/book-node/gauche-hacks/000249&#34; target=&#34;_blank&#34;&gt;http://karetta.jp/book-node/gauche-hacks/000249&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    上記を読んで勉強してみた
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    とりあえずwikiの作成画面と制御部分だけできた。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    画面を表示するだけでDBに書き込みにいったりしない。
+  &lt;/p&gt;
+  
+  &lt;pre class=&#34;syntax-highlight&#34;&gt;
+&lt;span class=&#34;synError&#34;&gt;#!/usr/local/bin/gosh&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;use www.cgi&lt;span class=&#34;synSpecial&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;use text.html-lite&lt;span class=&#34;synSpecial&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;define&lt;/span&gt; title-text &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;テスト&amp;#34;&lt;/span&gt;&lt;span class=&#34;synSpecial&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;define&lt;/span&gt; &lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;page &lt;span class=&#34;synConstant&#34;&gt;.&lt;/span&gt; content&lt;span class=&#34;synSpecial&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;list&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;cgi-header
+:content-type
+&lt;span class=&#34;synConstant&#34;&gt;&amp;#34;text/html; charset=ISO-2022-JP&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;html-doctype&lt;span class=&#34;synSpecial&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;html:html
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;html:head&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;html:title title-text&lt;span class=&#34;synSpecial&#34;&gt;))&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;apply&lt;/span&gt; html:body content&lt;span class=&#34;synSpecial&#34;&gt;))))&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;define&lt;/span&gt; write-page
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;page
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;html:h1 &lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;html-escape-string title-text&lt;span class=&#34;synSpecial&#34;&gt;))&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;html:form :method &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;POST&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;html:input :type &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;hidden&amp;#34;&lt;/span&gt; :name &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;act&amp;#34;&lt;/span&gt; :value &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;write&amp;#34;&lt;/span&gt;&lt;span class=&#34;synSpecial&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;html:p &lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;html:input :type &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt; :name &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt; :value &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;synSpecial&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;html:input :type &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;submit&amp;#34;&lt;/span&gt; :name &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;submit&amp;#34;&lt;/span&gt; :value &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;submit&amp;#34;&lt;/span&gt;&lt;span class=&#34;synSpecial&#34;&gt;))&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;html:p &lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;html:textarea :rows &lt;span class=&#34;synConstant&#34;&gt;20&lt;/span&gt; :cols &lt;span class=&#34;synConstant&#34;&gt;80&lt;/span&gt; :name &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;body&amp;#34;&lt;/span&gt;&lt;span class=&#34;synSpecial&#34;&gt;)))))&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;define&lt;/span&gt; test-page
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;page
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;html:head&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;html:title title-text&lt;span class=&#34;synSpecial&#34;&gt;))&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;html:body
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;html:p &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;test&amp;#34;&lt;/span&gt;&lt;span class=&#34;synSpecial&#34;&gt;))))&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;cgi-main
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;lambda&lt;/span&gt; &lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;params&lt;span class=&#34;synSpecial&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;synSpecial&#34;&gt;((&lt;/span&gt;action &lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;cgi-get-parameter &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;act&amp;#34;&lt;/span&gt; params&lt;span class=&#34;synSpecial&#34;&gt;)))&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;if&lt;/span&gt; action
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;cond&lt;/span&gt; &lt;span class=&#34;synSpecial&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;synIdentifier&#34;&gt;string=?&lt;/span&gt; action &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;write&amp;#34;&lt;/span&gt;&lt;span class=&#34;synSpecial&#34;&gt;)&lt;/span&gt; test-page&lt;span class=&#34;synSpecial&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;else&lt;/span&gt; write-page&lt;span class=&#34;synSpecial&#34;&gt;))&lt;/span&gt;
+write-page&lt;span class=&#34;synSpecial&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R5RS</title>
+      <link>http://d.tflare.com/2007/02/27/224358/</link>
+      <pubDate>Tue, 27 Feb 2007 13:43:58 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2007/02/27/224358/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    Kahuaのソースを書くために、Schemeの勉強がまず必要だろうということで
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    R5RSを読み出したのだがR5RSのはじめにがとても良いと思った。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    これはソフトウエアの設計にも当てはまる事だと思うが、
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    つい機能の上に機能を積み重ねてしまうので心に響いた。
+  &lt;/p&gt;
+  
+  &lt;blockquote&gt;
+    &lt;p&gt;
+      プログラミング言語の設計は、機能の上に機能を積み重ねることによってではなく、
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      余分な機能が必要であるように思わせている弱点と制約を取り除くことによってなされるべきである。
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;a href=&#34;http://www.unixuser.org/~euske/doc/r5rs-ja/index.html&#34; target=&#34;_blank&#34;&gt;http://www.unixuser.org/~euske/doc/r5rs-ja/index.html&lt;/a&gt;
+    &lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutorial Kahuaプログラミングを始めよう。</title>
+      <link>http://d.tflare.com/2007/02/25/140453/</link>
+      <pubDate>Sun, 25 Feb 2007 05:04:53 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2007/02/25/140453/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    &lt;a href=&#34;http://www.kahua.org/cgi-bin/kahua.fcgi/kahua-web/show/doc/Tutorial&#34; target=&#34;_blank&#34;&gt;http://www.kahua.org/cgi-bin/kahua.fcgi/kahua-web/show/doc/Tutorial&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    を参考にしてKahuaのセッティングを行う。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Gauche 0.8.9と Kahua 1.0.2をインストールして
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Step 1. まずは動かそうの
+  &lt;/p&gt;
+  
+  &lt;blockquote&gt;
+    &lt;p&gt;
+      保存したら、kahua-adminコマンドを起動してapp-serversファイルを reloadコマンドで再読み込みします。
+    &lt;/p&gt;
+  &lt;/blockquote&gt;
+  
+  &lt;p&gt;
+    までいったのだけどそこでkahua-adminすると、下記のエラーが出た。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    ERROR: working directory does not exist or is not writable: &amp;#8220;/usr/local/kahua/var/kahua&amp;#8221;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    見てみるとディレクトリはあるが権限がない状態になっている。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    強引に権限を付けてやってみるとkahua-adminはうまくいくけど
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    lsすると下記のエラー
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    ERROR: connect failed to #&lt;sockaddr unix &amp;#8220;/usr/local/kahua/tmp/kahua/kahua&amp;#8221;&gt;: No such file or directory
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    EmacsでM-x run-kahuaしても
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Symbol&amp;#8217;s function definition is void read-directory-name
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    とでてうまくいかないので後でやりなおし。
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutorial Kahuaプログラミングを始めよう。その2</title>
+      <link>http://d.tflare.com/2007/02/25/140453/</link>
+      <pubDate>Sun, 25 Feb 2007 05:04:53 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2007/02/25/140453/</guid>
+      <description>&lt;div class=&#34;section&#34;&gt;
+  &lt;p&gt;
+    kahua-adminでlsするとエラーになっていたのは
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Kahuaアプリケーションが立ち上がっていなかったためで
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Kahuaアプリケーションがたちあがっている状態だと正常に動いた。
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    ソーシャルブックマークを作る(2)までいったが
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    ちょっとリファクタリングの一番最後のコードを使うと
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Kahua error &amp;#8211; stale session keyというエラーページが表示されるので
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    newのとこだけ以下のように変更すると作成ページが表示されるようになった。
+  &lt;/p&gt;
+  
+  &lt;pre class=&#34;syntax-highlight&#34;&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;define-entry &lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;newbm&lt;span class=&#34;synSpecial&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;standard-page &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;New Bookmark&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;node-set/
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;all-bookmarks-link/&lt;span class=&#34;synSpecial&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;bookmark-form/ &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;synSpecial&#34;&gt;))))&lt;/span&gt;
+&lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;synStatement&#34;&gt;define&lt;/span&gt; new-bookmark-link/ &lt;span class=&#34;synSpecial&#34;&gt;(&lt;/span&gt;cut make-link/ newbm &lt;span class=&#34;synConstant&#34;&gt;&amp;#34;[New Bookmark]&amp;#34;&lt;/span&gt;&lt;span class=&#34;synSpecial&#34;&gt;))&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
