@@ -7,7 +7,7 @@ copyright = "Copyright (c) 2006 - 2016, hiroyuki_tの日記"
 languageCode = "ja-jp"
 theme = "beg"
 canonifyurls = true
-publishdir = "doc"
+publishdir = "docs"
 
 [params]
   disqusShortname = "http-d-tflare-com.disqus.com" # optional
