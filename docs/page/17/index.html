@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <link rel="stylesheet" href="http://d.tflare.com/css/styles.css">
     <link rel="stylesheet" href="http://d.tflare.com/css/custom.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.tflare.com/index.xml">
-    <link rel="canonical" href="http://d.tflare.com/" >
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.tflare.com//index.xml">
 
     
     <title>hiroyuki_tの日記</title>
@@ -61,7 +60,7 @@
       <article class="li">
   <header>
     <div class="date">Thu, Jun 14, 2007</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2007/06/14/224118/">Ubuntu 7.04 (Feisty Fawn)アップデート</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2007/06/14/224118/">Ubuntu 7.04 (Feisty Fawn)アップデート</a></div>
   </header>
   <div class="body"><div class="section">
   <p>
@@ -116,7 +115,7 @@
       <article class="li">
   <header>
     <div class="date">Fri, Jun 8, 2007</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2007/06/08/204436/">発想する会社</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2007/06/08/204436/">発想する会社</a></div>
   </header>
   <div class="body"><div class="section">
   <div data-role="amazonjs" data-asin="415208426X" data-locale="JP" data-tmpl="" data-img-size="" class="asin_415208426X_JP_ amazonjs_item">
@@ -204,7 +203,7 @@
       <article class="li">
   <header>
     <div class="date">Fri, Apr 20, 2007</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2007/04/20/222106/">Ubuntu 7.04 (Feisty Fawn)</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2007/04/20/222106/">Ubuntu 7.04 (Feisty Fawn)</a></div>
   </header>
   <div class="body"><div class="section">
   <p>
@@ -287,7 +286,7 @@
       <article class="li">
   <header>
     <div class="date">Thu, Apr 12, 2007</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2007/04/12/203653/">Opera9.2 アップデート</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2007/04/12/203653/">Opera9.2 アップデート</a></div>
   </header>
   <div class="body"><div class="section">
   <p>
@@ -319,7 +318,7 @@
       <article class="li">
   <header>
     <div class="date">Thu, Apr 5, 2007</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2007/04/05/231521/">アメリカ株売買　LFCとUSO</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2007/04/05/231521/">アメリカ株売買　LFCとUSO</a></div>
   </header>
   <div class="body"><div class="section">
   <p>
@@ -348,7 +347,7 @@
       <article class="li">
   <header>
     <div class="date">Sun, Mar 18, 2007</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2007/03/18/211232/">保険について（第一生命編）</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2007/03/18/211232/">保険について（第一生命編）</a></div>
   </header>
   <div class="body"><div class="section">
   <p>
@@ -472,7 +471,7 @@
       <article class="li">
   <header>
     <div class="date">Sun, Mar 11, 2007</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2007/03/11/190655/">scheme勉強</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2007/03/11/190655/">scheme勉強</a></div>
   </header>
   <div class="body">R5RS http://www.unixuser.org/~euske/doc/r5rs-ja/index.html 独修scheme三週間 http://www.sampou.org/scheme/t-y-scheme/t-y-scheme.html Gauche ユーザリファレンス http://www.shiro.dreamhost.com/scheme/gauche/man/gauche-refj.html Gauche:CGI:MiniWiKi http://practical-scheme.net/wiliki/wiliki.cgi?Gauche%3ACGI%3AMiniWiKi&l=en Gaucheプログラミング 第3部: 実用 http://karetta.jp/book-node/gauche-hacks/000249 上記を読んで勉強してみた とりあえずwikiの作成画面と制御部分だけできた。 画面を表示するだけでDBに書き込みにいったりしない。 #!/usr/local/bin/gosh (use www.cgi) (use text.html-lite) (define title-text &#34;テスト&#34;) (define (page . content) (list (cgi-header :content-type &#34;text/html; charset=ISO-2022-JP&#34; ) (html-doctype) (html:html (html:head(html:title title-text)) (apply html:body content)))) (define write-page (page (html:h1 (html-escape-string title-text)) (html:form :method &#34;POST&#34; (html:input :type &#34;hidden&#34; :name &#34;act&#34; :value &#34;write&#34;) (html:p (html:input :type &#34;text&#34; :name &#34;title&#34; :value &#34;&#34;) (html:input :type &#34;submit&#34; :name &#34;submit&#34; :value &#34;submit&#34;)) (html:p (html:textarea :rows 20 :cols 80 :name &#34;body&#34;))))) (define test-page (page (html:head(html:title title-text)) (html:body (html:p &#34;test&#34;)))) (cgi-main (lambda (params) (let ((action (cgi-get-parameter &#34;act&#34; params))) (if action (cond ((string=?</div>
 
@@ -488,7 +487,7 @@
       <article class="li">
   <header>
     <div class="date">Sat, Mar 10, 2007</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2007/03/11/000000/">Ubuntu6.10で不要なサービスの停止</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2007/03/11/000000/">Ubuntu6.10で不要なサービスの停止</a></div>
   </header>
   <div class="body"><div class="section">
   <p>
@@ -571,7 +570,7 @@
       <article class="li">
   <header>
     <div class="date">Tue, Mar 6, 2007</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2007/03/06/202941/">Firestarter設定他</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2007/03/06/202941/">Firestarter設定他</a></div>
   </header>
   <div class="body"><div class="section">
   <p>
@@ -667,7 +666,7 @@
       <article class="li">
   <header>
     <div class="date">Thu, Mar 1, 2007</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2007/03/01/205612/">Meldをインストール</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2007/03/01/205612/">Meldをインストール</a></div>
   </header>
   <div class="body"><div class="section">
   <p>
@@ -718,7 +717,6 @@
     <div class="col-md-4">
       
 <aside class="site">
-
 <script>
   (function() {
     var cx = '009556866949089595753:dtes_0-kk-8';
@@ -799,15 +797,25 @@
     </div>
   </div>
   
-
-  <div class="panel panel-default">
+  
+    <div class="panel panel-default">
     <div class="panel-heading">
       <h2 class="panel-title">site</h2>
     </div>
     <div class="list-group">
       <a href="http://tflare.com/" class="list-group-item">tflare.com</a>
       </div>
-  </div>    
+  </div>
+  
+    <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">twitter</h2>
+    </div>
+    <div class="list-group">
+      <a href="https://twitter.com/taki_tflare" class="list-group-item">taki_tflare</a>
+      </div>
+  </div>   
+
 </aside>
 
 
@@ -830,6 +838,15 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
+    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-84345073-1', 'auto');
+    ga('send', 'pageview');
+    </script>
     
 
   </body>

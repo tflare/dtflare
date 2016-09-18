@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <link rel="stylesheet" href="http://d.tflare.com/css/styles.css">
     <link rel="stylesheet" href="http://d.tflare.com/css/custom.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.tflare.com/index.xml">
-    <link rel="canonical" href="http://d.tflare.com/categories/prog/" >
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.tflare.com//index.xml">
 
     
     <title>Prog - hiroyuki_tの日記</title>
@@ -63,7 +62,7 @@
       <article class="li">
   <header>
     <div class="date">Fri, Apr 13, 2012</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2012/04/14/070956/">SubversionからGitに移行</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2012/04/14/070956/">SubversionからGitに移行</a></div>
   </header>
   <div class="body"><div class="section">
   <p>
@@ -99,7 +98,7 @@
       <article class="li">
   <header>
     <div class="date">Thu, Apr 12, 2012</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2012/04/12/195252/">バージョン管理システムのホスティングサービスBitbucket</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2012/04/12/195252/">バージョン管理システムのホスティングサービスBitbucket</a></div>
   </header>
   <div class="body"><div class="section">
   <p>
@@ -139,7 +138,7 @@
       <article class="li">
   <header>
     <div class="date">Wed, Jan 19, 2011</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2011/01/19/174514/">1日毎に自動更新するページを静的に見せかけ、60倍速く表示する方法</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2011/01/19/174514/">1日毎に自動更新するページを静的に見せかけ、60倍速く表示する方法</a></div>
   </header>
   <div class="body">動的にページを生成すると、ページの表示が遅い。 静的に作れば速いが、定期的なページの更新が煩雑になる。 このため、動的にページを生成し、静的に見せかけ、速く表示できる方法を考えたので個人的なメモとして残す。 今回の場合、ページの更新間隔を1日としているが変更は容易に可能 環境:さくらのスタンダード .htaccessの設定とプログラミング言語（ここではruby）とcronの連携で実現する。 手順 1. mod_rewriteでURLを書き換える。 2. 上記の際存在するファイルは対象にしないようにしておく。 3. アクセスがあった際に、プログラム言語で1の書き換え前のパスに生成したhtmlを作成する。 4. cronで3で作成したファイルを定期的に削除（今回は1日毎に実行するようにしておく。） 上記により一度作成したファイルがあればそれをプラウザで表示 なければcgi実行をするようになる。 プラウザで表示させることにより、プログラムを介在させなくてよくなり高速に表示されるようになる。 .htaccess index.htmlも生成対象としたいので 優先順位をindex.html index.cgiの順番とする。 これによりindex.htmlがない場合のみ、index.cgiを実行することになる。 これとプログラムでのindex.htmlの作成、手順4を組み合わせ実現する。 RewriteCond %{REQUEST_FILENAME} !-fで 存在するファイルは対象にしないようにする。 DirectoryIndex index.html index.cgi .ht RewriteEngine on RewriteCond %{REQUEST_FILENAME} !-f RewriteCond %{REQUEST_FILENAME} !-d RewriteRule ^&#34;キャッシュフォルダ名&#34;&#92;/(&#91;0-9A-Za-z]+).html$ index.cgi?a=g&#38;s=$1 &#91;L] ruby 以下のようなコードを作っておいて ruby内でhtmlを生成し終わったら実行 あとで見たら、railsのcache_pageで同じようなことをやっているので コード的にはそちらを参考にしたほうが良い。 見た記事:第4回 Railsアプリケーションをもっと速く 上記によると約60倍の性能となるようだ。 def cache_page(path, cash_content) root = File::dirname(__FILE__) path = root + path begin File::open(path, &#34;w&#34;) do |cash_file| cash_file.write(cash_content) end</div>
 
@@ -155,7 +154,7 @@
       <article class="li">
   <header>
     <div class="date">Fri, Jan 14, 2011</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2011/01/14/222923/">RabbitVCSとFileZilla</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2011/01/14/222923/">RabbitVCSとFileZilla</a></div>
   </header>
   <div class="body"><div class="section">
   <p>
@@ -195,7 +194,7 @@
       <article class="li">
   <header>
     <div class="date">Sat, Dec 26, 2009</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2009/12/26/160634/">ECMAScript 3版→5版　改訂メモ2(Object Objects)</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2009/12/26/160634/">ECMAScript 3版→5版　改訂メモ2(Object Objects)</a></div>
   </header>
   <div class="body">15.2 Object Objectsのメモ 以下が追加されている 15.2.3.2 Object.getPrototypeOf ( O ) オブジェクトのプロトタイプを取得 15.2.3.3 Object.getOwnPropertyDescriptor ( O, P ) Pのプロトタイプ情報を取得 15.2.3.4 Object.getOwnPropertyNames ( O ) オブジェクトのプロパティを取得 15.2.3.5 Object.create ( O [, Properties] ) 既存オブジェクトをプロパティとして新しいオブジェクトを生成 15.2.3.6 Object.defineProperty ( O, P, Attributes ) オブジェクトのプロパティを設定する。 15.2.3.7 Object.defineProperties ( O, Properties ) オブジェクトのプロパティを設定する。 15.2.3.8 Object.seal ( O ) オブジェクトのプロパティの追加、削除をできないようにする。 15.2.3.9 Object.freeze ( O ) オブジェクトのプロパティの追加、変更、削除をできないようにする。 15.2.3.10 Object.preventExtensions ( O ) オブジェクトのプロパティの追加をできないようにする。 15.2.3.11 Object.isSealed ( O ) 以下すべてを満たす時true、それ以外はfalseを返す</div>
 
@@ -211,7 +210,7 @@
       <article class="li">
   <header>
     <div class="date">Fri, Dec 25, 2009</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2009/12/25/103045/">ECMAScript 3版→5版　改訂メモ1</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2009/12/25/103045/">ECMAScript 3版→5版　改訂メモ1</a></div>
   </header>
   <div class="body">1から10.2まで変更点について気づいた所をメモ 初めの方なので内部的な所が多い。 2 Conformance Unicode 2.1 以降 → Unicode 3.0 以降 7.6.1.2 Future Reserved Words Future Reserved Wordsが減ってる。 abstract enum int short boolean export interface static byte extends long super char final native synchronized class float package throws const goto private transient debugger implements protected volatile double import public ↓ class enum extends super const export import strict mode:implements let private public yield interface package protected static 8.6.1 Property Attributes</div>
 
@@ -227,7 +226,7 @@
       <article class="li">
   <header>
     <div class="date">Sun, Dec 20, 2009</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2009/12/20/233325/">ECMAScript 5</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2009/12/20/233325/">ECMAScript 5</a></div>
   </header>
   <div class="body"><div class="section">
   <p>
@@ -304,7 +303,7 @@
       <article class="li">
   <header>
     <div class="date">Sat, Aug 26, 2006</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2006/08/26/113436/">Web用テストツールmemo</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2006/08/26/113436/">Web用テストツールmemo</a></div>
   </header>
   <div class="body">Selenium http://www.openqa.org/selenium/ Selenium 0.7利用手順書（前編） http://codezine.jp/a/article.aspx?aid=436 Selenium使うんならSeleniumIDEは必須だよね。 SeleniumIDEはFirefoxにしか対応していないから InternetExploreじゃないと動作しないシステムの場合困るんだよね。 社内用のシステムでありがちなんだけど Sahi &#8211; Web Automation and Test Tool http://sahi.sourceforge.net/ WebUnit ブラウザを使用せずにテストするツールRuby用 http://www.xpenguin.biz/download/webunit/index-ja.html Apache JMeter 負荷テスト用だけど機能テストでも一応使える http://jakarta.apache.org/jmeter/ JMeter(高機能/フリーなテストツール) http://www.stackasterisk.jp/tech/engineer/jmeter01_01.jsp Jameleon http://jameleon.sourceforge.net/ オープンソースの自動化テストツール「Jameleon」の概要 http://www.itmedia.co.jp/enterprise/articles/0601/12/news001.html WWW-Mechanize http://search.cpan.org/dist/WWW-Mechanize/ Perlモジュール/WWW::Mechanize &#8211; Walrus, Digit. http://digit.que.ne.jp/work/index.cgi?Perl%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%2FWWW%3A%3AMechanize Canoo WebTest 2.0 http://webtest.canoo.com/webtest/manual/WebTestHome.html Webアプリを自動的にテスト、Canoo WebTest 2.0 登場 http://journal.mycom.co.jp/news/2006/03/17/341.html IEの遠隔操作用ライブラリmechanize.js http://la.ma.la/blog/diary_200607121903.htm IEナビトレ http://www.vector.co.jp/soft/win95/net/se299115.html 送信するPOSTデータやCookieを保存したり、動的に編集できるツール FairyTrace http://www.vector.co.jp/soft/win95/util/se219079.html windows用（シェアウエア） マウスの操作等を記録する。 少し使ってたことがあるんだけど 画面が少しずれたりしただけで、使えなくなったりする。 （座標を記録しているのだから当たり前だけど） 当時の用途としてマウスの座標を記録したりするタイプだと ちょっと厳しいと思い。使うのをやめた。 WinRunner http://www.mercury.com/jp/products/quality-center/functional-testing/winrunner/ QuickTest ProfessionalとWinRunnerの機能的な違い http://www.ashisuto.co.jp/prod/qtp/sum/info/index.html WinRunnerかQuickTest Professionalか忘れたけど、 テスト結果を見るためにもライセンスが必要だったような気がする。 それなのにQuickTest Professionalのライセンスは以下のとおりの値段。</div>
 
@@ -320,7 +319,7 @@
       <article class="li">
   <header>
     <div class="date">Thu, Aug 24, 2006</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2006/08/25/000000/">第6回オープンソーステクノロジー勉強会内容</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2006/08/25/000000/">第6回オープンソーステクノロジー勉強会内容</a></div>
   </header>
   <div class="body"><div class="section">
   <p>
@@ -389,7 +388,7 @@
       <article class="li">
   <header>
     <div class="date">Thu, Aug 24, 2006</div>
-    <div class="title"><h1><a href="http://d.tflare.com/2006/08/25/000000/">自分の作っているテストツールについて</a></h1></div>
+    <div class="title"><a href="http://d.tflare.com/2006/08/25/000000/">自分の作っているテストツールについて</a></div>
   </header>
   <div class="body"><div class="section">
   <p>
@@ -552,7 +551,6 @@
     <div class="col-md-4">
       
 <aside class="site">
-
 <script>
   (function() {
     var cx = '009556866949089595753:dtes_0-kk-8';
@@ -633,15 +631,25 @@
     </div>
   </div>
   
-
-  <div class="panel panel-default">
+  
+    <div class="panel panel-default">
     <div class="panel-heading">
       <h2 class="panel-title">site</h2>
     </div>
     <div class="list-group">
       <a href="http://tflare.com/" class="list-group-item">tflare.com</a>
       </div>
-  </div>    
+  </div>
+  
+    <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">twitter</h2>
+    </div>
+    <div class="list-group">
+      <a href="https://twitter.com/taki_tflare" class="list-group-item">taki_tflare</a>
+      </div>
+  </div>   
+
 </aside>
 
 
@@ -664,6 +672,15 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
+    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-84345073-1', 'auto');
+    ga('send', 'pageview');
+    </script>
     
 
   </body>

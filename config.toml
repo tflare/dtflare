@@ -4,7 +4,7 @@ author = "hiroyuki_t"
 
 copyright = "Copyright (c) 2006 - 2016, hiroyuki_tの日記"
 
-languageCode = "ja-jp"
+LanguageCode = "ja-jp"
 theme = "beg"
 canonifyurls = true
 publishdir = "docs"
@@ -12,3 +12,8 @@ publishdir = "docs"
 [params]
   disqusShortname = "http-d-tflare-com.disqus.com" # optional
   toc = true # optional, When set to TRUE this parameter, table of contents appears in all articles.
+  GoogleAnalyticsUserID = "UA-84345073-1"
+  Twitter = "taki_tflare"
+   ShowRelatedPost = "True"
+
+  
