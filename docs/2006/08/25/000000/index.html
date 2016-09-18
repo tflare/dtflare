@@ -15,8 +15,8 @@
     <link rel="canonical" href="http://d.tflare.com/2006/08/25/000000/" >
 
     
-    <title>第6回オープンソーステクノロジー勉強会内容 - hiroyuki_tの日記</title>
-    <meta property='og:title' content="第6回オープンソーステクノロジー勉強会内容 - hiroyuki_tの日記">
+    <title>自分の作っているテストツールについて - hiroyuki_tの日記</title>
+    <meta property='og:title' content="自分の作っているテストツールについて - hiroyuki_tの日記">
     <meta property="og:type" content="article">
     
 
@@ -63,8 +63,8 @@
 
         <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://d.tflare.com/"/>
         <meta itemprop="dateModified" content="2006-08-24T15:00:00&#43;00:00">
-        <meta itemprop="headline" content="第6回オープンソーステクノロジー勉強会内容">
-        <meta itemprop="description" content="第6回オープンソーステクノロジー勉強会にいってきました。 内容と自分の作っているテストツールについて Seleniumには以下の物があるよ。 Selenium Core Selenium IDE Selenium Remote Control Selenium Coreではテストを書くのがめんどくさいからSelenium IDEがあり、 Selenium Coreでは定時にテストを実行することが出来ないのでSelenium Remote Controlがある。 後、テストの実行結果の一覧化をしているのを見て、 テストを定時に行うのであれば、実行結果の一覧を用意すると便利だと思った。 Selenium IDEは拡張機能を使えばAJAXにも対応できる。 &nbsp; 面白かった。 やる気が出てきた。">
+        <meta itemprop="headline" content="自分の作っているテストツールについて">
+        <meta itemprop="description" content="自動テストには環境整備が重要 自動テストする際にテーブルを全部削除するとか Railsのフィクスチャを使うとかいう話が出てるけど そういうことがやりたくても、自分が今いる環境ではそういうことが出来ない。 仕方ないので初回用と2回目以降用のテストケースを作って切り替えるということをしている。 やろうとすれば、すべて初回扱いにも出来るのだけど、 ・テスト用とはいえ、データを作りすぎるとまずい（簡単に削除できないので） ・テストの実行時間の問題 があるかと思い初回用と2回目以降用のテストケースを用意している。 &nbsp; テストを作成するのにはSeleniumを使っているのではなく ExcelのVBAで作っている。 なぜかというと今常駐している会社では、フリーソフトが使えないから、 そこら辺にあるものを使うしかなくExcelのVBAで作っている。 ExcelのVBAで命令セットを作って、 Excelのシートからその命令を呼び出すという風にしている。 たとえばMenuClick命令というのがあってこれを呼び出すと、メニューを押すことが出来る。 &nbsp; ExcelのVBAで作っているためWindowsのAPIを簡単に呼び出すことが可能。 画面のハードコピーを撮ってと言われても、簡単に画面のハードコピーを撮ることが出来る。 自分的には自動テストには画面のハードコピーは重要だと思わないけど好きな人はいるので仕方ない。 &nbsp; auto_screen_modeというのもあって auto_screen_modeをonにしてMenuClick命令等で画面を遷移させると、 勝手に開いている画面をすべて画面に撮って、Excelのシートに貼り付けたり出来る。 （一画面に収まらないときは自動でスクロールして画面を取ってくれる。） &nbsp; まあそれなりに命令セットがあって使えるんだけど、 テストを書くのがめんどくさいという問題点がある。 それを改善すべく、スクリプト生成ソフトを作ろうと考えてはいるのだが。 スクリプト生成ソフトを作るのにrubyが使いたいのだけど、rubyは入れられないので困っていたりする。 &nbsp; まあ現状でも使えるので少しずつ回帰テスト用のツールとして使っていこうと思っている。">
         <meta itemprop="url" content="http://d.tflare.com/2006/08/25/000000/">
         <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
           <meta itemprop="url" content="http://d.tflare.com/images/default.jpg" />
@@ -85,53 +85,45 @@
 
         <header class="article-header">
           <time itemprop="datePublished" pubdate="pubdate" datetime="2006-08-24T15:00:00&#43;00:00">Thu, Aug 24, 2006</time>
-          <h1 class="article-title">第6回オープンソーステクノロジー勉強会内容</h1>
+          <h1 class="article-title">自分の作っているテストツールについて</h1>
         </header>
 
         <div class="article-body" itemprop="articleBody">
           <div class="section">
   <p>
-    第6回オープンソーステクノロジー勉強会にいってきました。
+    自動テストには環境整備が重要
   </p>
   
   <p>
-    内容と自分の作っているテストツールについて
+    自動テストする際にテーブルを全部削除するとか
   </p>
   
   <p>
-    Seleniumには以下の物があるよ。
+    Railsのフィクスチャを使うとかいう話が出てるけど
   </p>
   
   <p>
-    Selenium Core
+    そういうことがやりたくても、自分が今いる環境ではそういうことが出来ない。
   </p>
   
   <p>
-    Selenium IDE
+    仕方ないので初回用と2回目以降用のテストケースを作って切り替えるということをしている。
   </p>
   
   <p>
-    Selenium Remote Control
+    やろうとすれば、すべて初回扱いにも出来るのだけど、
   </p>
   
   <p>
-    Selenium Coreではテストを書くのがめんどくさいからSelenium IDEがあり、
+    ・テスト用とはいえ、データを作りすぎるとまずい（簡単に削除できないので）
   </p>
   
   <p>
-    Selenium Coreでは定時にテストを実行することが出来ないのでSelenium Remote Controlがある。
+    ・テストの実行時間の問題
   </p>
   
   <p>
-    後、テストの実行結果の一覧化をしているのを見て、
-  </p>
-  
-  <p>
-    テストを定時に行うのであれば、実行結果の一覧を用意すると便利だと思った。
-  </p>
-  
-  <p>
-    Selenium IDEは拡張機能を使えばAJAXにも対応できる。
+    があるかと思い初回用と2回目以降用のテストケースを用意している。
   </p>
   
   <p>
@@ -139,11 +131,95 @@
   </p>
   
   <p>
-    面白かった。
+    テストを作成するのにはSeleniumを使っているのではなく
   </p>
   
   <p>
-    やる気が出てきた。
+    ExcelのVBAで作っている。
+  </p>
+  
+  <p>
+    なぜかというと今常駐している会社では、フリーソフトが使えないから、
+  </p>
+  
+  <p>
+    そこら辺にあるものを使うしかなくExcelのVBAで作っている。
+  </p>
+  
+  <p>
+    ExcelのVBAで命令セットを作って、
+  </p>
+  
+  <p>
+    Excelのシートからその命令を呼び出すという風にしている。
+  </p>
+  
+  <p>
+    たとえばMenuClick命令というのがあってこれを呼び出すと、メニューを押すことが出来る。
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    ExcelのVBAで作っているためWindowsのAPIを簡単に呼び出すことが可能。
+  </p>
+  
+  <p>
+    画面のハードコピーを撮ってと言われても、簡単に画面のハードコピーを撮ることが出来る。
+  </p>
+  
+  <p>
+    自分的には自動テストには画面のハードコピーは重要だと思わないけど好きな人はいるので仕方ない。
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    auto_screen_modeというのもあって
+  </p>
+  
+  <p>
+    auto_screen_modeをonにしてMenuClick命令等で画面を遷移させると、
+  </p>
+  
+  <p>
+    勝手に開いている画面をすべて画面に撮って、Excelのシートに貼り付けたり出来る。
+  </p>
+  
+  <p>
+    （一画面に収まらないときは自動でスクロールして画面を取ってくれる。）
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    まあそれなりに命令セットがあって使えるんだけど、
+  </p>
+  
+  <p>
+    テストを書くのがめんどくさいという問題点がある。
+  </p>
+  
+  <p>
+    それを改善すべく、スクリプト生成ソフトを作ろうと考えてはいるのだが。
+  </p>
+  
+  <p>
+    スクリプト生成ソフトを作るのにrubyが使いたいのだけど、rubyは入れられないので困っていたりする。
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    まあ現状でも使えるので少しずつ回帰テスト用のツールとして使っていこうと思っている。
   </p>
 </div>
 
@@ -154,10 +230,10 @@
           
 
           <div class="section share">
-            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fd.tflare.com%2f2006%2f08%2f25%2f000000%2f&t=%e7%ac%ac6%e5%9b%9e%e3%82%aa%e3%83%bc%e3%83%97%e3%83%b3%e3%82%bd%e3%83%bc%e3%82%b9%e3%83%86%e3%82%af%e3%83%8e%e3%83%ad%e3%82%b8%e3%83%bc%e5%8b%89%e5%bc%b7%e4%bc%9a%e5%86%85%e5%ae%b9" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
-            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fd.tflare.com%2f2006%2f08%2f25%2f000000%2f&text=%e7%ac%ac6%e5%9b%9e%e3%82%aa%e3%83%bc%e3%83%97%e3%83%b3%e3%82%bd%e3%83%bc%e3%82%b9%e3%83%86%e3%82%af%e3%83%8e%e3%83%ad%e3%82%b8%e3%83%bc%e5%8b%89%e5%bc%b7%e4%bc%9a%e5%86%85%e5%ae%b9&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fd.tflare.com%2f2006%2f08%2f25%2f000000%2f&t=%e8%87%aa%e5%88%86%e3%81%ae%e4%bd%9c%e3%81%a3%e3%81%a6%e3%81%84%e3%82%8b%e3%83%86%e3%82%b9%e3%83%88%e3%83%84%e3%83%bc%e3%83%ab%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fd.tflare.com%2f2006%2f08%2f25%2f000000%2f&text=%e8%87%aa%e5%88%86%e3%81%ae%e4%bd%9c%e3%81%a3%e3%81%a6%e3%81%84%e3%82%8b%e3%83%86%e3%82%b9%e3%83%88%e3%83%84%e3%83%bc%e3%83%ab%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
             <a href="https://plus.google.com/share?url=http%3a%2f%2fd.tflare.com%2f2006%2f08%2f25%2f000000%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
-            <a href="http://getpocket.com/edit?url=http%3a%2f%2fd.tflare.com%2f2006%2f08%2f25%2f000000%2f&title=%e7%ac%ac6%e5%9b%9e%e3%82%aa%e3%83%bc%e3%83%97%e3%83%b3%e3%82%bd%e3%83%bc%e3%82%b9%e3%83%86%e3%82%af%e3%83%8e%e3%83%ad%e3%82%b8%e3%83%bc%e5%8b%89%e5%bc%b7%e4%bc%9a%e5%86%85%e5%ae%b9" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2fd.tflare.com%2f2006%2f08%2f25%2f000000%2f&title=%e8%87%aa%e5%88%86%e3%81%ae%e4%bd%9c%e3%81%a3%e3%81%a6%e3%81%84%e3%82%8b%e3%83%86%e3%82%b9%e3%83%88%e3%83%84%e3%83%bc%e3%83%ab%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
           </div>
 
           
@@ -267,6 +343,14 @@
   </div>
   
 
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">site</h2>
+    </div>
+    <div class="list-group">
+      <a href="http://tflare.com/" class="list-group-item">tflare.com</a>
+      </div>
+  </div>    
 </aside>
 
 
