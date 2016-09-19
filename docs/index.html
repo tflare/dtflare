@@ -59,6 +59,77 @@
       
       <article class="li">
   <header>
+    <div class="date">Tue, Sep 20, 2016</div>
+    <div class="title"><a href="http://d.tflare.com/2016/09/20/090100/">WordPressからHugoに移行</a></div>
+  </header>
+  <div class="body">
+
+<h1 id="wordpressからhugoに移行">WordPressからHugoに移行</h1>
+
+<p>WordPress to Hugo Exporterを使用して移行しました。
+<a href="https://github.com/SchumacherFM/wordpress-to-hugo-exporter">https://github.com/SchumacherFM/wordpress-to-hugo-exporter</a></p>
+
+<hr />
+
+<h2 id="github-pagesへの移行試行-取りやめ">GitHub Pagesへの移行試行（取りやめ）</h2>
+
+<p>これに伴って、GitHub Pagesに移行しようとしましたが、取りやめました。</p>
+
+<h3 id="前提">前提</h3>
+
+<ul>
+<li>ドメインはスタードメインを使用</li>
+<li>メールはさくらのメールボックスを使用</li>
+</ul>
+
+<h3 id="取りやめた理由">取りやめた理由</h3>
+
+<ul>
+<li>GitHub Pagesではサブドメインの際はDNSの設定において、CNAMEの設定をする必要があるようです。（サブドメインでない場合にどうなるかは未確認）</li>
+<li>上記ドメインでメールも使用しようとしていたためMXレコードの設定もしようとしていたが、CNAMEとMXレコードの混在は不可能
+<a href="http://www.ocn.ne.jp/business/customer/set_up/dns_12.html">http://www.ocn.ne.jp/business/customer/set_up/dns_12.html</a></li>
+</ul>
+
+<p>（ドメイン会社のDNSレコード編集機能でNSレコードが変更できれば可能性があるが、スタードメインではNSレコードは編集不可能）</p>
+
+<hr />
+
+<h2 id="環境の変更">環境の変更</h2>
+
+<h3 id="web-さくらの共有サーバ-スタンダード-スターサーバ">Web　さくらの共有サーバ（スタンダード）→スターサーバ</h3>
+
+<p>WordPressを使用しなくなり、静的なサイトになったため
+さくらの共有サーバ（スタンダード）は不要だろうということでやめ、
+スタードメインに付属しているサーバを使用</p>
+
+<h3 id="メール-さくらの共有サーバ-スタンダード-さくらのメールボックス">メール　さくらの共有サーバ（スタンダード）→さくらのメールボックス</h3>
+
+<p>メールはスタードメインのメール転送機能を使用しようと思ったが、
+安定性が低いというページが有ったためさくらのメールボックスを使用することにした。</p>
+
+<p>エックスドメインであればドメインを契約すれば通常のメール機能が使えるようなので以降も要検討
+（スタードメインはメール転送機能のみ）</p>
+
+<hr />
+
+<h3 id="現在のスタードメインのdns設定">現在のスタードメインのDNS設定</h3>
+
+<p>tflare.com　A　スターサーバのIPアドレス</p>
+
+<p>d.tflare.com　A　スターサーバのIPアドレス</p>
+
+<p>tflare.com　MX　さくらのメールボックスのサーバホスト名</p>
+
+<p>tflare.com　TXT　v=spf1 a:さくらのメールボックスのサーバホスト名 -all</p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
     <div class="date">Thu, Aug 18, 2016</div>
     <div class="title"><a href="http://d.tflare.com/2016/08/19/010941/">ビジネス書を読んでもデキる人にはなれない読了　この本の概要</a></div>
   </header>
@@ -458,43 +529,6 @@
 <hr>
 
       
-      <article class="li">
-  <header>
-    <div class="date">Tue, Jul 22, 2014</div>
-    <div class="title"><a href="http://d.tflare.com/2014/07/23/075131/">プロセスルールの縮小の停滞とブレイクスルーへの期待</a></div>
-  </header>
-  <div class="body"><p><a href="http://ascii.jp/elem/000/000/165/165196/">http://ascii.jp/elem/000/000/165/165196/</a></p>
-
-<blockquote>
-<p>プロセスルールが縮小されるにしたがって、（中略）トランジスターの動作速度も向上していく。半導体の進化は、プロセスルールの縮小によって支えられてきたと言っていい。</p>
-</blockquote>
-
-<p>このプロセスルールの縮小が停滞しはじめてる。</p>
-
-<p>プロセスルールの縮小製造の最先端をいくIntelは、14nmプロセスで遅延が発生している。（現行は22nmプロセス）</p>
-
-<p>比較的新しいプロセスを使用するGPUでも28nmを2年以上使用している。</p>
-
-<p>（例えば、28nmを始めて使用したGeForce GTX 680は2012年3月23日に発売されている。）</p>
-
-<p>GeForceが20nmプロセスで製造されるのは2015年になると言われている。</p>
-
-<p>個人的に使用するPCのCPUやGPUは、必要な性能を満たしているためそれほど問題はないと考えている。</p>
-
-<p>しかし、スマートフォンを始めとするモバイル関連で使用するCPUやGPUには進歩がほしいと考えている。</p>
-
-<p>プロセスルールの縮小は難しい段階に入っており、ブレイクスルーが求められており</p>
-
-<p>日々研究が進んでいる。</p>
-
-<p>ブレイクスルーがなり、その技術がスマートフォンに使われる日を期待したい。</p>
-</div>
-
-  
-</article>
-<hr>
-
-      
       
 <nav>
   <ul class="pager">
@@ -534,6 +568,8 @@
     </div>
     <div class="list-group">
       
+      <a href="http://d.tflare.com/2016/09/20/090100/" class="list-group-item">WordPressからHugoに移行</a>
+      
       <a href="http://d.tflare.com/2016/08/19/010941/" class="list-group-item">ビジネス書を読んでもデキる人にはなれない読了　この本の概要</a>
       
       <a href="http://d.tflare.com/2016/07/31/160751/" class="list-group-item">僕が無料の英語マンガで楽にTOEIC900点を取って、映画の英語を字幕なしでリスニングできるワケ読了</a>
@@ -551,8 +587,6 @@
       <a href="http://d.tflare.com/2014/10/02/074817/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由（日本破綻論と国債発行）</a>
       
       <a href="http://d.tflare.com/2014/10/02/072949/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由</a>
-      
-      <a href="http://d.tflare.com/2014/07/23/075131/" class="list-group-item">プロセスルールの縮小の停滞とブレイクスルーへの期待</a>
       
     </div>
   </div>

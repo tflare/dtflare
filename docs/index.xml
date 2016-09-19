@@ -7,8 +7,76 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright (c) 2006 - 2016, hiroyuki_tの日記</copyright>
-    <lastBuildDate>Thu, 18 Aug 2016 16:09:41 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Sep 2016 00:01:00 +0000</lastBuildDate>
     <atom:link href="http://d.tflare.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>WordPressからHugoに移行</title>
+      <link>http://d.tflare.com/2016/09/20/090100/</link>
+      <pubDate>Tue, 20 Sep 2016 00:01:00 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2016/09/20/090100/</guid>
+      <description>
+
+&lt;h1 id=&#34;wordpressからhugoに移行&#34;&gt;WordPressからHugoに移行&lt;/h1&gt;
+
+&lt;p&gt;WordPress to Hugo Exporterを使用して移行しました。
+&lt;a href=&#34;https://github.com/SchumacherFM/wordpress-to-hugo-exporter&#34;&gt;https://github.com/SchumacherFM/wordpress-to-hugo-exporter&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;github-pagesへの移行試行-取りやめ&#34;&gt;GitHub Pagesへの移行試行（取りやめ）&lt;/h2&gt;
+
+&lt;p&gt;これに伴って、GitHub Pagesに移行しようとしましたが、取りやめました。&lt;/p&gt;
+
+&lt;h3 id=&#34;前提&#34;&gt;前提&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ドメインはスタードメインを使用&lt;/li&gt;
+&lt;li&gt;メールはさくらのメールボックスを使用&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;取りやめた理由&#34;&gt;取りやめた理由&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GitHub Pagesではサブドメインの際はDNSの設定において、CNAMEの設定をする必要があるようです。（サブドメインでない場合にどうなるかは未確認）&lt;/li&gt;
+&lt;li&gt;上記ドメインでメールも使用しようとしていたためMXレコードの設定もしようとしていたが、CNAMEとMXレコードの混在は不可能
+&lt;a href=&#34;http://www.ocn.ne.jp/business/customer/set_up/dns_12.html&#34;&gt;http://www.ocn.ne.jp/business/customer/set_up/dns_12.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;（ドメイン会社のDNSレコード編集機能でNSレコードが変更できれば可能性があるが、スタードメインではNSレコードは編集不可能）&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;環境の変更&#34;&gt;環境の変更&lt;/h2&gt;
+
+&lt;h3 id=&#34;web-さくらの共有サーバ-スタンダード-スターサーバ&#34;&gt;Web　さくらの共有サーバ（スタンダード）→スターサーバ&lt;/h3&gt;
+
+&lt;p&gt;WordPressを使用しなくなり、静的なサイトになったため
+さくらの共有サーバ（スタンダード）は不要だろうということでやめ、
+スタードメインに付属しているサーバを使用&lt;/p&gt;
+
+&lt;h3 id=&#34;メール-さくらの共有サーバ-スタンダード-さくらのメールボックス&#34;&gt;メール　さくらの共有サーバ（スタンダード）→さくらのメールボックス&lt;/h3&gt;
+
+&lt;p&gt;メールはスタードメインのメール転送機能を使用しようと思ったが、
+安定性が低いというページが有ったためさくらのメールボックスを使用することにした。&lt;/p&gt;
+
+&lt;p&gt;エックスドメインであればドメインを契約すれば通常のメール機能が使えるようなので以降も要検討
+（スタードメインはメール転送機能のみ）&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;現在のスタードメインのdns設定&#34;&gt;現在のスタードメインのDNS設定&lt;/h3&gt;
+
+&lt;p&gt;tflare.com　A　スターサーバのIPアドレス&lt;/p&gt;
+
+&lt;p&gt;d.tflare.com　A　スターサーバのIPアドレス&lt;/p&gt;
+
+&lt;p&gt;tflare.com　MX　さくらのメールボックスのサーバホスト名&lt;/p&gt;
+
+&lt;p&gt;tflare.com　TXT　v=spf1 a:さくらのメールボックスのサーバホスト名 -all&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ビジネス書を読んでもデキる人にはなれない読了　この本の概要</title>
@@ -639,219 +707,6 @@
 &lt;p&gt;&lt;a href=&#34;http://techbooster.jpn.org/andriod/environment/492/&#34;&gt;Ubuntu 10.04にAndroid SDKをインストールする&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;を参照&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Galleria QF655 Ubuntu Linux 12.04 初期設定 その1</title>
-      <link>http://d.tflare.com/2012/06/10/093524/</link>
-      <pubDate>Sun, 10 Jun 2012 00:35:24 +0000</pubDate>
-      
-      <guid>http://d.tflare.com/2012/06/10/093524/</guid>
-      <description>
-
-&lt;p&gt;Prime Note Galleria QF655購入&lt;/p&gt;
-
-&lt;h2 id=&#34;スペック&#34;&gt;スペック&lt;/h2&gt;
-
-&lt;table border=&#34;0&#34;&gt;
-  &lt;tr&gt;
-    &lt;td&gt;
-      CPU
-    &lt;/td&gt;
-    
-    &lt;td&gt;
-      Core i7-3610QM
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  
-  &lt;tr&gt;
-    &lt;td&gt;
-      MEMORY
-    &lt;/td&gt;
-    
-    &lt;td&gt;
-      8GB(M471B5273DH0-CK0 Samsung 4GB PC3-12800✕2)
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  
-  &lt;tr&gt;
-    &lt;td&gt;
-      SSD
-    &lt;/td&gt;
-    
-    &lt;td&gt;
-      128G(Intel SSD 330)
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  
-  &lt;tr&gt;
-    &lt;td&gt;
-      GPU
-    &lt;/td&gt;
-    
-    &lt;td&gt;
-      NVIDIA GeForce GT 650M 2GB
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  
-  &lt;tr&gt;
-    &lt;td&gt;
-      光学ドライブ
-    &lt;/td&gt;
-    
-    &lt;td&gt;
-      DVDスーパーマルチドライブ
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  
-  &lt;tr&gt;
-    &lt;td&gt;
-      OS
-    &lt;/td&gt;
-    
-    &lt;td&gt;
-      Windows7 Home Premium 64bit
-    &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;HDDから SSDに変更している。&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h2 id=&#34;パーテーション切り分け&#34;&gt;パーテーション切り分け&lt;/h2&gt;
-
-&lt;table border=&#34;0&#34;&gt;
-  &lt;tr&gt;
-    &lt;td&gt;
-      /
-    &lt;/td&gt;
-    
-    &lt;td&gt;
-      12G
-    &lt;/td&gt;
-    
-    &lt;td&gt;
-      ext4
-    &lt;/td&gt;
-    
-    &lt;td&gt;
-      Ubuntu Linux 12.04
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  
-  &lt;tr&gt;
-    &lt;td&gt;
-      /home
-    &lt;/td&gt;
-    
-    &lt;td&gt;
-      39G
-    &lt;/td&gt;
-    
-    &lt;td&gt;
-      ext4
-    &lt;/td&gt;
-    
-    &lt;td&gt;
-      Ubuntu Linux 12.04
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  
-  &lt;tr&gt;
-    &lt;td&gt;
-    &lt;/td&gt;
-    
-    &lt;td&gt;
-      67G
-    &lt;/td&gt;
-    
-    &lt;td&gt;
-      ntfs
-    &lt;/td&gt;
-    
-    &lt;td&gt;
-      Windows7
-    &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Ubuntu Linuxで使用するのがメインの用途となるが、&lt;/p&gt;
-
-&lt;p&gt;Windowsはゲーム （Skyrim等）で容量を取ることを想定し、多めに設定&lt;/p&gt;
-
-&lt;p&gt;データ移行等が行いやすいように、/homeは別パーテーションとする。&lt;/p&gt;
-
-&lt;p&gt;swapはメモリーが8GBあるので、設定しない。&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h2 id=&#34;ソフトウエア設定&#34;&gt;ソフトウエア設定&lt;/h2&gt;
-
-&lt;p&gt;２００６年から設定を引き継いでおり、新しく設定し直したかったので、homeをコピーするのではなく、&lt;/p&gt;
-
-&lt;p&gt;必要なもののみ設定しなおしする方針とした。&lt;/p&gt;
-
-&lt;h3 id=&#34;opera&#34;&gt;Opera&lt;/h3&gt;
-
-&lt;p&gt;本家からインストール&lt;/p&gt;
-
-&lt;p&gt;flashもインストール&lt;/p&gt;
-
-&lt;p&gt;以下のファイルを以前のPCから移行&lt;/p&gt;
-
-&lt;p&gt;bookmarks.adr, operaprefs.ini, override.ini, search.ini, wand.dat&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://ja.opera-wiki.com/urlfilter.ini%E8%A3%9C%E5%AE%8C%E8%A8%88%E7%94%BB&#34;&gt;urlfilter&lt;/a&gt;の設定&lt;/p&gt;
-
-&lt;p&gt;上記のGeneralのみurlfilter.iniという名前で $HOME/.operaに保存&lt;/p&gt;
-
-&lt;h3 id=&#34;zsh&#34;&gt;zsh&lt;/h3&gt;
-
-&lt;p&gt;補完が便利なシェル&lt;/p&gt;
-
-&lt;p&gt;apt-get install zsh&lt;/p&gt;
-
-&lt;p&gt;$ chsh&lt;/p&gt;
-
-&lt;p&gt;新しいシェル [/bin/bash]: /bin/zsh&lt;/p&gt;
-
-&lt;p&gt;補完が便利なので、ないと辛い&lt;/p&gt;
-
-&lt;p&gt;この&lt;a href=&#34;http://d.tflare.com/2007/02/10/210703/&#34;&gt;リンク&lt;/a&gt;の.zshrcや.zsh_historyを過去のデータから移行&lt;/p&gt;
-
-&lt;h3 id=&#34;mozc&#34;&gt;mozc&lt;/h3&gt;
-
-&lt;p&gt;Google日本語入力のオープンソース版&lt;/p&gt;
-
-&lt;p&gt;sudo apt-get install ibus-mozc mozc-server mozc-utils-gui&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://d.tflare.com/wp-content/uploads/2012/06/Screenshot_from_2012-06-10-085510.png&#34;&gt;&lt;img class=&#34;alignnone size-full wp-image-425&#34; title=&#34;Screenshot_from_2012-06-10 08:55:10&#34; src=&#34;http://d.tflare.com/wp-content/uploads/2012/06/Screenshot_from_2012-06-10-085510.png&#34; alt=&#34;&#34; width=&#34;200&#34; height=&#34;30&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;画面右上のキーボード→[再起動]&lt;/p&gt;
-
-&lt;p&gt;画面右上のキーボード→[設定] →[インプットメソッドタブ]mozcを設定&lt;/p&gt;
-
-&lt;p&gt;/usr/lib/mozc/mozc_tool &amp;#8211;mode=config_dialogでATOKキーバインドに変更&lt;/p&gt;
-
-&lt;h3 id=&#34;他のソフト&#34;&gt;他のソフト&lt;/h3&gt;
-
-&lt;p&gt;FTPソフト&lt;/p&gt;
-
-&lt;p&gt;sudo apt-get install filezilla&lt;/p&gt;
-
-&lt;p&gt;グラフィック編集・加工ソフト&lt;/p&gt;
-
-&lt;p&gt;sudo apt-get install gimp&lt;/p&gt;
-
-&lt;p&gt;ブラウザ&lt;/p&gt;
-
-&lt;p&gt;sudo apt-get install chromium-browser&lt;/p&gt;
 </description>
     </item>
     

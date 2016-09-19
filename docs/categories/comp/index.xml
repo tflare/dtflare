@@ -7,8 +7,76 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright (c) 2006 - 2016, hiroyuki_tの日記</copyright>
-    <lastBuildDate>Wed, 30 Mar 2016 22:12:48 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Sep 2016 00:01:00 +0000</lastBuildDate>
     <atom:link href="http://d.tflare.com/categories/comp/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>WordPressからHugoに移行</title>
+      <link>http://d.tflare.com/2016/09/20/090100/</link>
+      <pubDate>Tue, 20 Sep 2016 00:01:00 +0000</pubDate>
+      
+      <guid>http://d.tflare.com/2016/09/20/090100/</guid>
+      <description>
+
+&lt;h1 id=&#34;wordpressからhugoに移行&#34;&gt;WordPressからHugoに移行&lt;/h1&gt;
+
+&lt;p&gt;WordPress to Hugo Exporterを使用して移行しました。
+&lt;a href=&#34;https://github.com/SchumacherFM/wordpress-to-hugo-exporter&#34;&gt;https://github.com/SchumacherFM/wordpress-to-hugo-exporter&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;github-pagesへの移行試行-取りやめ&#34;&gt;GitHub Pagesへの移行試行（取りやめ）&lt;/h2&gt;
+
+&lt;p&gt;これに伴って、GitHub Pagesに移行しようとしましたが、取りやめました。&lt;/p&gt;
+
+&lt;h3 id=&#34;前提&#34;&gt;前提&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ドメインはスタードメインを使用&lt;/li&gt;
+&lt;li&gt;メールはさくらのメールボックスを使用&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;取りやめた理由&#34;&gt;取りやめた理由&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GitHub Pagesではサブドメインの際はDNSの設定において、CNAMEの設定をする必要があるようです。（サブドメインでない場合にどうなるかは未確認）&lt;/li&gt;
+&lt;li&gt;上記ドメインでメールも使用しようとしていたためMXレコードの設定もしようとしていたが、CNAMEとMXレコードの混在は不可能
+&lt;a href=&#34;http://www.ocn.ne.jp/business/customer/set_up/dns_12.html&#34;&gt;http://www.ocn.ne.jp/business/customer/set_up/dns_12.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;（ドメイン会社のDNSレコード編集機能でNSレコードが変更できれば可能性があるが、スタードメインではNSレコードは編集不可能）&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;環境の変更&#34;&gt;環境の変更&lt;/h2&gt;
+
+&lt;h3 id=&#34;web-さくらの共有サーバ-スタンダード-スターサーバ&#34;&gt;Web　さくらの共有サーバ（スタンダード）→スターサーバ&lt;/h3&gt;
+
+&lt;p&gt;WordPressを使用しなくなり、静的なサイトになったため
+さくらの共有サーバ（スタンダード）は不要だろうということでやめ、
+スタードメインに付属しているサーバを使用&lt;/p&gt;
+
+&lt;h3 id=&#34;メール-さくらの共有サーバ-スタンダード-さくらのメールボックス&#34;&gt;メール　さくらの共有サーバ（スタンダード）→さくらのメールボックス&lt;/h3&gt;
+
+&lt;p&gt;メールはスタードメインのメール転送機能を使用しようと思ったが、
+安定性が低いというページが有ったためさくらのメールボックスを使用することにした。&lt;/p&gt;
+
+&lt;p&gt;エックスドメインであればドメインを契約すれば通常のメール機能が使えるようなので以降も要検討
+（スタードメインはメール転送機能のみ）&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;現在のスタードメインのdns設定&#34;&gt;現在のスタードメインのDNS設定&lt;/h3&gt;
+
+&lt;p&gt;tflare.com　A　スターサーバのIPアドレス&lt;/p&gt;
+
+&lt;p&gt;d.tflare.com　A　スターサーバのIPアドレス&lt;/p&gt;
+
+&lt;p&gt;tflare.com　MX　さくらのメールボックスのサーバホスト名&lt;/p&gt;
+
+&lt;p&gt;tflare.com　TXT　v=spf1 a:さくらのメールボックスのサーバホスト名 -all&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>iMac 21.5インチとMacBook Air 13インチ購入</title>
@@ -971,100 +1039,6 @@
   
   &lt;p&gt;
     あとは1で振り分けられなかった個人的に来たメールをspamフォルダから移動しspamは削除すればOK
-  &lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>パーテーションの切り直し</title>
-      <link>http://d.tflare.com/2006/11/20/000000/</link>
-      <pubDate>Sun, 19 Nov 2006 15:00:00 +0000</pubDate>
-      
-      <guid>http://d.tflare.com/2006/11/20/000000/</guid>
-      <description>&lt;div class=&#34;section&#34;&gt;
-  &lt;p&gt;
-    マシンが故障したのでPCを購入した。
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    使っていたPCは3年使っていたので、よい感じのスパンだと思う。
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    次は2009年の11月に購入することにしよう。
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &amp;nbsp;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    マシンを購入してWindowsXPをインストールして、Ubuntu6.10をインストールした。
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    Ubuntu6.10をインストールした時にパーテーションの切り分けをミスった。
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    新しいパーテションはどれぐらいにしますか？
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    と聞かれたからそれがUbuntu用のパーテーションの大きさかと思ったら
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    それがWindows用のパーテーションの大きさだった。
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    （前にインストールしたときはカスタムでインストールしたので大丈夫だった。）
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &amp;nbsp;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    そこでパーテーションの切り直しができるツールを探していたら
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    KNOPPIX上でQTPartedを用いてできるという情報を得たので
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    knoppix_v5.0.1CD_20060601-20060614+IPAFont_AC20060623.iso
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    を試してみたらKNOPPIXがシリアルATAを認識しなくて
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    パーテーションの切り直しができなかった。
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &amp;nbsp;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    そこでシリアルATAに対応していそうなディストリビューションを探したところ&lt;a href=&#34;http://kanotix.com/&#34; target=&#34;_blank&#34;&gt;Kanotix&lt;/a&gt;が見つかり、
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    KANOTIX 2006-01-RC4を使用したところシリアルATAを認識してくれた。
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    後はKANOTIX上でGpartedを使用したところ無事パーテーションの切り直しができた。
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    その後WindowsXPもUbuntu6.10も無事起動が確認できた。
   &lt;/p&gt;
 &lt;/div&gt;
 </description>

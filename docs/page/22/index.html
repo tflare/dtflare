@@ -59,6 +59,151 @@
       
       <article class="li">
   <header>
+    <div class="date">Thu, Aug 24, 2006</div>
+    <div class="title"><a href="http://d.tflare.com/2006/08/25/000000/">自分の作っているテストツールについて</a></div>
+  </header>
+  <div class="body"><div class="section">
+  <p>
+    自動テストには環境整備が重要
+  </p>
+  
+  <p>
+    自動テストする際にテーブルを全部削除するとか
+  </p>
+  
+  <p>
+    Railsのフィクスチャを使うとかいう話が出てるけど
+  </p>
+  
+  <p>
+    そういうことがやりたくても、自分が今いる環境ではそういうことが出来ない。
+  </p>
+  
+  <p>
+    仕方ないので初回用と2回目以降用のテストケースを作って切り替えるということをしている。
+  </p>
+  
+  <p>
+    やろうとすれば、すべて初回扱いにも出来るのだけど、
+  </p>
+  
+  <p>
+    ・テスト用とはいえ、データを作りすぎるとまずい（簡単に削除できないので）
+  </p>
+  
+  <p>
+    ・テストの実行時間の問題
+  </p>
+  
+  <p>
+    があるかと思い初回用と2回目以降用のテストケースを用意している。
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    テストを作成するのにはSeleniumを使っているのではなく
+  </p>
+  
+  <p>
+    ExcelのVBAで作っている。
+  </p>
+  
+  <p>
+    なぜかというと今常駐している会社では、フリーソフトが使えないから、
+  </p>
+  
+  <p>
+    そこら辺にあるものを使うしかなくExcelのVBAで作っている。
+  </p>
+  
+  <p>
+    ExcelのVBAで命令セットを作って、
+  </p>
+  
+  <p>
+    Excelのシートからその命令を呼び出すという風にしている。
+  </p>
+  
+  <p>
+    たとえばMenuClick命令というのがあってこれを呼び出すと、メニューを押すことが出来る。
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    ExcelのVBAで作っているためWindowsのAPIを簡単に呼び出すことが可能。
+  </p>
+  
+  <p>
+    画面のハードコピーを撮ってと言われても、簡単に画面のハードコピーを撮ることが出来る。
+  </p>
+  
+  <p>
+    自分的には自動テストには画面のハードコピーは重要だと思わないけど好きな人はいるので仕方ない。
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    auto_screen_modeというのもあって
+  </p>
+  
+  <p>
+    auto_screen_modeをonにしてMenuClick命令等で画面を遷移させると、
+  </p>
+  
+  <p>
+    勝手に開いている画面をすべて画面に撮って、Excelのシートに貼り付けたり出来る。
+  </p>
+  
+  <p>
+    （一画面に収まらないときは自動でスクロールして画面を取ってくれる。）
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    まあそれなりに命令セットがあって使えるんだけど、
+  </p>
+  
+  <p>
+    テストを書くのがめんどくさいという問題点がある。
+  </p>
+  
+  <p>
+    それを改善すべく、スクリプト生成ソフトを作ろうと考えてはいるのだが。
+  </p>
+  
+  <p>
+    スクリプト生成ソフトを作るのにrubyが使いたいのだけど、rubyは入れられないので困っていたりする。
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    まあ現状でも使えるので少しずつ回帰テスト用のツールとして使っていこうと思っている。
+  </p>
+</div>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
     <div class="date">Tue, Aug 22, 2006</div>
     <div class="title"><a href="http://d.tflare.com/2006/08/22/210005/">株式投資を行う際に重要なこと</a></div>
   </header>
@@ -609,135 +754,6 @@
 <hr>
 
       
-      <article class="li">
-  <header>
-    <div class="date">Tue, Jun 27, 2006</div>
-    <div class="title"><a href="http://d.tflare.com/2006/06/27/210510/">人はなぜお金に失敗するのか</a></div>
-  </header>
-  <div class="body"><div class="section">
-  <div data-role="amazonjs" data-asin="4532191971" data-locale="JP" data-tmpl="" data-img-size="" class="asin_4532191971_JP_ amazonjs_item">
-    <div class="amazonjs_indicator">
-      <span class="amazonjs_indicator_img"></span><a class="amazonjs_indicator_title" href="#">人はなぜお金で失敗するのか (日経ビジネス人文庫)</a><span class="amazonjs_indicator_footer"></span>
-    </div>
-  </div></p> 
-  
-  <p>
-    人はなぜお金で失敗するのか (日経ビジネス人文庫)読了
-  </p>
-  
-  <p>
-    <a target="_blank" href="http://www.amazon.co.jp/%E8%B3%A2%E3%81%84%E3%81%AF%E3%81%9A%E3%81%AE%E3%81%82%E3%81%AA%E3%81%9F%E3%81%8C%E3%80%81%E3%81%AA%E3%81%9C%E3%81%8A%E9%87%91%E3%81%A7%E5%A4%B1%E6%95%97%E3%81%99%E3%82%8B%E3%81%AE%E3%81%8B-%E3%82%B2%E3%83%BC%E3%83%AA%E3%83%BC-%E3%83%99%E3%83%AB%E3%82%B9%E3%82%AD%E3%83%BC/dp/4532163587%3FSubscriptionId%3DAKIAJBFZIALNBJJP2WRQ%26tag%3Dtflare-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4532163587" title="賢いはずのあなたが、なぜお金で失敗するのか">賢いはずのあなたが、なぜお金で失敗するのか</a>の文庫版
-  </p>
-  
-  <p>
-    賢いはずのあなたが、なぜお金で失敗するのかは昔読んだけど結構忘れてた。
-  </p>
-  
-  <p>
-  </p>
-  
-  <p>
-    本書で上げられている取るべき手段の抜粋と感想
-  </p>
-  
-  <p>
-    ・保険の免責金額を上げる
-  </p>
-  
-  <p>
-    これは納得できる。
-  </p>
-  
-  <p>
-    免責金額をあげると、保険料が節約できる。
-  </p>
-  
-  <p>
-    毎月固定で何もしなくても節約できるので
-  </p>
-  
-  <p>
-  </p>
-  
-  <p>
-    ・小さい損失には自家保険をかける
-  </p>
-  
-  <p>
-    必要のない保険に入るな。ということ
-  </p>
-  
-  <p>
-    これも納得できる。
-  </p>
-  
-  <p>
-  </p>
-  
-  <p>
-    ・非常用の資金でクレジットカードの負債を完済する
-  </p>
-  
-  <p>
-    借金の金利が高い場合は、貯金せずに返したほうが良いということ。
-  </p>
-  
-  <p>
-  </p>
-  
-  <p>
-    ・インデックスファンドに乗りかえる
-  </p>
-  
-  <p>
-    この本で最も重要と書かれている。
-  </p>
-  
-  <p>
-    これを実際に行うことは難しいだろう。
-  </p>
-  
-  <p>
-    自分も実践できていない。
-  </p>
-  
-  <p>
-  </p>
-  
-  <p>
-    ・投資を分散する
-  </p>
-  
-  <p>
-    資金が少ないと分散のしようがない。
-  </p>
-  
-  <p>
-    ある程度資金がある人は分散したほうが良いとは思う。
-  </p>
-  
-  <p>
-  </p>
-  
-  <p>
-    ・最後に、お金の使い方を追跡する
-  </p>
-  
-  <p>
-    家計簿をつけろということ。
-  </p>
-  
-  <p>
-    効果的だが続けるのが難しい。
-  </p>
-</div>
-</div>
-
-  
-</article>
-<hr>
-
-      
       
 <nav>
   <ul class="pager">
@@ -777,6 +793,8 @@
     </div>
     <div class="list-group">
       
+      <a href="http://d.tflare.com/2016/09/20/090100/" class="list-group-item">WordPressからHugoに移行</a>
+      
       <a href="http://d.tflare.com/2016/08/19/010941/" class="list-group-item">ビジネス書を読んでもデキる人にはなれない読了　この本の概要</a>
       
       <a href="http://d.tflare.com/2016/07/31/160751/" class="list-group-item">僕が無料の英語マンガで楽にTOEIC900点を取って、映画の英語を字幕なしでリスニングできるワケ読了</a>
@@ -794,8 +812,6 @@
       <a href="http://d.tflare.com/2014/10/02/074817/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由（日本破綻論と国債発行）</a>
       
       <a href="http://d.tflare.com/2014/10/02/072949/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由</a>
-      
-      <a href="http://d.tflare.com/2014/07/23/075131/" class="list-group-item">プロセスルールの縮小の停滞とブレイクスルーへの期待</a>
       
     </div>
   </div>

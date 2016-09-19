@@ -61,6 +61,77 @@
       
       <article class="li">
   <header>
+    <div class="date">Tue, Sep 20, 2016</div>
+    <div class="title"><a href="http://d.tflare.com/2016/09/20/090100/">WordPressからHugoに移行</a></div>
+  </header>
+  <div class="body">
+
+<h1 id="wordpressからhugoに移行">WordPressからHugoに移行</h1>
+
+<p>WordPress to Hugo Exporterを使用して移行しました。
+<a href="https://github.com/SchumacherFM/wordpress-to-hugo-exporter">https://github.com/SchumacherFM/wordpress-to-hugo-exporter</a></p>
+
+<hr />
+
+<h2 id="github-pagesへの移行試行-取りやめ">GitHub Pagesへの移行試行（取りやめ）</h2>
+
+<p>これに伴って、GitHub Pagesに移行しようとしましたが、取りやめました。</p>
+
+<h3 id="前提">前提</h3>
+
+<ul>
+<li>ドメインはスタードメインを使用</li>
+<li>メールはさくらのメールボックスを使用</li>
+</ul>
+
+<h3 id="取りやめた理由">取りやめた理由</h3>
+
+<ul>
+<li>GitHub Pagesではサブドメインの際はDNSの設定において、CNAMEの設定をする必要があるようです。（サブドメインでない場合にどうなるかは未確認）</li>
+<li>上記ドメインでメールも使用しようとしていたためMXレコードの設定もしようとしていたが、CNAMEとMXレコードの混在は不可能
+<a href="http://www.ocn.ne.jp/business/customer/set_up/dns_12.html">http://www.ocn.ne.jp/business/customer/set_up/dns_12.html</a></li>
+</ul>
+
+<p>（ドメイン会社のDNSレコード編集機能でNSレコードが変更できれば可能性があるが、スタードメインではNSレコードは編集不可能）</p>
+
+<hr />
+
+<h2 id="環境の変更">環境の変更</h2>
+
+<h3 id="web-さくらの共有サーバ-スタンダード-スターサーバ">Web　さくらの共有サーバ（スタンダード）→スターサーバ</h3>
+
+<p>WordPressを使用しなくなり、静的なサイトになったため
+さくらの共有サーバ（スタンダード）は不要だろうということでやめ、
+スタードメインに付属しているサーバを使用</p>
+
+<h3 id="メール-さくらの共有サーバ-スタンダード-さくらのメールボックス">メール　さくらの共有サーバ（スタンダード）→さくらのメールボックス</h3>
+
+<p>メールはスタードメインのメール転送機能を使用しようと思ったが、
+安定性が低いというページが有ったためさくらのメールボックスを使用することにした。</p>
+
+<p>エックスドメインであればドメインを契約すれば通常のメール機能が使えるようなので以降も要検討
+（スタードメインはメール転送機能のみ）</p>
+
+<hr />
+
+<h3 id="現在のスタードメインのdns設定">現在のスタードメインのDNS設定</h3>
+
+<p>tflare.com　A　スターサーバのIPアドレス</p>
+
+<p>d.tflare.com　A　スターサーバのIPアドレス</p>
+
+<p>tflare.com　MX　さくらのメールボックスのサーバホスト名</p>
+
+<p>tflare.com　TXT　v=spf1 a:さくらのメールボックスのサーバホスト名 -all</p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
     <div class="date">Wed, Mar 30, 2016</div>
     <div class="title"><a href="http://d.tflare.com/2016/03/31/071248/">iMac 21.5インチとMacBook Air 13インチ購入</a></div>
   </header>
@@ -466,92 +537,6 @@
 <hr>
 
       
-      <article class="li">
-  <header>
-    <div class="date">Fri, Jun 25, 2010</div>
-    <div class="title"><a href="http://d.tflare.com/2010/06/25/204520/">製造プロセス CPU</a></div>
-  </header>
-  <div class="body"><div class="section">
-  <h4>
-    Intel
-  </h4>
-  
-  <p>
-    2010年 32nm
-  </p>
-  
-  <p>
-    2011年 32nm SandyBridge
-  </p>
-  
-  <p>
-    2012年 22nm IvyBridge
-  </p>
-  
-  <p>
-  </p>
-  
-  <h4>
-    AMD
-  </h4>
-  
-  <p>
-    2010年 45nm
-  </p>
-  
-  <p>
-    2011年 32nm Llano
-  </p>
-  
-  <p>
-    2011年 32nm Bulldozer
-  </p>
-  
-  <p>
-  </p>
-  
-  <p>
-    CPUの製造プロセスは上記になると思われる。
-  </p>
-  
-  <p>
-    製造プロセスが変わることによって
-  </p>
-  
-  <p>
-    同時に新技術が導入されることが多く、
-  </p>
-  
-  <p>
-    これにより、コスト低減、熱低減、ワットパフォーマンス改善等
-  </p>
-  
-  <p>
-    について期待できる。<a href="http://pc.watch.impress.co.jp/docs/column/kaigai/20100215_348705.html" target="_blank">参考</a>
-  </p>
-  
-  <p>
-  </p>
-  
-  <p>
-    これにより製造プロセスが変わる時が
-  </p>
-  
-  <p>
-    お得なPCの更新時期と言えると考える。
-  </p>
-  
-  <p>
-    Intelなら2012年、AMDなら2011年
-  </p>
-</div>
-</div>
-
-  
-</article>
-<hr>
-
-      
       
 <nav>
   <ul class="pager">
@@ -591,6 +576,8 @@
     </div>
     <div class="list-group">
       
+      <a href="http://d.tflare.com/2016/09/20/090100/" class="list-group-item">WordPressからHugoに移行</a>
+      
       <a href="http://d.tflare.com/2016/08/19/010941/" class="list-group-item">ビジネス書を読んでもデキる人にはなれない読了　この本の概要</a>
       
       <a href="http://d.tflare.com/2016/07/31/160751/" class="list-group-item">僕が無料の英語マンガで楽にTOEIC900点を取って、映画の英語を字幕なしでリスニングできるワケ読了</a>
@@ -608,8 +595,6 @@
       <a href="http://d.tflare.com/2014/10/02/074817/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由（日本破綻論と国債発行）</a>
       
       <a href="http://d.tflare.com/2014/10/02/072949/" class="list-group-item">消費税が8%から10%に徐々に引き上げられる理由</a>
-      
-      <a href="http://d.tflare.com/2014/07/23/075131/" class="list-group-item">プロセスルールの縮小の停滞とブレイクスルーへの期待</a>
       
     </div>
   </div>
