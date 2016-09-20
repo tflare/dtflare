@@ -32,8 +32,9 @@
 &lt;h3 id=&#34;前提&#34;&gt;前提&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;ドメインはスタードメインを使用&lt;/li&gt;
-&lt;li&gt;メールはさくらのメールボックスを使用&lt;/li&gt;
+&lt;li&gt;ドメイン会社はスタードメインを使用&lt;/li&gt;
+&lt;li&gt;メールサーバはさくらのメールボックスを使用&lt;/li&gt;
+&lt;li&gt;GitHub Pagesに使用するのはサブドメイン(d.tflare.com)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;取りやめた理由&#34;&gt;取りやめた理由&lt;/h3&gt;
