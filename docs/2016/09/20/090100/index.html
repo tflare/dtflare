@@ -63,7 +63,7 @@
         <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://d.tflare.com/"/>
         <meta itemprop="dateModified" content="2016-09-20T00:01:00&#43;00:00">
         <meta itemprop="headline" content="WordPressからHugoに移行">
-        <meta itemprop="description" content="WordPressからHugoに移行 WordPress to Hugo Exporterを使用して移行しました。 https://github.com/SchumacherFM/wordpress-to-hugo-exporter GitHub Pagesへの移行試行（取りやめ） これに伴って、GitHub Pagesに移行しようとしましたが、取りやめました。 前提 ドメイン会社はスタードメインを使用 メールサーバはさくらのメールボックスを使用 GitHub Pagesに使用するのはサブドメイン(d.tflare.com) 取りやめた理由 GitHub Pagesではサブドメインの際はDNSの設定において、CNAMEの設定をする必要があるようです。（サブドメインでない場合にどうなるかは未確認） 上記ドメインでメールも使用しようとしていたためMXレコードの設定もしようとしていたが、CNAMEとMXレコードの混在は不可能 http://www.ocn.ne.jp/business/customer/set_up/dns_12.html （ドメイン会社のDNSレコード編集機能でNSレコードが変更できれば可能性があるが、スタードメインではNSレコードは編集不可能） 環境の変更 Web さくらの共有サーバ（スタンダード）→スターサーバ WordPressを使用しなくなり、静的なサイトになったため さくらの共有サーバ（スタンダード）は不要だろうということでやめ、 スタードメインに付属しているサーバを使用 メール さくらの共有サーバ（スタンダード）→さくらのメールボックス メールはスタードメインのメール転送機能を使用しようと思ったが、 安定性が低いというページが有ったためさくらのメールボックスを使用することにした。 エックスドメインであればドメインを契約すれば通常のメール機能が使えるようなので以降も要検討 （スタードメインはメール転送機能のみ） 現在のスタードメインのDNS設定 tflare.com A スターサーバのIPアドレス d.tflare.com A スターサーバのIPアドレス tflare.com MX さくらのメールボックスのサーバホスト名 tflare.com TXT v=spf1 a:さくらのメールボックスのサーバホスト名 -all">
+        <meta itemprop="description" content="WordPressからHugoに移行 WordPress to Hugo Exporterを使用して移行しました。 https://github.com/SchumacherFM/wordpress-to-hugo-exporter GitHub Pagesへの移行試行（取りやめ） これに伴って、GitHub Pagesに移行しようとしましたが、取りやめました。 前提 ドメイン会社はスタードメインを使用 メールサーバはさくらのメールボックスを使用 GitHub Pagesに使用するのはサブドメイン(d.tflare.com) 取りやめた理由 GitHub Pagesではサブドメインの際はDNSの設定において、CNAMEの設定をする必要があるようです。（サブドメインでない場合にどうなるかは未確認） 上記ドメインでメールも使用しようとしていたためMXレコードの設定もしようとしていたが、CNAMEとMXレコードの混在は不可能 http://www.ocn.ne.jp/business/customer/set_up/dns_12.html http://www.star-domain.jp/man/man_dns_setting.php （ドメイン会社のDNSレコード編集機能でNSレコードが変更できれば可能性があるが、スタードメインではNSレコードは編集不可能） 環境の変更 Web さくらの共有サーバ（スタンダード）→スターサーバ WordPressを使用しなくなり、静的なサイトになったため さくらの共有サーバ（スタンダード）は不要だろうということでやめ、 スタードメインに付属しているサーバを使用 メール さくらの共有サーバ（スタンダード）→さくらのメールボックス メールはスタードメインのメール転送機能を使用しようと思ったが、 安定性が低いというページが有ったためさくらのメールボックスを使用することにした。 エックスドメインであればドメインを契約すれば通常のメール機能が使えるようなので移行も要検討 （スタードメインはメール転送機能のみ） 現在のスタードメインのDNS設定 tflare.com A スターサーバのIPアドレス d.tflare.com A スターサーバのIPアドレス tflare.com MX さくらのメールボックスのサーバホスト名 tflare.com TXT v=spf1 a:さくらのメールボックスのサーバホスト名 -all">
         <meta itemprop="url" content="http://d.tflare.com/2016/09/20/090100/">
         <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
           <meta itemprop="url" content="http://d.tflare.com/images/default.jpg" />
@@ -114,7 +114,8 @@
 <ul>
 <li>GitHub Pagesではサブドメインの際はDNSの設定において、CNAMEの設定をする必要があるようです。（サブドメインでない場合にどうなるかは未確認）</li>
 <li>上記ドメインでメールも使用しようとしていたためMXレコードの設定もしようとしていたが、CNAMEとMXレコードの混在は不可能
-<a href="http://www.ocn.ne.jp/business/customer/set_up/dns_12.html">http://www.ocn.ne.jp/business/customer/set_up/dns_12.html</a></li>
+<a href="http://www.ocn.ne.jp/business/customer/set_up/dns_12.html">http://www.ocn.ne.jp/business/customer/set_up/dns_12.html</a>
+<a href="http://www.star-domain.jp/man/man_dns_setting.php">http://www.star-domain.jp/man/man_dns_setting.php</a></li>
 </ul>
 
 <p>（ドメイン会社のDNSレコード編集機能でNSレコードが変更できれば可能性があるが、スタードメインではNSレコードは編集不可能）</p>
@@ -134,7 +135,7 @@
 <p>メールはスタードメインのメール転送機能を使用しようと思ったが、
 安定性が低いというページが有ったためさくらのメールボックスを使用することにした。</p>
 
-<p>エックスドメインであればドメインを契約すれば通常のメール機能が使えるようなので以降も要検討
+<p>エックスドメインであればドメインを契約すれば通常のメール機能が使えるようなので移行も要検討
 （スタードメインはメール転送機能のみ）</p>
 
 <hr />

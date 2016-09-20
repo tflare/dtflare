@@ -42,7 +42,8 @@
 &lt;ul&gt;
 &lt;li&gt;GitHub Pagesではサブドメインの際はDNSの設定において、CNAMEの設定をする必要があるようです。（サブドメインでない場合にどうなるかは未確認）&lt;/li&gt;
 &lt;li&gt;上記ドメインでメールも使用しようとしていたためMXレコードの設定もしようとしていたが、CNAMEとMXレコードの混在は不可能
-&lt;a href=&#34;http://www.ocn.ne.jp/business/customer/set_up/dns_12.html&#34;&gt;http://www.ocn.ne.jp/business/customer/set_up/dns_12.html&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;http://www.ocn.ne.jp/business/customer/set_up/dns_12.html&#34;&gt;http://www.ocn.ne.jp/business/customer/set_up/dns_12.html&lt;/a&gt;
+&lt;a href=&#34;http://www.star-domain.jp/man/man_dns_setting.php&#34;&gt;http://www.star-domain.jp/man/man_dns_setting.php&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;（ドメイン会社のDNSレコード編集機能でNSレコードが変更できれば可能性があるが、スタードメインではNSレコードは編集不可能）&lt;/p&gt;
@@ -62,7 +63,7 @@
 &lt;p&gt;メールはスタードメインのメール転送機能を使用しようと思ったが、
 安定性が低いというページが有ったためさくらのメールボックスを使用することにした。&lt;/p&gt;
 
-&lt;p&gt;エックスドメインであればドメインを契約すれば通常のメール機能が使えるようなので以降も要検討
+&lt;p&gt;エックスドメインであればドメインを契約すれば通常のメール機能が使えるようなので移行も要検討
 （スタードメインはメール転送機能のみ）&lt;/p&gt;
 
 &lt;hr /&gt;
