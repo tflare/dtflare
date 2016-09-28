@@ -1,3 +1,6 @@
 # .gitignore
 # .DS_Store banished!
 .DS_Store
+
+# docsフォルダは生成対象のためgit管理対象外
+docs/
