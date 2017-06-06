@@ -1,5 +1,5 @@
 ---
-title: AI&機械学習しよう！　ソース＆論文輪読会（UNREAL）に出席してきました。
+title: AI&機械学習しよう！　ソース＆論文輪読会（UNREAL）に出席してきました。part1
 author: hiroyuki_t
 layout: post
 date: 2017-06-04T07:26:00+09:00
@@ -8,7 +8,7 @@ categories:
   - 機械学習
   
 ---
-# AI&機械学習しよう！　ソース＆論文輪読会（UNREAL）に出席してきました。
+# AI&機械学習しよう！　ソース＆論文輪読会（UNREAL）に出席してきました。part1
 
 [AI&機械学習しよう！　ソース＆論文輪読会（UNREAL）](http://do2dle.connpass.com/event/57366/)に出席してきました。
 
