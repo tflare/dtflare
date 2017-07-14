@@ -1,5 +1,5 @@
 theme="polymer"
-baseurl = "http://d.tflare.com/"
+baseurl = "https://d.tflare.com/"
 languageCode = "ja-jp"
 title = "hiroyuki_tの日記"
 MetaDataFormat = "toml"
