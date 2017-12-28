@@ -33,11 +33,11 @@
       font-family: 'Roboto', sans-serif;
     }
 
-h1 {
+.title {
 position: relative;
 }
 
-h1:after {
+.title:after {
 content: "";
 position: absolute;
 left: 0;
@@ -48,7 +48,7 @@ background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff
 background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
 }
 
-h2 {
+h1 {
 position: relative;
 padding: 0.6em;
 background: -webkit-repeating-linear-gradient(-45deg, #fff5df, #fff5df 4px,#ffe4b1 3px, #ffe4b1 8px);
@@ -56,7 +56,7 @@ background: repeating-linear-gradient(-45deg, #fff5df, #fff5df 4px,#ffe4b1 3px, 
 border-radius: 7px;
 }
 
-h2:after {
+h1:after {
 position: absolute;
 content: '';
 top: 100%;
@@ -66,7 +66,32 @@ border-top: 15px solid #ffebbe;
 width: 0;
 height: 0;
 }
-    
+
+h2 {
+position: relative;
+padding-left: 25px;
+}
+
+h2:before {
+position: absolute;
+content: '';
+bottom: -3px;
+left: 0;
+width: 0;
+height: 0;
+border: none;
+border-left: solid 15px transparent;
+border-bottom: solid 15px rgb(119, 195, 223);
+}
+h2:after {
+position: absolute;
+content: '';
+bottom: -3px;
+left: 10px;
+width: 100%;
+border-bottom: solid 3px rgb(119, 195, 223);
+}
+
     .nav {
       border-right: 1px solid #ccc;
     }
@@ -178,7 +203,7 @@ height: 0;
           <iron-icon icon="chevron-right"></iron-icon>
         </paper-item></a>
       </paper-menu>
-      
+
       <paper-menu>
           <paper-item><div class="flex">Recent Posts</div></paper-item>
                  <hr />
@@ -192,7 +217,7 @@ height: 0;
 </paper-menu>
 
     </div>
-    
+
     <paper-scroll-header-panel main condenses header-height="256" condensed-header-height="64">
 
       <paper-toolbar>
