@@ -3,7 +3,6 @@
 
 {{range $index, $page := .Paginator.Pages}}
   <div class="article">
-    <div class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
     {{if .Params.categories }}
       <div class="categories">categories:
         {{ range $index, $category := .Params.categories }}
