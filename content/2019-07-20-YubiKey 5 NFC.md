@@ -29,4 +29,4 @@ GitHubがChromeのみを対応としているのが残念。
 | GitHub       |    ◎    |             ×            | Security keys使用できない、Chromeのみ対応？            |
 | Slack        |    ◎    |             ×            | Security keys使用できない                              |
 | Amazon.co.jp |    ◎    |             ×            | Security keys使用できない、バックアップ用にAuthyを設定 |
-| Microsoft    |    ◎    |             ×            | Security keys使用できない、Edgeのみ対応？              |
+| Microsoft    |    ×    |             ×            | Authenticator使用、Security keys使用できない、Edgeのみ対応？              |
