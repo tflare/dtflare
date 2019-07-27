@@ -10,10 +10,10 @@ categories:
 ---
 
 # YubiKey 5 NFC 設定
-YubiKey 5 NFCが届いたので、個人的によく使用しているサービスに設定した。
-（Security keysの設定ができないものについては、SMS認証のみを行った。）
+YubiKey 5 NFCが届いたので、個人的によく使用しているサービスに設定した。  
+（Security keysの設定ができないものについては、SMS認証のみを行った。）  
 
-GitHubがChromeのみを対応としているのが残念。
+GitHubがChromeのみを対応としているのが残念。  
 （ブラウザにVivaldiを使用していて、FIDO U2F対応しているのに使えない。）
 
 後は、YubiKey 5 NFCをSSHの秘密鍵の保存などに使用しようと思っている。
