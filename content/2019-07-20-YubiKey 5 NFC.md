@@ -26,9 +26,11 @@ GitHubがChromeのみを対応としているのが残念。
 | Google       |    ◎    |             ◎            |                                                        |
 | Twitter      |    ◎    |             ◎            |                                                        |
 | Facebook     |    ◎    |             ◎            |                                                        |
-| GitHub       |    ◎    |             ×            | Security keys使用できない、Chromeのみ対応？            |
+| GitHub       |    ◎    |             ×            | Security keys使用できない、Chromeのみ対応            |
 | Slack        |    ◎    |             ×            | Security keys使用できない                              |
 | Amazon.co.jp |    ◎    |             ×            | Security keys使用できない、バックアップ用にAuthyを設定 |
 | Microsoft    |    ×    |             ×            | Authenticator使用、Security keys使用できない、Edgeのみ対応？              |
 | Bitbucket    |    ×    |             ×            | Authyを設定              |
 | Dropbox    |    ◎    |             ◎            |               |
+| Gitlab    |    ×    |             ×            | Authyを設定              |
+| Qiita    |    ×    |             ×            | Authyを設定              |
