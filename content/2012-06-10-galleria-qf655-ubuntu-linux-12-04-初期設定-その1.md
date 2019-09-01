@@ -18,57 +18,57 @@ Prime Note Galleria QF655購入
     <td>
       CPU
     </td>
-    
+
     <td>
       Core i7-3610QM
     </td>
   </tr>
-  
+
   <tr>
     <td>
       MEMORY
     </td>
-    
+
     <td>
       8GB(M471B5273DH0-CK0 Samsung 4GB PC3-12800✕2)
     </td>
   </tr>
-  
+
   <tr>
     <td>
       SSD
     </td>
-    
+
     <td>
       128G(Intel SSD 330)
     </td>
   </tr>
-  
+
   <tr>
     <td>
       GPU
     </td>
-    
+
     <td>
       NVIDIA GeForce GT 650M 2GB
     </td>
   </tr>
-  
+
   <tr>
     <td>
       光学ドライブ
     </td>
-    
+
     <td>
       DVDスーパーマルチドライブ
     </td>
   </tr>
-  
+
   <tr>
     <td>
       OS
     </td>
-    
+
     <td>
       Windows7 Home Premium 64bit
     </td>
@@ -88,50 +88,50 @@ HDDから SSDに変更している。
     <td>
       /
     </td>
-    
+
     <td>
       12G
     </td>
-    
+
     <td>
       ext4
     </td>
-    
+
     <td>
       Ubuntu Linux 12.04
     </td>
   </tr>
-  
+
   <tr>
     <td>
       /home
     </td>
-    
+
     <td>
       39G
     </td>
-    
+
     <td>
       ext4
     </td>
-    
+
     <td>
       Ubuntu Linux 12.04
     </td>
   </tr>
-  
+
   <tr>
     <td>
     </td>
-    
+
     <td>
       67G
     </td>
-    
+
     <td>
       ntfs
     </td>
-    
+
     <td>
       Windows7
     </td>
@@ -159,14 +159,14 @@ swapはメモリーが8GBあるので、設定しない。
 ### Opera
 
 本家からインストール
-  
+
 flashもインストール
 
 以下のファイルを以前のPCから移行
 
 bookmarks.adr, operaprefs.ini, override.ini, search.ini, wand.dat
 
-[urlfilter][1]の設定
+urlfilterの設定
 
 上記のGeneralのみurlfilter.iniという名前で $HOME/.operaに保存
 
@@ -175,13 +175,13 @@ bookmarks.adr, operaprefs.ini, override.ini, search.ini, wand.dat
 補完が便利なシェル
 
 apt-get install zsh
-  
+
 $ chsh
-  
+
 新しいシェル [/bin/bash]: /bin/zsh
-  
+
 補完が便利なので、ないと辛い
-  
+
 この[リンク][2]の.zshrcや.zsh_historyを過去のデータから移行
 
 ### mozc
@@ -190,8 +190,6 @@ Google日本語入力のオープンソース版
 
 sudo apt-get install ibus-mozc mozc-server mozc-utils-gui
 
-[<img class="alignnone size-full wp-image-425" title="Screenshot_from_2012-06-10 08:55:10" src="http://d.tflare.com/wp-content/uploads/2012/06/Screenshot_from_2012-06-10-085510.png" alt="" width="200" height="30" />][3]
-  
 画面右上のキーボード→[再起動]
 
 画面右上のキーボード→[設定] →[インプットメソッドタブ]mozcを設定
@@ -201,17 +199,15 @@ sudo apt-get install ibus-mozc mozc-server mozc-utils-gui
 ### 他のソフト
 
 FTPソフト
-  
+
 sudo apt-get install filezilla
-  
+
 グラフィック編集・加工ソフト
-  
+
 sudo apt-get install gimp
-  
+
 ブラウザ
-  
+
 sudo apt-get install chromium-browser
 
- [1]: http://ja.opera-wiki.com/urlfilter.ini%E8%A3%9C%E5%AE%8C%E8%A8%88%E7%94%BB
- [2]: http://d.tflare.com/2007/02/10/210703/
- [3]: http://d.tflare.com/wp-content/uploads/2012/06/Screenshot_from_2012-06-10-085510.png
+ [2]: https://d.tflare.com/2007/02/10/210703/

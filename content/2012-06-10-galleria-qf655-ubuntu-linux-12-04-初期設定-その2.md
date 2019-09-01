@@ -17,8 +17,6 @@ Galleria QF655 Ubuntu Linux 12.04 初期設定 その2
 
 gsettings set org.gnome.nautilus.preferences always-use-location-entry true
 
-[<img src="http://d.tflare.com/wp-content/uploads/2012/06/Screenshot_from_2012-06-10-120518-300x30.png" alt="" title="Screenshot_from_2012-06-10 12:05:18" width="300" height="30" class="alignnone size-medium wp-image-448" srcset="http://d.tflare.com/wp-content/uploads/2012/06/Screenshot_from_2012-06-10-120518-300x30.png 300w, http://d.tflare.com/wp-content/uploads/2012/06/Screenshot_from_2012-06-10-120518-768x77.png 768w, http://d.tflare.com/wp-content/uploads/2012/06/Screenshot_from_2012-06-10-120518.png 800w" sizes="(max-width: 300px) 100vw, 300px" />][1]
-
 ### グローバルメニューの無効化
 
 sudo apt-get autoremove appmenu-gtk appmenu-gtk3 appmenu-qt
@@ -89,6 +87,5 @@ sudo cp /usr/lib/jni/libswt-*3740.so ~/.swt/lib/linux/x86/
 
 を参照
 
- [1]: http://d.tflare.com/wp-content/uploads/2012/06/Screenshot_from_2012-06-10-120518.png
  [2]: http://askubuntu.com/questions/125150/unsatisfied-link-error-and-missing-so-files-when-starting-eclipse
  [3]: http://techbooster.jpn.org/andriod/environment/492/
