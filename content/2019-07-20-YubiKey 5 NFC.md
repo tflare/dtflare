@@ -26,7 +26,7 @@ GitHubがChromeのみを対応としているのが残念。
 | Google       |    ◎    |             ◎            |                                                        |
 | Twitter      |    ◎    |             ◎            |                                                        |
 | Facebook     |    ◎    |             ◎            |                                                        |
-| GitHub       |    ◎    |             ×            | Security keys使用できない、Chromeのみ対応            |
+| GitHub       |    ◎    |             ◎            | 前までChromeのみ対応だったが、2019年8月21日にWebAuthn対応で他のブラウザにも開放されたので設定            |
 | Slack        |    ◎    |             ×            | Security keys使用できない                              |
 | Amazon.co.jp |    ◎    |             ×            | Security keys使用できない、バックアップ用にAuthyを設定 |
 | Microsoft    |    ×    |             ×            | Authenticator使用、Security keys使用できない、Edgeのみ対応？              |
