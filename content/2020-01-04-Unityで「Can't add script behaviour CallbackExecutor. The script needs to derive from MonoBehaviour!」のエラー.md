@@ -1,5 +1,5 @@
 ---
-title:  Unityで「Can't add script behaviour CallbackExecutor. The script needs to derive from MonoBehaviour!」のエラー
+title:  Unity 2018.4.14f1でUnityの教科書 Unity2019完全対応版p55「Can't add script behaviour CallbackExecutor. The script needs to derive from MonoBehaviour!」の時の対処法
 author: hiroyuki_t
 layout: post
 date: 2020-01-04T10:00:00+09:00
@@ -9,7 +9,7 @@ categories:
 
 ---
 
-# Unityで「Can't add script behaviour CallbackExecutor. The script needs to derive from MonoBehaviour!」のエラー
+# Unity 2018.4.14f1でUnityの教科書 Unity2019完全対応版p55「Can't add script behaviour CallbackExecutor. The script needs to derive from MonoBehaviour!」の時の対処法
 
 Unity 2018.4.14f1で
 Unityの教科書 Unity2019完全対応版 2D&3Dスマートフォンゲーム入門講座　p55のスクリプトのアタッチをしてみたところ
