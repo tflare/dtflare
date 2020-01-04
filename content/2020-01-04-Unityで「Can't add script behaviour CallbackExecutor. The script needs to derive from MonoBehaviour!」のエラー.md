@@ -16,15 +16,14 @@ Unityの教科書 Unity2019完全対応版 2D&3Dスマートフォンゲーム�
 
 「Can't add script behaviour CallbackExecutor. The script needs to derive from MonoBehaviour!」のエラーになる。  
 原因を調べてみたところ、ファイル名はクラス名でなければならないためだった。  
-ファイル名を「NewBehaviourScript」に戻すとアタッチできた。
+ファイル名を「NewBehaviourScript」に戻すとアタッチできた。  
 おそらくバージョンの違いによるものと思われる。（新バージョンでは自動でクラス名が変更される機能がついているのでは？）  
 
 
 Unityは2020年1月4日現在 Windowsで2018.4.14f1がデフォルトダウンロードされる。  
 これはLTS（2 年間のサポート期間）の最新版が2018.4系であるためと思われる。  
-LTSはバージョンが「.4」で終わることで判別可能
-詳しくは以下に記載がある。
+LTSはバージョンが「.4」で終わることで判別可能  
+詳しくは以下リンク先に記載がある。
 
 
-Unity の新しいリリースプラン：TECH ストリームと長期サポート（LTS）ストリームの導入
-https://blogs.unity3d.com/jp/2018/04/09/new-plans-for-unity-releases-introducing-the-tech-and-long-term-support-lts-streams/
+[Unity の新しいリリースプラン：TECH ストリームと長期サポート（LTS）ストリームの導入](https://blogs.unity3d.com/jp/2018/04/09/new-plans-for-unity-releases-introducing-the-tech-and-long-term-support-lts-streams/)
