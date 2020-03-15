@@ -1,10 +1,10 @@
 theme="polymer"
 baseurl = "https://d.tflare.com/"
 languageCode = "ja-jp"
-title = "hiroyuki_tの日記"
+title = "Hiroyuki Abeの日記"
 MetaDataFormat = "toml"
 paginate = 10 # optional
-copyright = "Copyright (c) 2006 - 2018, hiroyuki_tの日記"
+copyright = "Copyright (c) 2006 - 2020, Hiroyuki Abe"
 canonifyurls = true
 publishdir = "docs"
 disqusShortname = "http-d-tflare-com.disqus.com" # optional
