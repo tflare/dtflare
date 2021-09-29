@@ -1,19 +1,34 @@
-theme="polymer"
+theme="m10c"
 baseurl = "https://d.tflare.com/"
 languageCode = "ja-jp"
 title = "Hiroyuki Abeの日記"
 MetaDataFormat = "toml"
 paginate = 10 # optional
-copyright = "Copyright (c) 2006 - 2020, Hiroyuki Abe"
+copyright = "Copyright (c) 2006 - 2021, Hiroyuki Abe"
 canonifyurls = true
 publishdir = "docs"
-disqusShortname = "http-d-tflare-com.disqus.com" # optional
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 2
 
 [params]
-  author = "hiroyuki_t"
-  photo = "images/photo.png" # optional
-  profile = "images/profile.png" # optional
-  cover = "images/cover.png" # optional
-  twitter = "taki_tflare" # optional
-  github = "tflare" # optional
-  googleAnalyticsUserID = "UA-84345073-1" # optional
+  author = "Hiroyuki Abe"
+  description = "つれずれ日記"
+  menu_item_separator = " - "
+  [[params.social]]
+    icon = "github"
+    name = "Github"
+    url = "https://github.com/tflare"
+  [[params.social]]
+    icon = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/taki_tflare"
