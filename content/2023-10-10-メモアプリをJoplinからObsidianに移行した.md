@@ -2,8 +2,8 @@
 title: メモアプリをJoplinからObsidianに移行した
 author: hiroyuki_t
 layout: post
-date: 2023-10-08T09:30:00+09:00
-url: /2023/10/08/093000/
+date: 2023-10-10T17:30:00+09:00
+url: /2023/10/10/173000/
 categories:
 - Comp
 
