@@ -4,3 +4,7 @@
 
 # docsフォルダは生成対象のためgit管理対象外
 docs/
+
+# Hugoがビルド時に生成するファイル
+.hugo_build.lock
+/resources/
