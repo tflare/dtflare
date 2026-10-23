@@ -2,11 +2,17 @@ theme="m10c"
 baseurl = "https://d.tflare.com/"
 languageCode = "ja-jp"
 title = "Hiroyuki Abeの日記"
-MetaDataFormat = "toml"
-paginate = 10 # optional
-copyright = "Copyright (c) 2006 - 2021, Hiroyuki Abe"
+copyright = "Copyright (c) 2006 - 2026, Hiroyuki Abe"
 canonifyurls = true
 publishdir = "docs"
+
+[pagination]
+  pagerSize = 10
+
+# Hugo 0.60以降のMarkdownエンジン(Goldmark)は既定で生HTMLを出力しないため、
+# 記事中の<table>などをこれまで通り表示するために有効化
+[markup.goldmark.renderer]
+  unsafe = true
 
 [menu]
   [[menu.main]]
