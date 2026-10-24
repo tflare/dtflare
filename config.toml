@@ -9,11 +9,6 @@ publishdir = "docs"
 [pagination]
   pagerSize = 10
 
-# Hugo 0.60以降のMarkdownエンジン(Goldmark)は既定で生HTMLを出力しないため、
-# 記事中の<table>などをこれまで通り表示するために有効化
-[markup.goldmark.renderer]
-  unsafe = true
-
 [menu]
   [[menu.main]]
     identifier = "home"

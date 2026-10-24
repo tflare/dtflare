@@ -22,10 +22,12 @@ Twenty Eleven Theme Extensionsでヘッダーの画像のサイズを変更し�
 
 ## 移行時に使用した設定の個人的なメモ
 
-<day date=&#8221;([0-9]{4}\-[0-9]{2}\-[0-9]{2})&#8221; title=&#8221;(.+?)&#8221;(.|\n)+?</body>
+```
+<day date="([0-9]{4}\-[0-9]{2}\-[0-9]{2})" title="(.+?)"(.|\n)+?</body>
 
-<day date=&#8221;\1&#8243; title=&#8221;\2&#8243;><body><a href=&#8221;http://d.tflare.com/\1&#8243;>\2</a></body>
+<day date="\1" title="\2"><body><a href="http://d.tflare.com/\1">\2</a></body>
 
 http://d.tflare.com/([0-9]{4})\-([0-9]{2})-([0-9]{2})
 
 http://d.tflare.com/\1/\2/\3
+```

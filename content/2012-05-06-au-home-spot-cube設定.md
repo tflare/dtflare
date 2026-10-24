@@ -42,6 +42,5 @@ WEPは解析ソフトが出まわっており、即解析されてしまう。
 フレッツ光、Bフレッツの人は以下も参照してください。   
 [フレッツ光/Bフレッツ(VH-100E&lt;S&gt;)とau HOME SPOT CUBEをつなぐ方法 ][1]
 
-<p style="text-align: right;">
 
  [1]: http://d.tflare.com/2012/04/10/055014/ "フレッツ光/Bフレッツ(VH-100E&lt;S&gt;)とau HOME SPOT CUBEをつなぐ方法"
